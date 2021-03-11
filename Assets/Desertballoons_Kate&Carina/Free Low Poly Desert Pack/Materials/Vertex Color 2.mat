@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Vertex Color
+  m_Name: Vertex Color 2
   m_Shader: {fileID: 4800000, guid: 9271e864ef20504479d70527f1b73721, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -75,3 +75,4 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 0.8207547, b: 0.039949894, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
