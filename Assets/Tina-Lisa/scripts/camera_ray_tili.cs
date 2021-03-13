@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camera_ray_beka : MonoBehaviour
+public class camera_ray_tili : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,12 +15,9 @@ public class camera_ray_beka : MonoBehaviour
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 50))
-        {
-            if(hit.rigidbody != null)
-            {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-            }
+        if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
+        { 
+            hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
         }
     }
 }
