@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7893382980841406476}
   - component: {fileID: 8648070644665896935}
   - component: {fileID: 5832835600948726877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: jumpy
   m_Icon: {fileID: 0}
