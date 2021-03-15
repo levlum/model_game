@@ -20,5 +20,3 @@ public class cam_ray : MonoBehaviour
         }
     }
 }
-
-
