@@ -1,12 +1,20 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 namespace Kate_Carina {
     public class FuggooController_kaca : MonoBehaviour
+=======
+public class FuggooController : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+>>>>>>> Stashed changes
     {
     public GameObject explosion; // drag your explosion prefab here
 
+<<<<<<< Updated upstream
         // Start is called before the first frame update
         void Start()
         {
@@ -24,5 +32,11 @@ namespace Kate_Carina {
             Destroy(gameObject); // destroy the grenade
             Destroy(expl, 3); // delete the explosion after 3 seconds
         }
+=======
+    // Update is called once per frame
+    void Update()
+    {
+        
+>>>>>>> Stashed changes
     }
 }
