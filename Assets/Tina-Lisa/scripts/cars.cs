@@ -3,35 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class cars : MonoBehaviour
+namespace Tisa
 {
-     public Text coinText;
-     public int coinCount = 0;
-     //public GameManager gameManager;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public class cars : MonoBehaviour
     {
-        
-    }
-    private void FixedUpdate()
-    {
-        coinText.text = coinCount.ToString();
-    }
-    private void OnTriggerEnter(Collider other)
+        public Text coinText;
 
-    {
-        if (other.gameObject.CompareTag("car"))
+        public int coinCount = 0;
+
+        //public GameManager gameManager;
+        // Start is called before the first frame update
+        void Start()
         {
-            other.gameObject.SetActive(false);
-            //gameManager.addPoint();
-            coinCount++;
-            UnityEngine.Debug.Log("car im korb");
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void FixedUpdate()
+        {
+            coinText.text = coinCount.ToString();
+        }
+
+        private void OnTriggerEnter(Collider other)
+
+        {
+            if (other.gameObject.CompareTag("car"))
+            {
+                other.gameObject.SetActive(false);
+                //gameManager.addPoint();
+                coinCount++;
+                UnityEngine.Debug.Log("car im korb");
+            }
         }
     }
 }

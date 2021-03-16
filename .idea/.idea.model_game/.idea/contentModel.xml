@@ -69,7 +69,6 @@
         </e>
         <e p="Tina-Lisa" t="Include">
           <e p="scripts" t="Include">
-            <e p="cam_ray_tisa.cs" t="Include" />
             <e p="camera_ray_tili.cs" t="Include" />
             <e p="cars.cs" t="Include" />
           </e>

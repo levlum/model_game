@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cam_ray_tisa.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cam_ray_tisa.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +67,7 @@
       <workItem from="1615895148055" duration="3000" />
       <workItem from="1615895210459" duration="119000" />
       <workItem from="1615895385537" duration="27000" />
+      <workItem from="1615909884078" duration="186000" />
     </task>
     <servers />
   </component>
