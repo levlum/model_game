@@ -20,9 +20,7 @@ public class Camera_ray : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-        }
-
-        {
+            
             if (hit.rigidbody.tag == "Jumpy")
             {
                 if (Input.GetMouseButtonDown(0))
@@ -30,7 +28,7 @@ public class Camera_ray : MonoBehaviour
                     hit.transform.Rotate(new Vector3(45, 0, 45));
             }
         }
-
+        
     }
     
 }
