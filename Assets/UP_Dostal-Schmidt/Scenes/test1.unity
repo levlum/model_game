@@ -10358,6 +10358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 100
   layerMask: 0
+  maxHeight: 20
 --- !u!4 &2004433898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1103871801181823030, guid: 371da34b9d383bd45b81de7080b2be52, type: 3}
