@@ -32,3 +32,4 @@ public class Rotator2: MonoBehaviour
                             , zForceDirection * speedMultiplier
                             , spacePivot);
     }
+}

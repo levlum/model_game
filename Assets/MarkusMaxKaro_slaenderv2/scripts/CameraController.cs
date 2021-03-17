@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace markus_max_karo {
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
@@ -17,4 +18,5 @@ public class CameraController : MonoBehaviour
     {
         transform.position = player.transform.position + offset;
     }
+}
 }
