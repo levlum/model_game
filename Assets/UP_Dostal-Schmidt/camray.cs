@@ -6,6 +6,7 @@ public class camray : MonoBehaviour
 {
     public int maxDistance;
     public int layerMask;
+    public int maxHeight;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +24,17 @@ public class camray : MonoBehaviour
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray, out hit, maxDistance) && hit.rigidbody != null)
         {
+           
             //forcemode applies instantforce depending on mass
             //.AddForce(ray.direction * hitForce)
-            hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+               if(hit.collider.GetComponent<Transform>().position.y < maxHeight)
+            {
 
+                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+                Debug.Log("I hit: " + hit.collider);
+
+            }
+           
         }
         
     }
