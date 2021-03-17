@@ -6,6 +6,8 @@ TagManager:
   tags:
   - jumpy
   - Jumpy
+  - korb
+  - car
   layers:
   - Default
   - TransparentFX
