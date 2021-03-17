@@ -5,7 +5,8 @@ using UnityEngine;
 namespace caro_julian {
 public class Camera_ray : MonoBehaviour
 {
-    
+
+        public float push_strength;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,9 @@ public class Camera_ray : MonoBehaviour
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out hit, 60) && hit.rigidbody != null)
+        if(Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
-            hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            hit.rigidbody.AddForce(Vector3.up * push_strength * Time.deltaTime, ForceMode.Impulse);
           
         }
 
