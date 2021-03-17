@@ -541,6 +541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e38454d85cc24e543aa38eecc8265d40, type: 3}
+--- !u!4 &414276432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3331596260234265497, guid: e38454d85cc24e543aa38eecc8265d40, type: 3}
+  m_PrefabInstance: {fileID: 414276431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &537744386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1061,7 @@ Animator:
   m_GameObject: {fileID: 1114070804}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e3396475f7f173941bf7384c694e081b, type: 2}
+  m_Controller: {fileID: 9100000, guid: ff186f25e85bdd841ade91c4c7cfc4a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1315,9 +1320,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488422979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 881fa84c4b0d82445996f98a9c73d36e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6064faaea0d3ae84292c7762618f29fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1488422979}
+  sensitivity: 40
+  ignoreMe:
+    serializedVersion: 2
+    m_Bits: 3
+  crosshair_t: {fileID: 414276432}
+  push_object: {fileID: 1800739918}
 --- !u!114 &1488422982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,6 +1862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77bd34041b0848742ba8d6170a54330c, type: 3}
+--- !u!4 &1800739918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5570139461664048165, guid: 77bd34041b0848742ba8d6170a54330c, type: 3}
+  m_PrefabInstance: {fileID: 1800739917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1986705751
 GameObject:
   m_ObjectHideFlags: 0
