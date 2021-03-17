@@ -23,10 +23,12 @@ public class camray : MonoBehaviour
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray, out hit, maxDistance) && hit.rigidbody != null)
         {
+           
             //forcemode applies instantforce depending on mass
             //.AddForce(ray.direction * hitForce)
+               
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-
+            Debug.Log("I hit: " + hit.collider);
         }
         
     }
