@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace caro_julian {
 public class Camera_ray : MonoBehaviour
 {
     
@@ -25,4 +26,5 @@ public class Camera_ray : MonoBehaviour
 
         //gameObject.GetComponent<Rigidbody2D>().AddForce((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized * moveForce, ForceMode2D.Impulse);
     }
+}
 }

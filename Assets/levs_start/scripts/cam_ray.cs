@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Lev
+{
 public class cam_ray : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -20,5 +22,5 @@ public class cam_ray : MonoBehaviour
         }
     }
 }
-
+}
 

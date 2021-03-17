@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Lev {
+namespace yasi_caro {
     public class camera_ray : MonoBehaviour
     {
         public LayerMask ignoreMe;

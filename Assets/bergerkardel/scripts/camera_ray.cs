@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace bergerkardel {
 public class camera_ray : MonoBehaviour
 {
     public Transform targetObject;
@@ -30,4 +31,5 @@ public class camera_ray : MonoBehaviour
         cameraPosition = targetObject.position + initalOffset;
         transform.position = cameraPosition;
     }
+}
 }
