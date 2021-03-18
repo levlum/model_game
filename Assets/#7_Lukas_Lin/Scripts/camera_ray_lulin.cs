@@ -5,6 +5,7 @@ using UnityEngine;
 public class camera_ray_lulin : MonoBehaviour
 {
     [SerializeField] private float speed = 0.5f;
+    [SerializeField] private GameObject firstObject;
     void Start()
     {
         
