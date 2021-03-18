@@ -1374,7 +1374,7 @@ MonoBehaviour:
   sensitivity: 40
   ignoreMe:
     serializedVersion: 2
-    m_Bits: 68
+    m_Bits: 74
   crosshair_t: {fileID: 2144226839}
   push_object: {fileID: 629508711}
 --- !u!114 &1488422982
