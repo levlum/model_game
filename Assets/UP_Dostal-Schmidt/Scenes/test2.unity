@@ -915,7 +915,7 @@ MonoBehaviour:
   maxDistance: 100
   layerMask: 0
   maxHeight: 7
-  force: 1
+  force: 0.15
 --- !u!114 &777905045
 MonoBehaviour:
   m_ObjectHideFlags: 0

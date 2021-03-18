@@ -7,7 +7,7 @@ public class camray : MonoBehaviour
     public int maxDistance;
     public int layerMask;
     public int maxHeight;
-    public int force;
+    public float force;
     // Start is called before the first frame update
     void Start()
     {
