@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/2nd plate.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/2nd plate.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/2ndplat.animaton.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/2ndplat.animaton.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/3rd plat.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/3rd plat.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/3rd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/3rd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +50,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -109,5 +100,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2443" y="361" key="SettingsEditor" timestamp="1616066240100">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2443" y="361" key="SettingsEditor/1680.23.2560.1417/0.23.1680.1027@1680.23.2560.1417" timestamp="1616066240100" />
   </component>
 </project>

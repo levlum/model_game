@@ -9,22 +9,24 @@ public class AttachObject : MonoBehaviour {
 
     private void Start()
     {
-        Player = GameObject.FindWithTag("Jumpy");
+       // Player = GameObject.FindWithTag("Jumpy");
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Player)
+        //if (other.gameObject == Player)
+        if (other.gameObject.CompareTag("Jumpy"))
         {
-            Player.transform.parent = transform;
+            other.gameObject.transform.parent = transform;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == Player)
+        //if (other.gameObject == Player)
+        if (other.gameObject.CompareTag("Jumpy"))
         {
-            Player.transform.parent = null;
+            other.gameObject.transform.parent = null;
         }
     }
 }
