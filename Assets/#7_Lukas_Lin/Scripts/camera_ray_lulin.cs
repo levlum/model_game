@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class camera_ray_lulin : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float speed = 0.5f;
     void Start()
     {
         
@@ -21,5 +21,11 @@ public class camera_ray_lulin : MonoBehaviour
             
            
         }
+
+        if (GetComponent<Camera>().transform.position.y >= 30f)
+        {
+            GetComponent<Camera>().transform.position -= new Vector3(0, speed,0);
+        }
+        
     }
 }
