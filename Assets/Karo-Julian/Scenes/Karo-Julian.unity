@@ -193,6 +193,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8119000344687953545, guid: c10ced54932ef1e489e01d431431024b, type: 3}
   m_PrefabInstance: {fileID: 121627810}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &11376208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11376202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61fcb2b90df9ff46961fa0ae2c2fcdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canjump: 0
 --- !u!1001 &68285642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,7 +344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1315112846, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_Mass
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1315112846, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_AngularDrag
@@ -367,11 +380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7378316042249949207, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.4
+      value: 13.13
       objectReference: {fileID: 0}
     - target: {fileID: 7378316042249949207, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.3
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 7378316042249949207, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -403,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119000344687953545, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_Name
-      value: Cube
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8119000344687953545, guid: c10ced54932ef1e489e01d431431024b, type: 3}
       propertyPath: m_TagString
@@ -564,8 +577,8 @@ GameObject:
   - component: {fileID: 255079890}
   - component: {fileID: 255079889}
   m_Layer: 0
-  m_Name: Cube (6)
-  m_TagString: Untagged
+  m_Name: Platform (1)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -659,8 +672,8 @@ GameObject:
   - component: {fileID: 286845415}
   - component: {fileID: 286845414}
   m_Layer: 0
-  m_Name: Cube (10)
-  m_TagString: Untagged
+  m_Name: Platform (5)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -735,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286845413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.47, y: 15.46, z: 1103.4124}
+  m_LocalPosition: {x: 11.47, y: 12.04, z: 1103.4124}
   m_LocalScale: {x: 10, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1487934561}
@@ -789,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abe9c199a2de5d469e9a3b64360b150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0.2, y: 0.2}
+  speed: {x: 1, y: 1}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 0
   isLooping: 1
@@ -1236,7 +1249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abe9c199a2de5d469e9a3b64360b150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 1, y: 1}
+  speed: {x: 1.5, y: 1.5}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 0
   isLooping: 1
@@ -1253,8 +1266,8 @@ GameObject:
   - component: {fileID: 925649913}
   - component: {fileID: 925649912}
   m_Layer: 0
-  m_Name: Cube (11)
-  m_TagString: Untagged
+  m_Name: Platform (6)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1937,7 +1950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1181144845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,8 +2063,8 @@ GameObject:
   - component: {fileID: 1192031353}
   - component: {fileID: 1192031352}
   m_Layer: 0
-  m_Name: Cube (9)
-  m_TagString: Untagged
+  m_Name: Platform (4)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2403,7 +2416,7 @@ GameObject:
   - component: {fileID: 1487934560}
   m_Layer: 0
   m_Name: Middleground Platforms
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2420,10 +2433,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abe9c199a2de5d469e9a3b64360b150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 2, y: 2}
+  speed: {x: 3, y: 3}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 0
-  isLooping: 0
+  isLooping: 1
 --- !u!4 &1487934561
 Transform:
   m_ObjectHideFlags: 0
@@ -2850,8 +2863,8 @@ GameObject:
   - component: {fileID: 1684616926}
   - component: {fileID: 1684616925}
   m_Layer: 0
-  m_Name: Cube (7)
-  m_TagString: Untagged
+  m_Name: Platform (2)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3070,7 +3083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6ace64514c2d2458b651c52807cf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  push_strength: 50
+  push_strength: 400
 --- !u!114 &1687258587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3097,8 +3110,8 @@ GameObject:
   - component: {fileID: 1703101854}
   - component: {fileID: 1703101853}
   m_Layer: 0
-  m_Name: Cube (8)
-  m_TagString: Untagged
+  m_Name: Platform (3)
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

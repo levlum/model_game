@@ -11,8 +11,8 @@ public class Exit : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            UnityEngine.Debug.Log("dead");
 
-    
             //Application.Quit();
             UnityEditor.EditorApplication.ExitPlaymode();
         }

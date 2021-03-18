@@ -36,12 +36,12 @@ public class Swipe : MonoBehaviour
 
         if(move == 2)
         {
-            player.transform.Translate(Vector2.left * (3 * Time.deltaTime));
+            player.transform.Translate(Vector2.left * (0 * Time.deltaTime));
         }
 
         if (move == 1)
         {
-            player.transform.Translate(Vector2.right * (5 * Time.deltaTime));
+            player.transform.Translate(Vector2.right * (3 * Time.deltaTime));
         }
     }
 }

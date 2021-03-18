@@ -10,6 +10,8 @@ TagManager:
   - car
   - pop
   - funnel
+  - plattform
+  - Platform
   layers:
   - Default
   - TransparentFX

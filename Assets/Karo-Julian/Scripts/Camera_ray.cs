@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace caro_julian {
+namespace karo_julian {
 public class Camera_ray : MonoBehaviour
 {
-
+       PlayerScript isground;
         public float push_strength;
-
+        
     // Start is called before the first frame update
     void Start()
     {
-        
+            isground = GameObject.Find("Player").GetComponent<PlayerScript>();
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class Camera_ray : MonoBehaviour
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
+        if(Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null && isground.canjump == true)
         {
             hit.rigidbody.AddForce(Vector3.up * push_strength * Time.deltaTime, ForceMode.Impulse);
           
