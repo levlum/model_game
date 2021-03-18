@@ -8,6 +8,8 @@ TagManager:
   - Jumpy
   - korb
   - car
+  - Collectable
+  - bubble
   layers:
   - Default
   - TransparentFX
