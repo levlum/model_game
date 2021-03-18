@@ -9,7 +9,8 @@ namespace Tisa
     public class cars : MonoBehaviour
     {
         public Text coinText;
-
+        public GameObject korb;
+       
         public int coinCount = 0;
 
         //public GameManager gameManager;
@@ -37,6 +38,7 @@ namespace Tisa
             {
                 other.gameObject.SetActive(false);
                 //gameManager.addPoint();
+                // korb.transform.position = new Vector3(0, 1.5f, 0);
                 coinCount++;
                 UnityEngine.Debug.Log("car im korb");
             }
