@@ -6,6 +6,8 @@ using UnityEngine;
 public class funnel_controller : MonoBehaviour
 {
     private GameObject[] funnel;
+    private Vector3 currFunnelPos;
+    bool stopRightMovement = false;
     void Start()
     {
         funnel = GameObject.FindGameObjectsWithTag("funnel");
@@ -14,7 +16,7 @@ public class funnel_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && !stopRightMovement)
         {
             funnel[0].transform.position += new Vector3(1f, 0,0);
         } 
@@ -31,10 +33,18 @@ public class funnel_controller : MonoBehaviour
             funnel[0].transform.position += new Vector3(0, 0,-1f);
         }
 
-        if (funnel[0].transform.position.x >= 25f)
+        currFunnelPos = funnel[0].transform.position;
+        
+        if (funnel[0].transform.position.x >= 18f)
         {
-            
-        } 
+            currFunnelPos.x = 18f;
+            stopRightMovement = true;
+
+        }
+        else
+        {
+            stopRightMovement = false;
+        }
     }
     
 }
