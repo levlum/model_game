@@ -2,24 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kate_Carina {
-    public class MainCameraController : MonoBehaviour
-    {
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
+public class MainCameraController : MonoBehaviour
+{
+    public LayerMask ignoreMe;
+    public float pushing_strength = 0.5f;
 
-        // Update is called once per frame
-        void Update()
+    private GameObject[] jumpy_objects;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        jumpy_objects = GameObject.FindGameObjectsWithTag("jumpy");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        RaycastHit hit;
+        var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit, 50f, ~ignoreMe) && hit.collider.name == "Mixed_Ground_01")
         {
-            RaycastHit hit;     //variable
-            var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition); // we create a ray
-            if(Physics.Raycast(ray, out hit, 50) && (hit.rigidbody != null));       //put it into information with physics and give information
-                if(hit.collider.tag == "jumpy") {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-            } 
+                                                                                 //use all objects with tag "jumpy"
+            foreach (var one_jumpy in jumpy_objects)
+            {
+                Vector3 power_direction = hit.point - one_jumpy.GetComponent<Transform>().position;
+                one_jumpy.GetComponent<Rigidbody>().AddForce(power_direction, ForceMode.Force);
+            }
         }
     }
 }

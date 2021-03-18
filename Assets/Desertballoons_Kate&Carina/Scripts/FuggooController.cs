@@ -1,29 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+public class FuggooController : MonoBehaviour
+{
+    public Text coinText;
 
-namespace Kate_Carina {
-    public class FuggooController_kaca : MonoBehaviour
+    public int coinCount = 0;
+
+    private void FixedUpdate()
     {
-    public GameObject explosion; // drag your explosion prefab here
+        coinText.text = coinCount.ToString();
+    }
 
-        // Start is called before the first frame update
-        void Start()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("collectable"))
         {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        }
-
-        void OnCollisionEnter()
-        {
-            GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
-            Destroy(gameObject); // destroy the grenade
-            Destroy(expl, 3); // delete the explosion after 3 seconds
+            other.gameObject.SetActive(false);
+            //gameManager.addPoint();
+            coinCount++;
+            UnityEngine.Debug.Log("score");
         }
     }
 }
+
