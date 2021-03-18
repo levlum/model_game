@@ -16,7 +16,6 @@ public class FuggooController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-
     {
         if (other.gameObject.CompareTag("collectable"))
         {
