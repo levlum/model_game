@@ -8,7 +8,7 @@ public class AttachObject : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Jumpy"))
+        if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.transform.parent = transform;
         }
@@ -17,7 +17,7 @@ public class AttachObject : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
         //if (other.gameObject == Player)
-        if (other.gameObject.CompareTag("Jumpy"))
+        if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.transform.parent = null;
         }

@@ -21,7 +21,7 @@ public class Camera_ray : MonoBehaviour
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
             
-            if (hit.rigidbody.tag == "Jumpy")
+            if (hit.rigidbody.tag == "Player")
             {
                 if (Input.GetMouseButtonDown(0))
 
