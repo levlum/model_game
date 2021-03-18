@@ -5,16 +5,9 @@ using UnityEngine;
 
 public class AttachObject : MonoBehaviour {
     
-    GameObject Player;
-
-    private void Start()
-    {
-       // Player = GameObject.FindWithTag("Jumpy");
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject == Player)
         if (other.gameObject.CompareTag("Jumpy"))
         {
             other.gameObject.transform.parent = transform;
