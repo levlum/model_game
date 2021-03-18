@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainCameraController : MonoBehaviour
 {
     public LayerMask ignoreMe;
-    public float pushing_strength = 1f;
+    public float pushing_strength = 0.5f;
 
     private GameObject[] jumpy_objects;
 
@@ -21,7 +21,7 @@ public class MainCameraController : MonoBehaviour
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 500f, ~ignoreMe) && hit.collider.name == "Mixed_Ground_01")
+        if (Physics.Raycast(ray, out hit, 50f, ~ignoreMe) && hit.collider.name == "Mixed_Ground_01")
         {
                                                                                  //use all objects with tag "jumpy"
             foreach (var one_jumpy in jumpy_objects)
