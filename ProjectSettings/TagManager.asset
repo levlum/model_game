@@ -9,7 +9,7 @@ TagManager:
   - korb
   - car
   - pop
-  - funnel
+  - collectable
   layers:
   - Default
   - TransparentFX
