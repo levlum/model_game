@@ -28,13 +28,8 @@
           </e>
         </e>
         <e p="#7_Lukas_Lin" t="Include">
-          <e p="Game" t="Include">
-            <e p="scripts" t="Include">
-              <e p="camera_ray_lulin.cs" t="Include" />
-            </e>
-          </e>
           <e p="scripts" t="Include">
-            <e p="camera_ray.cs" t="Include" />
+            <e p="camera_ray_lulin.cs" t="Include" />
             <e p="funnel_controller.cs" t="Include" />
           </e>
         </e>
@@ -56,11 +51,6 @@
           </e>
         </e>
         <e p="Desertballoons_Kate&amp;Carina" t="Include">
-          <e p="3D Games Effects Pack Free" t="Include">
-            <e p="_FAQ - Informations" t="Include">
-              <e p="Help Readme SOS.txt" t="Include" />
-            </e>
-          </e>
           <e p="Free Low Poly Desert Pack" t="Include">
             <e p="Materials" t="Include">
               <e p="Shaders" t="Include">
@@ -73,13 +63,29 @@
           <e p="scripts" t="Include">
             <e p="FuggooController.cs" t="Include" />
             <e p="MainCameraController.cs" t="Include" />
-            <e p="SimpleCameraController.cs" t="Include" />
           </e>
         </e>
         <e p="GueneyJulianBaskiceball" t="Include">
           <e p="scripts" t="Include">
             <e p="camera_script.cs" t="Include" />
             <e p="player_script.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Karo-Julian" t="Include">
+          <e p="Packages" t="Include">
+            <e p="LowPolyTreePack" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+          </e>
+          <e p="scripts" t="Include">
+            <e p="camera_ray.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
+            <e p="Exit.cs" t="Include" />
+            <e p="NewCamera_ray.cs" t="Include" />
+            <e p="RendererExtensions.cs" t="Include" />
+            <e p="ScrollingScript.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
+            <e p="Swipe.cs" t="Include" />
           </e>
         </e>
         <e p="Klein-jobst" t="Include">
@@ -106,6 +112,7 @@
           </e>
         </e>
         <e p="UP_Dostal-Schmidt" t="Include">
+          <e p="camMovement.cs" t="Include" />
           <e p="camray.cs" t="Include" />
         </e>
         <e p="Yasi_Caro" t="Include">

@@ -8,6 +8,8 @@ TagManager:
   - Jumpy
   - korb
   - car
+  - pop
+  - funnel
   layers:
   - Default
   - TransparentFX
