@@ -7,7 +7,8 @@ public class funnel_controller : MonoBehaviour
 {
     private GameObject[] funnel;
     private Vector3 currFunnelPos;
-    bool stopRightMovement = false;
+    bool stopRightMovement, stopLeftMovement, stopBackMovement, stopFrontMovement = false;
+    [SerializeField] private float funnelSpeed=1.0f;
     void Start()
     {
         funnel = GameObject.FindGameObjectsWithTag("funnel");
@@ -18,20 +19,24 @@ public class funnel_controller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow) && !stopRightMovement)
         {
-            funnel[0].transform.position += new Vector3(1f, 0,0);
+            funnel[0].transform.position += new Vector3(funnelSpeed, 0,0);
+            stopRightMovement = true;
         } 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && !stopLeftMovement)
         {
-            funnel[0].transform.position += new Vector3(-1f, 0,0);
+            funnel[0].transform.position += new Vector3(-funnelSpeed, 0,0);
+            stopLeftMovement = true;
         } 
-        if (Input.GetKey(KeyCode.UpArrow))
+        /*if (Input.GetKey(KeyCode.UpArrow) && !stopBackMovement )
         {
             funnel[0].transform.position += new Vector3(0, 0,1f);
+            stopBackMovement = true;
         } 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) )
         {
             funnel[0].transform.position += new Vector3(0, 0,-1f);
-        }
+            stopFrontMovement = true;
+        }*/
 
         currFunnelPos = funnel[0].transform.position;
         
@@ -45,6 +50,36 @@ public class funnel_controller : MonoBehaviour
         {
             stopRightMovement = false;
         }
+        if (funnel[0].transform.position.x <= -18f)
+        {
+            currFunnelPos.x = 18f;
+            stopLeftMovement = true;
+
+        }
+        else
+        {
+            stopLeftMovement = false;
+        }
+        /*if (funnel[0].transform.position.z <= 80f)
+        {
+            currFunnelPos.z = 80f;
+            stopBackMovement = true;
+
+        }
+        else
+        {
+            stopBackMovement = false;
+        }*/
+        /*if (funnel[0].transform.position.z <= -25f)
+        {
+            currFunnelPos.z = -25f;
+            stopFrontMovement = true;
+
+        }
+        else
+        {
+            stopFrontMovement = false;
+        }*/
     }
     
 }
