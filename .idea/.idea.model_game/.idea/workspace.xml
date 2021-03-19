@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL2-Tricky-3D-Puzzle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL2-Tricky-3D-Puzzle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Desertballoons_Kate&amp;Carina/SkySerie Freebie.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
