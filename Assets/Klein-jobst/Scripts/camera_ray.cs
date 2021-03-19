@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +17,7 @@ namespace klein_jobst {
             RaycastHit hit;
 
             var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody !=null)
+            if (Physics.Raycast(ray, out hit, 150) && hit.rigidbody !=null)
             {
                 hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
             }
