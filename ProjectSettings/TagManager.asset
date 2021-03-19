@@ -8,6 +8,10 @@ TagManager:
   - Jumpy
   - korb
   - car
+  - pop
+  - funnel
+  - plattform
+  - Platform
   layers:
   - Default
   - TransparentFX
