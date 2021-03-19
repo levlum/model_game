@@ -12,7 +12,7 @@ public class Instantiate : MonoBehaviour
     {
 
         bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
-        bubbleClone.transform.position = new Vector3(Random.Range(0, 5), 1, Random.Range(0, 10));
-        Destroy(bubbleClone, 3);
+        bubbleClone.transform.position = new Vector3(Random.Range(0, 30), 5, Random.Range(0, 30));
+        Destroy(bubbleClone, 4);
     }
 }
