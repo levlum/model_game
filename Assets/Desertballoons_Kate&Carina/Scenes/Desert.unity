@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3405aae1149ed4d9da3e46bf58e5b2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 0}
+  coinText: {fileID: 27925962}
   coinCount: 0
 --- !u!1001 &533747010
 PrefabInstance:
@@ -4643,7 +4643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3405aae1149ed4d9da3e46bf58e5b2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 0}
+  coinText: {fileID: 27925962}
   coinCount: 0
 --- !u!136 &2081041966
 CapsuleCollider:
