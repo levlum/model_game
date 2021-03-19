@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraRay : MonoBehaviour
 {
+
+    public float power;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +20,17 @@ public class CameraRay : MonoBehaviour
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
-            hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            // hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            var bubbles = GameObject.FindGameObjectsWithTag("bubble");
+            foreach (var bubble in bubbles)
+            {
+                if (hit.collider != bubble.GetComponent<Collider>()) {
+                    var direction = bubble.transform.position - hit.point;
+                    var distance = direction.magnitude;
+                    direction.Normalize();
+                    bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power * 1/distance);
+                }
+            }
             Debug.Log("HI");
 
         }
