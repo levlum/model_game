@@ -7,22 +7,37 @@ namespace karo_julian
 {
     public class PlayerScript : MonoBehaviour
     {
-        public bool canjump = false;
+        //public bool canjump = false;
 
-        public void Start()
+        private CharacterController myController;
+        public float gravityForce;
+        public float ySpeed;
+        public float jumpForce;
+        public float hangTime;
+        public float hangTimer;
+        public float gravityModifier;
+        public float ForwardSpeed;
+        public float runSpeed;
+        public float lerpTime;
+
+        void Start()
         {
-           
+            myController = GetComponent<CharacterController>();
         }
 
-        private void Update()
+        void FixedUpdate()
         {
-            
-            
+
+            MyGravity();
+            Jump();
+            ForwardMovement();
+            SpeedApply();
+
         }
 
 
 
-        public void OnCollisionEnter(Collision collision)
+       /* public void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Platform"))
             {
@@ -45,6 +60,63 @@ namespace karo_julian
                 canjump = false;
 
             }
+        } */
+
+        void Jump()
+        {
+            if(Input.GetButton("Fire1"))
+            {
+                if(myController.isGrounded)
+                {
+                    hangTimer = hangTime;
+                    ySpeed = jumpForce;
+
+                }
+                else
+                {
+                    if(hangTimer > 0)
+                    {
+                        hangTimer -= Time.deltaTime;
+                        ySpeed += gravityModifier * hangTimer * Time.deltaTime;
+                    }
+                }
+            }
         }
+
+        void MyGravity()
+        {
+            ySpeed = myController.velocity.y;
+            ySpeed -= gravityForce * Time.deltaTime;
+        }
+
+        void ForwardMovement()
+        {
+            if(myController.isGrounded)
+            {
+                if (ForwardSpeed <= runSpeed - .1f || ForwardSpeed >= runSpeed + .1f)
+                    ForwardSpeed = Mathf.Lerp(ForwardSpeed, runSpeed, lerpTime);
+                else
+                    ForwardSpeed = runSpeed;
+            }
+        }
+
+        void SpeedApply()
+        {
+            myController.Move(transform.forward * ForwardSpeed * Time.deltaTime);
+            myController.Move(new Vector3(0, ySpeed, 0) * Time.deltaTime);
+        }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.gameObject.tag == "Finish")
+            {
+                UnityEditor.EditorApplication.ExitPlaymode();
+            }
+        }
+
     }
+
+
+
+
 }
