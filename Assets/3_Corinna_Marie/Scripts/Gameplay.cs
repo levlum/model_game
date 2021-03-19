@@ -6,29 +6,41 @@ public class Gameplay : MonoBehaviour
 {
 
     public GameObject bubbleOriginal;
-    public float respawnTime = 1.0f;
+    GameObject bubbleClone;
 
-    void Start()
+    private void Update()
     {
-        StartCoroutine(bubbleWave());
-        //GameObject BubbleClone = Instantiate(bubbleOriginal);
-        //CreateBubbles(3);
+ 
+            bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
+   
     }
 
-    private void spawnBubble() {
-        GameObject a = Instantiate(bubbleOriginal) as GameObject;
-        a.transform.position = new Vector3(Random.Range(0,1),1, Random.Range(0, 1));
-    }
+    //public GameObject bubbleOriginal;
+    //public float respawnTime = 1.0f;
 
-    IEnumerator bubbleWave()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(respawnTime);
-            spawnBubble();
-        }
-      
-    }
+    //void Start()
+    //{
+    //    StartCoroutine(bubbleWave());
+    //    //GameObject BubbleClone = Instantiate(bubbleOriginal);
+    //    //CreateBubbles(3);
+    //}
+
+    //private void spawnBubble() {
+    //    GameObject a = Instantiate(bubbleOriginal) as GameObject;
+    //    a.transform.position = new Vector3(Random.Range(0,1),1, Random.Range(0, 1));
+    //}
+
+    //IEnumerator bubbleWave()
+    //{
+    //    while (true)
+    //    {
+    //        yield return new WaitForSeconds(respawnTime);
+    //        spawnBubble();
+    //    }
+
+    //}
+
+
 
     //void CreateBubbles(int bubbleNum)
     //{
