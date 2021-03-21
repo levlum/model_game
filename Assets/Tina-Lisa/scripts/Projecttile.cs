@@ -5,20 +5,24 @@ using UnityEngine;
 public class Projecttile : MonoBehaviour
 {
     public Rigidbody bulletPrefabs;
+    public Rigidbody trash;
     public GameObject cursor;
     public LayerMask layer;
     public Transform shootPoint;
     private Camera cam;
+    public float randomObject;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        randomObject = Random.Range(0,4);
        LaunchProjectile();
     }
     void LaunchProjectile()
@@ -36,11 +40,25 @@ public class Projecttile : MonoBehaviour
 
             if(Input.GetMouseButtonDown(0))
             {
-                Rigidbody obj = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
-                obj.transform.rotation = Random.rotation ;
-                obj.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+                if(randomObject == 0)
+                {
+                         Rigidbody objWine = Instantiate(trash, shootPoint.position, Quaternion.identity);
+                objWine.transform.rotation = Random.rotation ;
+                objWine.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
-                obj.velocity = Vo;
+                objWine.velocity = Vo;
+                Debug.Log(randomObject);
+                }
+                else{
+                     Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
+                objTrash.transform.rotation = Random.rotation ;
+                objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+
+                objTrash.velocity = Vo;
+                Debug.Log(randomObject);
+                }
+
+               
             }
         }
         else{
