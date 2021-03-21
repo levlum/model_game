@@ -37,6 +37,9 @@ public class Projecttile : MonoBehaviour
             if(Input.GetMouseButtonDown(0))
             {
                 Rigidbody obj = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
+                obj.transform.rotation = Random.rotation ;
+                obj.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+
                 obj.velocity = Vo;
             }
         }
