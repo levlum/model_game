@@ -21,8 +21,8 @@
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cam_ray_script.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
-        <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/funnel_controller.cs" />
         <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/camera_ray_lulin.cs" />
+        <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/funnel_controller.cs" />
       </list>
     </option>
   </component>
@@ -76,6 +76,7 @@
       <workItem from="1616070741362" duration="3243000" />
       <workItem from="1616086352154" duration="3457000" />
       <workItem from="1616136806084" duration="3485000" />
+      <workItem from="1616514548509" duration="3895000" />
     </task>
     <servers />
   </component>
