@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6483905392218056750}
   m_Layer: 0
   m_Name: Prefab
-  m_TagString: Untagged
+  m_TagString: bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e8bab11ba7445e4ae8a874c37ba17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 1
