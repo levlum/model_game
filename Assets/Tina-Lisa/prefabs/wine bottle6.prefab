@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7809563986522921326}
   - component: {fileID: -3416387138214742947}
   - component: {fileID: 6230305308276911566}
+  - component: {fileID: 5140875565693006648}
   m_Layer: 0
   m_Name: wine bottle6
-  m_TagString: Untagged
+  m_TagString: bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +113,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d715843e5e8b8442db07891a5bed22c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  spinx: 0
+  spiny: 0
+  spinz: 0
 --- !u!65 &6230305308276911566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913543380176276541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06474237, y: 0.303521, z: 0.06474237}
+  m_Center: {x: 0, y: 0.15223952, z: 0}
+--- !u!65 &5140875565693006648
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 526456448272800351}
   - component: {fileID: 1007210934828299159}
   - component: {fileID: 512411989108113487}
+  - component: {fileID: 7924238392411386032}
   m_Layer: 0
   m_Name: soup can2
-  m_TagString: Untagged
+  m_TagString: can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +92,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039749278966758282}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.9102182, y: 14.863063, z: 7.9102187}
@@ -112,3 +113,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7924238392411386032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039749278966758282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9102182, y: 14.863063, z: 7.9102187}
+  m_Center: {x: -0.49650466, y: 0.33344698, z: -2.9004033}
