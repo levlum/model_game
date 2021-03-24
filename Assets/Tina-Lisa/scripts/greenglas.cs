@@ -31,5 +31,11 @@ public class greenglas : MonoBehaviour
                 greenCount++;
                UnityEngine.Debug.Log("bottle in bin");
             }
+            if (other.gameObject.CompareTag("can"))
+            {
+                other.gameObject.SetActive(false);
+                greenCount--;
+               UnityEngine.Debug.Log("bottle in bin");
+            }
         }
 }
