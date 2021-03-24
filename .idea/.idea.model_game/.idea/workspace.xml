@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +16,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../1. Semester/ProjectWork/chicknroll/Chick-n-Roll/Chick'n'Roll/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cam_ray_script.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
+        <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -32,6 +39,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -68,6 +76,7 @@
       <workItem from="1615895385537" duration="27000" />
       <workItem from="1615909884078" duration="186000" />
       <workItem from="1615910328740" duration="371000" />
+      <workItem from="1616607051360" duration="6340000" />
     </task>
     <servers />
   </component>
@@ -78,5 +87,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="558" y="178" key="SettingsEditor" timestamp="1616610235820">
+      <screen x="0" y="23" width="1920" height="1009" />
+    </state>
+    <state x="558" y="178" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1009/-1680.23.1680.1027@0.23.1920.1009" timestamp="1616610235820" />
   </component>
 </project>
