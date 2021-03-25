@@ -40,13 +40,17 @@ public class Camera_ray : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(player.transform.position[1]>32)
+        if((player.transform.position[1]>32)&&(player.transform.position[1]<48))
         {
             Cposition = new Vector3(0.0f,40.0f,-36.0f);
         }
         if(player.transform.position[1]<16)
         {
             Cposition = new Vector3(0.0f,24.0f,-36.0f);
+        }
+        if(player.transform.position[1]>48)
+        {
+            Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
     }
     

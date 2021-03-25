@@ -496,7 +496,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &426745762
 BoxCollider:
@@ -617,7 +617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503589662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.18, y: 9.99, z: 3.52}
+  m_LocalPosition: {x: 0, y: 10, z: 3}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1194,7 +1194,7 @@ Transform:
   m_LocalScale: {x: 16, y: 0.1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1213463771
 GameObject:
@@ -1289,7 +1289,7 @@ Transform:
   m_LocalScale: {x: 32, y: 0.1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1231052445
 GameObject:
@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 1740180232}
   - component: {fileID: 1740180231}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1672,6 +1672,7 @@ MonoBehaviour:
   Level1: {fileID: 586105137}
   Level2: {fileID: 1247955587}
   Level3: {fileID: 1932757959}
+  player: {fileID: 503589662}
 --- !u!81 &1740180232
 AudioListener:
   m_ObjectHideFlags: 0
