@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Jumpy
   - Platform
+  - jumpy
+  - Level1
+  - Level2
+  - Level3
   layers:
   - Default
   - TransparentFX

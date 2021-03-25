@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class Camera_ray : MonoBehaviour
 {
+    public GameObject Level1;
+    public GameObject Level2;
+    public GameObject Level3;
+
+    private Vector3 Cposition;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Cposition = new Vector3(0.0f,24.0f,-36.0f);
     }
 
     // Update is called once per frame
@@ -31,4 +36,33 @@ public class Camera_ray : MonoBehaviour
         
     }
     
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Level1"))
+        {
+            Level1.SetActive(false);
+            Level2.SetActive(true);
+            Level3.SetActive(true);
+            Cposition = new Vector3(0.0f,24.0f,-36.0f);
+        }
+        if (other.gameObject.CompareTag("Level2"))
+        {
+            Level1.SetActive(true);
+            Level2.SetActive(false);
+            Level3.SetActive(true);
+            Cposition = new Vector3(0.0f,40.0f,-36.0f);
+        }
+        if (other.gameObject.CompareTag("Level3"))
+        {
+            Level1.SetActive(true);
+            Level2.SetActive(true);
+            Level3.SetActive(false);
+            Cposition = new Vector3(0.0f,56.0f,-36.0f);
+        }
+    }
+
+    void LateUpdate()
+    {
+        transform.position = Cposition;
+    }
 }
