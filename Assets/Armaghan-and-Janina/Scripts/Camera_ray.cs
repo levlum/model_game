@@ -8,6 +8,7 @@ public class Camera_ray : MonoBehaviour
     public GameObject Level1;
     public GameObject Level2;
     public GameObject Level3;
+    public GameObject player;
 
     private Vector3 Cposition;
 
@@ -15,6 +16,7 @@ public class Camera_ray : MonoBehaviour
     void Start()
     {
         Cposition = new Vector3(0.0f,24.0f,-36.0f);
+        Debug.Log("Started");
     }
 
     // Update is called once per frame
@@ -35,15 +37,30 @@ public class Camera_ray : MonoBehaviour
         }
         
     }
+
+    void FixedUpdate()
+    {
+        if(player.transform.position[1]>32)
+        {
+            Cposition = new Vector3(0.0f,40.0f,-36.0f);
+        }
+        if(player.transform.position[1]<16)
+        {
+            Cposition = new Vector3(0.0f,24.0f,-36.0f);
+        }
+    }
     
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Triggered");
         if (other.gameObject.CompareTag("Level1"))
         {
+            
             Level1.SetActive(false);
             Level2.SetActive(true);
             Level3.SetActive(true);
             Cposition = new Vector3(0.0f,24.0f,-36.0f);
+            Debug.Log("Level1");
         }
         if (other.gameObject.CompareTag("Level2"))
         {
