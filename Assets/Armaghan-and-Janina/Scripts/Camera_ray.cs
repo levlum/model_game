@@ -1,25 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Camera_ray : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     /*private void FixedUpdate()
     {
        // Restartet das spiel, falls die y-position des players  -4 ist:
-        if (transform.position.y < -2)
+        if (transform.position.y < -1)
         {
             Application.LoadLevel(Application.loadedLevel);
         }
     }*/
+    
+    /*private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Floor")
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.ExitPlaymode();
+#endif
+        }
+    }*/
+    
 
     // Update is called once per frame
     void Update()
@@ -39,5 +46,4 @@ public class Camera_ray : MonoBehaviour
         }
         
     }
-    
 }

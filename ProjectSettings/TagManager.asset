@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jumpy
   - Platform
+  - Lava
   layers:
   - Default
   - TransparentFX
