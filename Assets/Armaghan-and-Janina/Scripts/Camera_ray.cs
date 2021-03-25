@@ -12,6 +12,15 @@ public class Camera_ray : MonoBehaviour
 
     }
 
+    /*private void FixedUpdate()
+    {
+       // Restartet das spiel, falls die y-position des players  -4 ist:
+        if (transform.position.y < -2)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }*/
+
     // Update is called once per frame
     void Update()
     {

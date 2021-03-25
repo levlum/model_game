@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/3D-Objects/Ring.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/3D-Objects/Ring.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/3D-Objects/Ring.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/3D-Objects/Ring.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/Platform_02.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/Platform_02.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/Platform_03.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/animation/Platform_03.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +37,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/AttachObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +91,9 @@
       <option name="presentableId" value="Default" />
       <updated>1615908487331</updated>
       <workItem from="1615908496159" duration="3544000" />
+      <workItem from="1616617416912" duration="858000" />
+      <workItem from="1616690561929" duration="999000" />
+      <workItem from="1616709909898" duration="653000" />
     </task>
     <servers />
   </component>
