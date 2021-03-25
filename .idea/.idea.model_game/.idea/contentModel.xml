@@ -140,6 +140,7 @@
         </e>
         <e p="Tina-Lisa" t="Include">
           <e p="scripts" t="Include">
+            <e p="bottleSwirl.cs" t="Include" />
             <e p="camera_ray_tili.cs" t="Include" />
             <e p="cars.cs" t="Include" />
             <e p="Projecttile.cs" t="Include" />
