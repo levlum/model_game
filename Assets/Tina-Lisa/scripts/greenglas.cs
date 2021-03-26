@@ -7,35 +7,42 @@ public class greenglas : MonoBehaviour
 {
     public Text greenText;
     public int greenCount = 0;
+      private static float points; 
+      public float _point;
+    public points script;
     // Start is called before the first frame update
     void Start()
     {
-        
+       script = GameObject.FindObjectOfType<points>(); 
+       _point = script._points;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+         //Debug.Log("Punkte: " + points);
+         points = script._points;  //  Update our score continuously.
+        greenText.text = script._points.ToString(); 
     }
     private void FixedUpdate()
         {
-            greenText.text = greenCount.ToString();
+            //greenText.text = points.ToString();
         }
         private void OnTriggerEnter(Collider other)
 
         {
+            script = GameObject.FindObjectOfType<points>(); 
             if (other.gameObject.CompareTag("bottle"))
             {
                 other.gameObject.SetActive(false);
-                greenCount++;
-               UnityEngine.Debug.Log("bottle in bin");
+                script._points++;
+               UnityEngine.Debug.Log("Points: " +script._points);
             }
             if (other.gameObject.CompareTag("can"))
             {
             
-                greenCount--;
-               UnityEngine.Debug.Log("bottle in bin");
+                script._points--;
+               UnityEngine.Debug.Log("Points " + script._points);
             }
         }
 }
