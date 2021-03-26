@@ -12,6 +12,10 @@ TagManager:
   - funnel
   - plattform
   - Platform
+  - bin
+  - greenglas
+  - bottle
+  - can
   layers:
   - Default
   - TransparentFX
