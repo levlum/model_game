@@ -8,6 +8,8 @@
         <e p="#1_Valentina_Alex-3D-Puzzle" t="Include">
           <e p="scripts" t="Include">
             <e p="camera_ray.cs" t="Include" />
+            <e p="move.cs" t="Include" />
+            <e p="moveie.cs" t="Include" />
             <e p="RotObj.cs" t="Include" />
           </e>
         </e>

@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3-Tricky-3D-Puzzle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3-Tricky-3D-Puzzle.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -32,6 +34,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/moveie.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -41,6 +47,8 @@
         <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/funnel_controller.cs" />
         <option value="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotate.cs" />
         <option value="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/Rotate-cube.cs" />
+        <option value="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/move.cs" />
+        <option value="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/moveie.cs" />
         <option value="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" />
       </list>
     </option>
@@ -94,6 +102,7 @@
       <workItem from="1615989943930" duration="604000" />
       <workItem from="1616070741362" duration="3243000" />
       <workItem from="1616086352154" duration="1562000" />
+      <workItem from="1616691002920" duration="4223000" />
     </task>
     <servers />
   </component>
@@ -112,6 +121,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

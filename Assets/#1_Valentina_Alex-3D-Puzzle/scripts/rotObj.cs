@@ -9,10 +9,10 @@ public class rotObj : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
-        float rotY = Input.GetAxis("Mouse Y") * rotSpeed * Mathf.Deg2Rad;
+       // float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
+        float rotX = Input.GetAxis("Mouse Y") * rotSpeed * Mathf.Deg2Rad;
         
-        transform.RotateAround(Vector3.up, -rotY);
+        //transform.RotateAround(Vector3.up, rotZ);
         transform.RotateAround(Vector3.left, rotX);
     }
 }
