@@ -19,7 +19,6 @@ public class camera_ray_mamaka : MonoBehaviour
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null){
-            Debug.Log("huhu");
             hit.rigidbody.AddForce(Vector3.up * Time.deltaTime * power, ForceMode.Impulse);
         }
     }
