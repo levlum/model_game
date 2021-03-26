@@ -34,7 +34,6 @@ public class bin : MonoBehaviour
             }
             if (other.gameObject.CompareTag("bottle"))
             {
-                other.gameObject.SetActive(false);
                 binCount--;
                UnityEngine.Debug.Log("can in bin");
             }
