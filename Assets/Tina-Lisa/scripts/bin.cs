@@ -21,8 +21,8 @@ public class bin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // points = script._points;  //  Update our score continuously.
-       // binText.text = script._points.ToString();
+        points = script._points;  //  Update our score continuously.
+       binText.text = script._points.ToString();
     }
    private void FixedUpdate()
         {

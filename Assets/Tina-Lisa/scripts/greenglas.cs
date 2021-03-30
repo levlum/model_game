@@ -7,7 +7,7 @@ public class greenglas : MonoBehaviour
 {
     public Text greenText;
     public int greenCount = 0;
-          private static float points; 
+          public static float point; 
       public float _point;
     public points script;
     // Start is called before the first frame update
@@ -20,9 +20,10 @@ public class greenglas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           Debug.Log("Punkte: " + points);
-         //points = script._points;  //  Update our score continuously.
-       // greenText.text = script._points.ToString(); 
+           
+        _point = script._points;  //  Update our score continuously.
+      greenText.text = script._points.ToString(); 
+       //Debug.Log("Punkte: " + point);
     }
     private void FixedUpdate()
         {
