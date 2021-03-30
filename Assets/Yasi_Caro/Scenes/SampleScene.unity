@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -737,9 +737,10 @@ GameObject:
   - component: {fileID: 840068854}
   - component: {fileID: 840068853}
   - component: {fileID: 840068855}
+  - component: {fileID: 840068856}
   m_Layer: 0
   m_Name: Cheese10 (1)
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -819,10 +820,24 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!64 &840068856
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840068851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 272955531779302703, guid: 9e0edacd9cd5848d1b77a7b6dd5e509b, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,13 +915,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.18326661, y: 0.3362525, z: -0.06688477, w: 0.92134356}
-  m_LocalPosition: {x: -34.4, y: 50.3, z: -40.2}
+  m_LocalRotation: {x: 0.3588019, y: 0.0028239745, z: -0.0010854909, w: 0.9334089}
+  m_LocalPosition: {x: -4.04, y: 83.01, z: -40.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 22.5, y: 40.1, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.054, y: 0.347, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,16 +931,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00d285ff892243dbab28d8a5f634d57, type: 3}
+  m_Script: {fileID: 11500000, guid: 26d1a260a56c0be4a86aeadfa2452d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initeraction_type: 0
   ignoreMe:
     serializedVersion: 2
-    m_Bits: 68
+    m_Bits: 0
   crosshair_t: {fileID: 0}
-  push_object: {fileID: 0}
-  pushing_strength: 1
+  power: 10
 --- !u!1 &975003920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1252,7 @@ GameObject:
   - component: {fileID: 1663098158}
   m_Layer: 0
   m_Name: Cheese12 (1)
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1319,9 +1332,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!64 &1663098158
 MeshCollider:
@@ -1334,7 +1347,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9159887216163171569, guid: 9e0edacd9cd5848d1b77a7b6dd5e509b, type: 3}
 --- !u!1001 &1681845154
@@ -1705,9 +1718,10 @@ GameObject:
   - component: {fileID: 5902390868765642245}
   - component: {fileID: 6493348563747950880}
   - component: {fileID: 203611724624999241}
+  - component: {fileID: 203611724624999242}
   m_Layer: 0
   m_Name: Cheese15
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1724,10 +1738,24 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!64 &203611724624999242
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203611724624999240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4556761732234750860, guid: 9e0edacd9cd5848d1b77a7b6dd5e509b, type: 3}
 --- !u!4 &290921179319302250
 Transform:
   m_ObjectHideFlags: 0
@@ -1822,7 +1850,7 @@ GameObject:
   - component: {fileID: 2058657623322261371}
   m_Layer: 0
   m_Name: Cheese10
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1839,9 +1867,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &2058657623322261370
 BoxCollider:
@@ -1851,8 +1879,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058657623322261368}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
+  m_IsTrigger: 0
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2000, y: 2000, z: 2000}
   m_Center: {x: 0.022500003, y: -0.0000000016298143, z: 0.000059999762}
@@ -2002,9 +2030,10 @@ GameObject:
   - component: {fileID: 3413529626055493631}
   - component: {fileID: 3512552854861597899}
   - component: {fileID: 6952308582906112317}
+  - component: {fileID: 6952308582906112318}
   m_Layer: 0
   m_Name: Cheese14
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2021,10 +2050,24 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!64 &6952308582906112318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952308582906112316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3061791239197506188, guid: 9e0edacd9cd5848d1b77a7b6dd5e509b, type: 3}
 --- !u!1 &7329568578551434181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,9 +2080,10 @@ GameObject:
   - component: {fileID: 7342930569079207652}
   - component: {fileID: 8568200866940375927}
   - component: {fileID: 7329568578551434182}
+  - component: {fileID: 7329568578551434183}
   m_Layer: 0
   m_Name: Cheese12
-  m_TagString: Untagged
+  m_TagString: plattform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2056,10 +2100,24 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!64 &7329568578551434183
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329568578551434181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9159887216163171569, guid: 9e0edacd9cd5848d1b77a7b6dd5e509b, type: 3}
 --- !u!33 &7342930569079207652
 MeshFilter:
   m_ObjectHideFlags: 0
