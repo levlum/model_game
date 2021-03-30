@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class points : MonoBehaviour
 {
- 
-    public float _points; 
+       public float _points; 
     public greenglas scriptgreen;
     public bin scriptbin;
     public Text      pointsText;
-  
-
+    // Start is called before the first frame update
     void Start()
     {
         scriptgreen = GameObject.FindObjectOfType<greenglas>();
@@ -32,7 +31,6 @@ public class points : MonoBehaviour
         }
     private void OnTriggerEnter(Collider other)
     {
-       
-           
+        
     }
 }

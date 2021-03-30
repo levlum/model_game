@@ -47,7 +47,7 @@ public class Projecttile : MonoBehaviour
                 objWine.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objWine.velocity = Vo;
-                //Debug.Log(randomObject);
+                Debug.Log(randomObject);
                 }
                 else{
                      Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
@@ -55,7 +55,7 @@ public class Projecttile : MonoBehaviour
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objTrash.velocity = Vo;
-                //Debug.Log(randomObject);
+                Debug.Log(randomObject);
                 }
 
                
