@@ -15,11 +15,15 @@ public class points : MonoBehaviour
     {
         scriptgreen = GameObject.FindObjectOfType<greenglas>();
         scriptbin = GameObject.FindObjectOfType<bin>();
+
+       // totalPoints = scriptbin.points + scriptgreen.points;
+        
     }
      void Update()
      {
          //pointsText.text = _points.ToString(); 
         //_lifes = script.lifes;  //  Update our score continuously.
+        
      }
         private void FixedUpdate()
         {
