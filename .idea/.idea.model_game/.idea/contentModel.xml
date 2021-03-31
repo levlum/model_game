@@ -26,7 +26,6 @@
           <e p="scripts" t="Include">
             <e p="AttachObject.cs" t="Include" />
             <e p="camera_ray.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
           </e>
         </e>
         <e p="bergerkardel" t="Include">

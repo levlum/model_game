@@ -6,26 +6,10 @@ using UnityEngine.SceneManagement;
 
 
 public class Camera_ray : MonoBehaviour
-{
 
-    /*private void FixedUpdate()
-    {
-       // Restartet das spiel, falls die y-position des players  -4 ist:
-        if (transform.position.y < -1)
-        {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-    }*/
-    
-    /*private void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Floor")
-        {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.ExitPlaymode();
-#endif
-        }
-    }*/
+{
+    private Rigidbody m_Rigidbody;
+    private SerializeField m_speed;
     
 
     // Update is called once per frame
@@ -43,7 +27,9 @@ public class Camera_ray : MonoBehaviour
 
                     hit.transform.Rotate(new Vector3(45, 0, 45));
             }
+            
         }
         
     }
+    
 }
