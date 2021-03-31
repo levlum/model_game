@@ -30,15 +30,17 @@ public class plant : MonoBehaviour
         {
             //greenText.text = greenCount.ToString();
         }
-        private void OnTriggerEnter(Collider other)
+        /*private void OnTriggerEnter(Collider other)
 
-        {script = GameObject.FindObjectOfType<points>(); 
+        {
+                script = GameObject.FindObjectOfType<points>(); 
          
             if (other.gameObject.CompareTag("house"))
             {
-                this.gameObject.SetActive(false);
+                //this.gameObject.SetActive(false);
                  script._points++;
                UnityEngine.Debug.Log("Plant: " +script._points);
+               
                  
             }
              if (other.gameObject.CompareTag("can") ||other.gameObject.CompareTag("bottle"))
@@ -47,5 +49,17 @@ public class plant : MonoBehaviour
                   script._points--;
                UnityEngine.Debug.Log("Points " + script._points);
             }
-        }
+        }*/
+
+         public Transform explosionPrefab;
+                void OnCollisionEnter(Collision collision) {
+                   if (collision.gameObject.tag == "house")
+                   {
+                         ContactPoint contact = collision.contacts[0];
+                         Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+                        Vector3 pos = contact.point;
+                         Instantiate(explosionPrefab, pos, rot);
+                        Destroy(gameObject);
+                   }
+                }
 }
