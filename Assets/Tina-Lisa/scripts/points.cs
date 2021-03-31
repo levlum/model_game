@@ -8,13 +8,14 @@ public class points : MonoBehaviour
        public float _points; 
     public greenglas scriptgreen;
     public bin scriptbin;
+     public plant scriptplant;
     public Text      pointsText;
     // Start is called before the first frame update
     void Start()
     {
         scriptgreen = GameObject.FindObjectOfType<greenglas>();
         scriptbin = GameObject.FindObjectOfType<bin>();
-
+        scriptplant = GameObject.FindObjectOfType<plant>();     
        // totalPoints = scriptbin.points + scriptgreen.points;
         
     }

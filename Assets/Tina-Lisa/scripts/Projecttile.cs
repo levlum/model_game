@@ -6,6 +6,7 @@ public class Projecttile : MonoBehaviour
 {
     public Rigidbody bulletPrefabs;
     public Rigidbody trash;
+    public Rigidbody plant;
     public GameObject cursor;
     public LayerMask layer;
     public Transform shootPoint;
@@ -22,7 +23,7 @@ public class Projecttile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomObject = Random.Range(0,4);
+        randomObject = Random.Range(0,5);
        LaunchProjectile();
     }
     void LaunchProjectile()
@@ -42,15 +43,23 @@ public class Projecttile : MonoBehaviour
             {
                 if(randomObject == 0)
                 {
-                         Rigidbody objWine = Instantiate(trash, shootPoint.position, Quaternion.identity);
+                Rigidbody objWine = Instantiate(trash, shootPoint.position, Quaternion.identity);
                 objWine.transform.rotation = Random.rotation ;
                 objWine.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objWine.velocity = Vo;
                // Debug.Log(randomObject);
                 }
-                else{
-                     Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
+                else if (randomObject == 1){
+                Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
+                objTrash.transform.rotation = Random.rotation ;
+                objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+
+                objTrash.velocity = Vo;
+                //Debug.Log(randomObject);
+                }
+                else {
+                Rigidbody objTrash = Instantiate(plant, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 

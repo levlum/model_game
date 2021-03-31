@@ -16,6 +16,7 @@ TagManager:
   - greenglas
   - bottle
   - can
+  - house
   layers:
   - Default
   - TransparentFX
