@@ -44,34 +44,34 @@ public class Camera_ray : MonoBehaviour
         if((player.transform.position[1]>32)&&(player.transform.position[1]<48))
         {
             Cposition = new Vector3(0.0f,40.0f,-36.0f);
-            Light1.SetActive(true);
-            Light2.SetActive(true);
-            Light3.SetActive(true);
-            Light4.SetActive(false);
+//            Light1.SetActive(true);
+//            Light2.SetActive(true);
+//            Light3.SetActive(true);
+//            Light4.SetActive(false);
         }
         if(player.transform.position[1]<16)
         {
             Cposition = new Vector3(0.0f,24.0f,-36.0f);
-            Light1.SetActive(true);
-            Light2.SetActive(false);
-            Light3.SetActive(false);
-            Light4.SetActive(false);
+//            Light1.SetActive(true);
+//            Light2.SetActive(false);
+//            Light3.SetActive(false);
+//            Light4.SetActive(false);
         }
         if((player.transform.position[1]<32)&&(player.transform.position[1]>16))
         {
             Cposition = new Vector3(0.0f,24.0f,-36.0f);
-            Light1.SetActive(true);
-            Light2.SetActive(true);
-            Light3.SetActive(false);
-            Light4.SetActive(false);
+//            Light1.SetActive(true);
+//            Light2.SetActive(true);
+//            Light3.SetActive(false);
+//            Light4.SetActive(false);
         }
         if(player.transform.position[1]>48)
         {
             Cposition = new Vector3(0.0f,56.0f,-36.0f);
-            Light1.SetActive(true);
-            Light2.SetActive(true);
-            Light3.SetActive(true);
-            Light4.SetActive(true);
+//            Light1.SetActive(true);
+//            Light2.SetActive(true);
+//            Light3.SetActive(true);
+//            Light4.SetActive(true);
         }
     }
 // Trigger did not work. Don't know why!
