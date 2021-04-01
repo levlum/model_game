@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projecttile : MonoBehaviour
 {
+
     public Rigidbody bulletPrefabs;
     public Rigidbody trash;
     public Rigidbody plant;
@@ -18,6 +19,9 @@ public class Projecttile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+         
+        randomObject = Random.Range(0,5);
+        
         cam = Camera.main;
         Timer = GameObject.FindObjectOfType<timer>(); 
         
@@ -26,8 +30,8 @@ public class Projecttile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomObject = Random.Range(0,5);
-       LaunchProjectile();
+       Debug.Log(randomObject);
+        LaunchProjectile();
 
          if (i == 20) {
                   Timer.finished = true;
@@ -49,6 +53,7 @@ public class Projecttile : MonoBehaviour
 
             if(Input.GetMouseButtonDown(0))
             {
+                
                 if (i < 20){
                     i++;
                 if(randomObject == 0)
@@ -61,7 +66,7 @@ public class Projecttile : MonoBehaviour
                // Debug.Log(randomObject);
                 }
                 else if (randomObject == 1){
-                Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
+                Rigidbody objTrash = Instantiate(plant, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
@@ -69,7 +74,7 @@ public class Projecttile : MonoBehaviour
                 //Debug.Log(randomObject);
                 }
                 else {
-                Rigidbody objTrash = Instantiate(plant, shootPoint.position, Quaternion.identity);
+                Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
@@ -79,7 +84,7 @@ public class Projecttile : MonoBehaviour
             
 
               } 
-            
+            randomObject = Random.Range(0,5);
             }
         }
         else{
@@ -108,4 +113,5 @@ public class Projecttile : MonoBehaviour
 
             return result;
     }
+
 }
