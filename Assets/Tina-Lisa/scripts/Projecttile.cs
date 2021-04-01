@@ -12,11 +12,14 @@ public class Projecttile : MonoBehaviour
     public Transform shootPoint;
     private Camera cam;
     public float randomObject;
+    public float i = 0;
+    public timer Timer;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+        Timer = GameObject.FindObjectOfType<timer>(); 
         
     }
 
@@ -25,6 +28,11 @@ public class Projecttile : MonoBehaviour
     {
         randomObject = Random.Range(0,5);
        LaunchProjectile();
+
+         if (i == 20) {
+                  Timer.finished = true;
+                  Debug.Log("finised");
+              }
     }
     void LaunchProjectile()
     {
@@ -41,6 +49,8 @@ public class Projecttile : MonoBehaviour
 
             if(Input.GetMouseButtonDown(0))
             {
+                if (i < 20){
+                    i++;
                 if(randomObject == 0)
                 {
                 Rigidbody objWine = Instantiate(trash, shootPoint.position, Quaternion.identity);
@@ -66,8 +76,10 @@ public class Projecttile : MonoBehaviour
                 objTrash.velocity = Vo;
                 //Debug.Log(randomObject);
                 }
+            
 
-               
+              } 
+            
             }
         }
         else{
