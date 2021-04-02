@@ -6,6 +6,8 @@ public class Projecttile : MonoBehaviour
 {
 
     public Rigidbody bulletPrefabs;
+    public Rigidbody greenBottlePrefab;
+    public Rigidbody whiteBottlePrefab;
     public Rigidbody trash;
     public Rigidbody plant;
     public GameObject cursor;
@@ -20,7 +22,8 @@ public class Projecttile : MonoBehaviour
     void Start()
     {
          
-        randomObject = Random.Range(0,5);
+        randomObject = Random.Range(0,8);
+        
         
         cam = Camera.main;
         Timer = GameObject.FindObjectOfType<timer>(); 
@@ -58,39 +61,63 @@ public class Projecttile : MonoBehaviour
                     i++;
                 if(randomObject == 0)
                 {
-                Rigidbody objWine = Instantiate(trash, shootPoint.position, Quaternion.identity);
+                Rigidbody objWine = Instantiate(plant, shootPoint.position, Quaternion.identity);
                 objWine.transform.rotation = Random.rotation ;
                 objWine.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objWine.velocity = Vo;
                // Debug.Log(randomObject);
                 }
-                else if (randomObject == 1){
-                Rigidbody objTrash = Instantiate(plant, shootPoint.position, Quaternion.identity);
+                else if (randomObject == 1 || randomObject == 2){
+                Rigidbody objTrash = Instantiate(trash, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objTrash.velocity = Vo;
                 //Debug.Log(randomObject);
                 }
-                else {
+                else if (randomObject == 3 || randomObject == 4) {
+                    
                 Rigidbody objTrash = Instantiate(bulletPrefabs, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
                 objTrash.velocity = Vo;
                 //Debug.Log(randomObject);
-                }
+                
             
+                         
+                     }
+                     else if (randomObject == 5 || randomObject == 6) {
+                    
+                Rigidbody objTrash = Instantiate(greenBottlePrefab, shootPoint.position, Quaternion.identity);
+                objTrash.transform.rotation = Random.rotation ;
+                objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
-              } 
-            randomObject = Random.Range(0,5);
+                objTrash.velocity = Vo;
+                //Debug.Log(randomObject);
+                
+            
+                         
+                     }
+                      else {
+                    
+                Rigidbody objTrash = Instantiate(whiteBottlePrefab, shootPoint.position, Quaternion.identity);
+                objTrash.transform.rotation = Random.rotation ;
+                objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+
+                objTrash.velocity = Vo;
+                //Debug.Log(randomObject);
+                
+            
+                         
+                     }
+                     randomObject = Random.Range(0,8);
+                 }
+                 else{
+                    cursor.SetActive(false);
+                  }
             }
-        }
-        else{
-            cursor.SetActive(false);
-        }
-    }
 
     Vector3 CalculateVelocity(Vector3 target, Vector3 origin, float time)
     {
@@ -113,5 +140,6 @@ public class Projecttile : MonoBehaviour
 
             return result;
     }
-
+        }
+}
 }

@@ -33,14 +33,14 @@ public class greenglas : MonoBehaviour
         private void OnTriggerEnter(Collider other)
 
         {script = GameObject.FindObjectOfType<points>(); 
-            if (other.gameObject.CompareTag("bottle"))
+            if (other.gameObject.CompareTag("green"))
             {
                 other.gameObject.SetActive(false);
                  script._points++;
                UnityEngine.Debug.Log("Points: " +script._points);
                  
             }
-            if (other.gameObject.CompareTag("can"))
+              if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("bown"))
             {
             
                   script._points--;
