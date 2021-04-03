@@ -22,7 +22,7 @@ public class Projecttile : MonoBehaviour
     void Start()
     {
          
-        randomObject = Random.Range(0,8);
+        randomObject = Random.Range(0,1);
         
         
         cam = Camera.main;
@@ -35,7 +35,7 @@ public class Projecttile : MonoBehaviour
     {
        Debug.Log(randomObject);
         LaunchProjectile();
-
+       
          if (i == 20) {
                   Timer.finished = true;
                   Debug.Log("finised");
@@ -53,7 +53,42 @@ public class Projecttile : MonoBehaviour
 
             Vector3 Vo = CalculateVelocity(hit.point, shootPoint.position, 1f);
             transform.rotation = Quaternion.LookRotation(Vo);
-
+            /* if(randomObject == 0)
+            {
+                Rigidbody objPlant = Instantiate(plant, new Vector3(10,3,9), Quaternion.identity);
+                
+            }
+             else if (randomObject == 1 || randomObject == 2){
+                Rigidbody objTrash = Instantiate(trash, new Vector3(10,3,9), Quaternion.identity);
+               
+                }
+                else if (randomObject == 3 || randomObject == 4) {
+                    
+                Rigidbody objTrash = Instantiate(bulletPrefabs, new Vector3(10,3,9), Quaternion.identity);
+                
+                //Debug.Log(randomObject);
+                
+            
+                         
+                     }
+                     else if (randomObject == 5 || randomObject == 6) {
+                    
+                Rigidbody objTrash = Instantiate(greenBottlePrefab, new Vector3(10,3,9), Quaternion.identity);
+                
+                //Debug.Log(randomObject);
+                
+            
+                         
+                     }
+                      else {
+                    
+                Rigidbody objTrash = Instantiate(whiteBottlePrefab, new Vector3(10,3,9), Quaternion.identity);
+                
+                //Debug.Log(randomObject);
+                
+            
+                         
+                     }*/
             if(Input.GetMouseButtonDown(0))
             {
                 
@@ -61,11 +96,11 @@ public class Projecttile : MonoBehaviour
                     i++;
                 if(randomObject == 0)
                 {
-                Rigidbody objWine = Instantiate(plant, shootPoint.position, Quaternion.identity);
-                objWine.transform.rotation = Random.rotation ;
-                objWine.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+                Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
+                objPlant.transform.rotation = Random.rotation ;
+                objPlant.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
-                objWine.velocity = Vo;
+                objPlant.velocity = Vo;
                // Debug.Log(randomObject);
                 }
                 else if (randomObject == 1 || randomObject == 2){

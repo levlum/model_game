@@ -17,6 +17,9 @@ TagManager:
   - bottle
   - can
   - house
+  - green
+  - brown
+  - white
   layers:
   - Default
   - TransparentFX
