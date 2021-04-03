@@ -117,7 +117,7 @@ MonoBehaviour:
   _point: 0
   script: {fileID: 0}
   slider: {fileID: 0}
-  explosionPrefab: {fileID: 6630181688990581948, guid: 9008d4ed56a764b50acd2ba2bfeaa4c7, type: 3}
+  explosionPrefab: {fileID: 8040015438563326059, guid: 0cb781ae86c194c93971fbe5616a52cb, type: 3}
 --- !u!135 &-2220164800121867003
 SphereCollider:
   m_ObjectHideFlags: 0
