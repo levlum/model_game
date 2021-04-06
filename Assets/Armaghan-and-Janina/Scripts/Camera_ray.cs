@@ -20,16 +20,9 @@ public class Camera_ray : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-            
-            if (hit.rigidbody.tag == "Player")
-            {
-                if (Input.GetMouseButtonDown(0))
 
-                    hit.transform.Rotate(new Vector3(45, 0, 45));
-            }
-            
         }
-        
+
     }
     
 }

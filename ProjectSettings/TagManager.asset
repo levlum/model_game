@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Lava
   - SpeedBoost
+  - ParticleSystem
   layers:
   - Default
   - TransparentFX
