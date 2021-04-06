@@ -12,6 +12,9 @@ TagManager:
   - funnel
   - plattform
   - Platform
+  - Part
+  - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX

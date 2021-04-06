@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace karo_julian {
-public class Camera_ray : MonoBehaviour
+public class Camera_ray_old : MonoBehaviour
 {
        PlayerScript isground;
         public float push_strength;
