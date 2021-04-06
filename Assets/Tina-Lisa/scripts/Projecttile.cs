@@ -16,25 +16,32 @@ public class Projecttile : MonoBehaviour
       public Rigidbody brownBottlePref;
       public Rigidbody canPref;
     public GameObject cursor;
+    public GameObject whiteBottlePointer;
+    public GameObject greenBottlePointer;
+    public GameObject brownBottlePointer;
+    public GameObject canPointer;
+    public GameObject samenPointer;
     public LayerMask layer;
     public Transform shootPoint;
     private Camera cam;
     public float randomObject;
     public float i = 0;
     public timer Timer;
+    public RaycastHit hit;
 
     // Start is called before the first frame update
     void Start()
     {
          
         randomObject = Random.Range(0,8);
-        if(randomObject == 0)
+        /*if(randomObject == 0)
                         {
                     SamenBallPref.gameObject.SetActive(true);
                     canPref.gameObject.SetActive(false);
                     brownBottlePref.gameObject.SetActive(false);
                     greenBottlePref.gameObject.SetActive(false);
                  whiteBottlePref.gameObject.SetActive(false);
+                 
                                 
                       }  
                       if(randomObject == 1 || randomObject == 2)
@@ -70,7 +77,51 @@ public class Projecttile : MonoBehaviour
                     brownBottlePref.gameObject.SetActive(false);
                  greenBottlePref.gameObject.SetActive(false);
                                 
-                      }  
+                      }  */
+                    if(randomObject == 0)
+                    {
+                    whiteBottlePointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
+                    samenPointer.transform.position = hit.point + Vector3.up * 0.1f;    
+                    }  
+                    if(randomObject == 1 || randomObject == 2)
+                    {
+                     samenPointer.SetActive(false);
+                     whiteBottlePointer.SetActive(false);
+                     brownBottlePointer.SetActive(false);
+                     greenBottlePointer.SetActive(false);
+                     canPointer.SetActive(true);
+                     canPointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 3 || randomObject == 4)
+                    {
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    whiteBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false);
+                    brownBottlePointer.SetActive(true);
+                    brownBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 5 || randomObject == 6)
+                    {
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    whiteBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(true);
+                    greenBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 7 || randomObject == 8)
+                    { 
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false);
+                    whiteBottlePointer.SetActive(true);
+                    whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
+                    } 
         
         cam = Camera.main;
         Timer = GameObject.FindObjectOfType<timer>(); 
@@ -85,7 +136,7 @@ public class Projecttile : MonoBehaviour
        
          if (i == 20) {
                   Timer.finished = true;
-                  Debug.Log("finised");
+                  Debug.Log("finished");
               }
     }
     void LaunchProjectile()
@@ -95,43 +146,64 @@ public class Projecttile : MonoBehaviour
 
         if (Physics.Raycast(camRay, out hit, 100f, layer))
         {
-            cursor.SetActive(true);
-            cursor.transform.position = hit.point + Vector3.up * 0.1f;
+           // whiteBottlePointer.SetActive(true);
+           // whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
 
             Vector3 Vo = CalculateVelocity(hit.point, shootPoint.position, 1f);
             transform.rotation = Quaternion.LookRotation(Vo);
-      
-             /* else if (randomObject == 1 || randomObject == 2){
-                Rigidbody objTrash = Instantiate(trash, new Vector3(10,3,9), Quaternion.identity);
-               
-                }
-                else if (randomObject == 3 || randomObject == 4) {
+      if(randomObject == 0)
+                    {
+                 SamenBallPref.gameObject.SetActive(false);
+                    canPref.gameObject.SetActive(false);
+                    brownBottlePref.gameObject.SetActive(false);
+                    greenBottlePref.gameObject.SetActive(false);
+                 whiteBottlePref.gameObject.SetActive(false);
+                    samenPointer.SetActive(true);
+            samenPointer.transform.position = hit.point + Vector3.up * 0.1f;    
+                      }  
+                      if(randomObject == 1 || randomObject == 2)
+                        {
+                    canPref.gameObject.SetActive(true);
+                    SamenBallPref.gameObject.SetActive(false);
+                    brownBottlePref.gameObject.SetActive(false);
+                 greenBottlePref.gameObject.SetActive(false);
+                                whiteBottlePref.gameObject.SetActive(false);
+                                canPointer.SetActive(true);
+            canPointer.transform.position = hit.point + Vector3.up * 0.1f;
+                      } 
+                      if(randomObject == 3 || randomObject == 4)
+                        {
+                    brownBottlePref.gameObject.SetActive(true);
+                    canPref.gameObject.SetActive(false);
+                    SamenBallPref.gameObject.SetActive(false);
+                 whiteBottlePref.gameObject.SetActive(false);
+                               greenBottlePref.gameObject.SetActive(false); 
+                               brownBottlePointer.SetActive(true);
+            brownBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                      } 
+                      if(randomObject == 5 || randomObject == 6)
+                        {
+                    greenBottlePref.gameObject.SetActive(true);
+                    canPref.gameObject.SetActive(false);
+                    SamenBallPref.gameObject.SetActive(false);
+                    brownBottlePref.gameObject.SetActive(false);
+                 whiteBottlePref.gameObject.SetActive(false);
+                 greenBottlePointer.SetActive(true);
+            greenBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                                
+                      } 
+                       if(randomObject == 7 || randomObject == 8)
+                        {
+                    whiteBottlePref.gameObject.SetActive(true);
+                    canPref.gameObject.SetActive(false);
+                    SamenBallPref.gameObject.SetActive(false);
+                    brownBottlePref.gameObject.SetActive(false);
+                 greenBottlePref.gameObject.SetActive(false);
+                    whiteBottlePointer.SetActive(true);
+            whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
+                      }                 
                     
-                Rigidbody objTrash = Instantiate(bulletPrefabs, new Vector3(10,3,9), Quaternion.identity);
-                
-                //Debug.Log(randomObject);
-                
-            
-                         
-                     }
-                     else if (randomObject == 5 || randomObject == 6) {
-                    
-                Rigidbody objTrash = Instantiate(greenBottlePrefab, new Vector3(10,3,9), Quaternion.identity);
-                
-                //Debug.Log(randomObject);
-                
-            
-                         
-                     }
-                      else {
-                    
-                Rigidbody objTrash = Instantiate(whiteBottlePrefab, new Vector3(10,3,9), Quaternion.identity);
-                
-                //Debug.Log(randomObject);
-                
-            
-                         
-                     }*/
+              
             if(Input.GetMouseButtonDown(0))
             {
                 
@@ -191,51 +263,7 @@ public class Projecttile : MonoBehaviour
                          
                      }
                     randomObject = Random.Range(0,8);
-                    if(randomObject == 0)
-                        {
-                    SamenBallPref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                    greenBottlePref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                                
-                      }  
-                      if(randomObject == 1 || randomObject == 2)
-                        {
-                    canPref.gameObject.SetActive(true);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 greenBottlePref.gameObject.SetActive(false);
-                                whiteBottlePref.gameObject.SetActive(false);
-                      } 
-                      if(randomObject == 3 || randomObject == 4)
-                        {
-                    brownBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                               greenBottlePref.gameObject.SetActive(false); 
-                      } 
-                      if(randomObject == 5 || randomObject == 6)
-                        {
-                    greenBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                                
-                      } 
-                       if(randomObject == 7 || randomObject == 8)
-                        {
-                    whiteBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 greenBottlePref.gameObject.SetActive(false);
-                                
-                      }                 
-                    }
-                 else{
+                    }        else{
                     cursor.SetActive(false);
                   }
             }
