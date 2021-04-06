@@ -40,7 +40,7 @@ public class greenglas : MonoBehaviour
                UnityEngine.Debug.Log("Points: " +script._points);
                  
             }
-              if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("bown"))
+              if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("brown"))
             {
             
                   script._points--;
