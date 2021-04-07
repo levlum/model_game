@@ -55,6 +55,8 @@ public class plant : MonoBehaviour
                 void OnCollisionEnter(Collision collision) {
                    if (collision.gameObject.tag == "house")
                    {
+                      script._points++;
+                      // slider.value = script._points;
                          ContactPoint contact = collision.contacts[0];
                          Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
                         Vector3 pos = contact.point;

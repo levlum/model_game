@@ -37,14 +37,16 @@ public class greenglas : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                  script._points++;
-               UnityEngine.Debug.Log("Points: " +script._points);
+                 slider.value = script._points;
+               UnityEngine.Debug.Log("Grün Points: " +script._points);
                  
             }
               if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("brown"))
             {
             
                   script._points--;
-               UnityEngine.Debug.Log("Points " + script._points);
+                  slider.value = script._points;
+               UnityEngine.Debug.Log("Grün Points " + script._points);
             }
         }
 }

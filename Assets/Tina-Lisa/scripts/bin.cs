@@ -10,6 +10,7 @@ public class bin : MonoBehaviour
      private static float  points; 
     public points script;
     public float _point;
+    public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +37,13 @@ public class bin : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
               script._points+=1;
+              slider.value = script._points;
                UnityEngine.Debug.Log("Points: " + script._points);
             }
             if (other.gameObject.CompareTag("bottle"))
             {
                 script._points--;
+                slider.value = script._points;
                UnityEngine.Debug.Log("Points: " + script._points);
             }
         }

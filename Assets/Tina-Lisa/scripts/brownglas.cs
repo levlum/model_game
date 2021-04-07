@@ -36,6 +36,7 @@ public class brownglas : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                  script._points++;
+                 slider.value = script._points;
                UnityEngine.Debug.Log("Points: " +script._points);
                  
             }
@@ -43,6 +44,7 @@ public class brownglas : MonoBehaviour
             {
             
                   script._points--;
+                  slider.value = script._points;
                UnityEngine.Debug.Log("Points " + script._points);
             }
         }

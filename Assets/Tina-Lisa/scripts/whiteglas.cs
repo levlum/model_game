@@ -35,13 +35,15 @@ public class whiteglas : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                  script._points++;
+                 slider.value = script._points;
                UnityEngine.Debug.Log("Points: " +script._points);
                  
             }
-            if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("bown"))
+            if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown"))
             {
             
                   script._points--;
+                  slider.value = script._points;
                UnityEngine.Debug.Log("Points " + script._points);
             }
         }

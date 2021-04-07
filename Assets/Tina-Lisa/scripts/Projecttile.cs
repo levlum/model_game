@@ -131,7 +131,8 @@ public class Projecttile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       Debug.Log(randomObject);
+       //
+       //Debug.Log(randomObject);
         LaunchProjectile();
        
          if (i == 20) {
