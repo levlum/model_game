@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
         <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/funnel_controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/GameOver.cs" />
       </list>
     </option>
   </component>
@@ -78,6 +78,7 @@
       <workItem from="1616619830821" duration="1016000" />
       <workItem from="1616769030617" duration="21000" />
       <workItem from="1617189094719" duration="254000" />
+      <workItem from="1617813965759" duration="181000" />
     </task>
     <servers />
   </component>
