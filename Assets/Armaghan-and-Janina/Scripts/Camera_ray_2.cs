@@ -11,6 +11,7 @@ public class Camera_ray_2 : MonoBehaviour
     //public GameObject Light4;
     public GameObject player;
     public AudioClip PassedRing;
+    public AudioClip FinalRing;
     public Rigidbody rb_player;
 
     private Vector3 Cposition;
@@ -34,7 +35,7 @@ public class Camera_ray_2 : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
-            Debug.Log(hit.collider);
+            //Debug.Log(hit.collider);
             if (hit.rigidbody.tag == "Player")
             {
                 if (Input.GetMouseButtonDown(0))
@@ -75,7 +76,7 @@ public class Camera_ray_2 : MonoBehaviour
 //            Light3.SetActive(false);
 //            Light4.SetActive(false);
         }
-        if(player.transform.position[1]>=48)
+        if((player.transform.position[1]>=48)&&(player.transform.position[1]<64))
         {
             CurrentLevel = 4;
             Cposition = new Vector3(0.0f,56.0f,-36.0f);
@@ -84,12 +85,18 @@ public class Camera_ray_2 : MonoBehaviour
 //            Light3.SetActive(true);
 //            Light4.SetActive(true);
         }
+        if(player.transform.position[1]>=64)
+        {
+            CurrentLevel = 5;
+            Cposition = new Vector3(0.0f,72.0f,-36.0f);
+            AudioSource.PlayClipAtPoint(FinalRing, transform.position, 1);
+        }
         if (CurrentLevel > PreviousLevel)
         {
             AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
             if(CurrentLevel == 3 || CurrentLevel == 4)
             {
-                rb_player.GetComponent<Rigidbody>().AddForce(Vector3.up, ForceMode.Impulse);
+                rb_player.AddForce(Vector3.up, ForceMode.Impulse);
                 Debug.Log("Impulse");
                 Debug.Log(player.GetComponent<Collider>());
             }
