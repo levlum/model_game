@@ -10,7 +10,7 @@ public class Camera_ray : MonoBehaviour
 {
     private Rigidbody m_Rigidbody;
     private SerializeField m_speed;
-    
+
 
     // Update is called once per frame
     void Update()
@@ -39,5 +39,4 @@ public class Camera_ray : MonoBehaviour
 
         }
     }
-    
 }

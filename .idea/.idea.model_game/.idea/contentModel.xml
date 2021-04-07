@@ -26,6 +26,7 @@
           <e p="scripts" t="Include">
             <e p="AttachObject.cs" t="Include" />
             <e p="camera_ray.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
             <e p="SpeedBoost1.cs" t="Include" />
             <e p="SpeedBoost2.cs" t="Include" />
             <e p="SpeedBoost3.cs" t="Include" />

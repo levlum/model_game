@@ -22,8 +22,10 @@
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Blue.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02_Janina.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +41,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/AttachObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost2.cs" />
@@ -54,6 +56,7 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost1.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +109,7 @@
       <workItem from="1617185850575" duration="4381000" />
       <workItem from="1617213217536" duration="304000" />
       <workItem from="1617738365034" duration="2551000" />
-      <workItem from="1617780212257" duration="3015000" />
+      <workItem from="1617780212257" duration="5981000" />
     </task>
     <servers />
   </component>

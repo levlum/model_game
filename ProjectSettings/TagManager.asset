@@ -9,6 +9,8 @@ TagManager:
   - Lava
   - SpeedBoost
   - ParticleSystem
+  - Teleport
+  - Teleport_Outside
   layers:
   - Default
   - TransparentFX
