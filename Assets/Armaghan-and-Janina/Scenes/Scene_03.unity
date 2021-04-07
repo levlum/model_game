@@ -3058,6 +3058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 503589662}
   PassedRing: {fileID: 8300000, guid: 7e8c7ede1ed66c646853bad2fe1b73d7, type: 3}
+  FinalRing: {fileID: 8300000, guid: f0021a723382aed4d8ce7a955fdb384b, type: 3}
   rb_player: {fileID: 503589664}
 --- !u!81 &1740180232
 AudioListener:
