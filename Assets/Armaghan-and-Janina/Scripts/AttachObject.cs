@@ -6,20 +6,20 @@ using UnityEngine;
 public class AttachObject : MonoBehaviour {
     
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //when colliding
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player")) //if the other gameObject has the tag "player" (our playersphere)
         {
-            other.gameObject.transform.parent = transform;
+            other.gameObject.transform.parent = transform; //transform the platform, so that it becomes a parent of the playersphere, as long as they are colliding.
+                                                           //So the playersphere is moving along with the platform.
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other) //when colliding exit
     {
-        //if (other.gameObject == Player)
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.parent = null;
+            other.gameObject.transform.parent = null; //transform the platform back to its original, so the playersphere is no longer a child of the platform.
         }
     }
 }
