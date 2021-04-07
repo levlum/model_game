@@ -8,11 +8,21 @@ public class Instantiate : MonoBehaviour
     GameObject bubbleClone;
     public float respawnTime = 1.0f;
 
+    private void Start()
+    {
+        for (int i = 0; i < 200; i++)
+        {
+            bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
+            bubbleClone.transform.position = new Vector3(Random.Range(0, 50), 7, Random.Range(0, 20));
+
+        }
+    }
+
     private void Update()
     {
 
-        bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
-        bubbleClone.transform.position = new Vector3(Random.Range(0, 50), 7, Random.Range(0, 50));
-        Destroy(bubbleClone, respawnTime);
+        //bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
+        //bubbleClone.transform.position = new Vector3(Random.Range(0, 50), 7, Random.Range(0, 50));
+        //Destroy(bubbleClone, respawnTime);
     }
 }
