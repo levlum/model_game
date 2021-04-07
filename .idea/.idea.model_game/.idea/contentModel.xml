@@ -30,6 +30,7 @@
             <e p="SpeedBoost2.cs" t="Include" />
             <e p="SpeedBoost3.cs" t="Include" />
             <e p="SpeedBoost4.cs" t="Include" />
+            <e p="SpeedBoost5.cs" t="Include" />
           </e>
         </e>
         <e p="bergerkardel" t="Include">

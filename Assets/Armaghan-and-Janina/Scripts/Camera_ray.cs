@@ -21,8 +21,23 @@ public class Camera_ray : MonoBehaviour
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
 
-        }
+            if (hit.rigidbody.tag == "Platform")
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    hit.transform.Rotate(new Vector3(0,0, 20));
+                }
+            }
+            
+            if (hit.rigidbody.tag == "Jumpy")
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    hit.transform.Rotate(new Vector3(0,0, -20));
+                }
+            }
 
+        }
     }
     
 }
