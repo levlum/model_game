@@ -11,6 +11,7 @@ public class Camera_ray : MonoBehaviour
     private Rigidbody m_Rigidbody;
     private SerializeField m_speed;
 
+    public AudioClip PlatformRotate;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +27,7 @@ public class Camera_ray : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     hit.transform.Rotate(new Vector3(0,0, 20));
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
             }
             
@@ -34,6 +36,7 @@ public class Camera_ray : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     hit.transform.Rotate(new Vector3(0,0, -20));
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
             }
 

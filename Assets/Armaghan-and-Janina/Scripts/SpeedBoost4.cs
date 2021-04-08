@@ -6,12 +6,14 @@ public class SpeedBoost4 : MonoBehaviour
 
 {
     public GameObject particleSystem4;
+    public AudioClip BoostSound;
     void OnTriggerStay(Collider other)
     {
         if (other.attachedRigidbody)
         {
             other.attachedRigidbody.AddForce(Vector3.up * 500);
             particleSystem4.SetActive(true);
+            AudioSource.PlayClipAtPoint(BoostSound, transform.position, 1);
             StartCoroutine("StopParticleSystem");
         }
     }

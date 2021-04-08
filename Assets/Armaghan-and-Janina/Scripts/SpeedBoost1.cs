@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpeedBoost1 : MonoBehaviour
-
 {
     public GameObject particleSystem1;
+    public AudioClip BoostSound;
     void OnTriggerStay(Collider other)
     {
         if (other.attachedRigidbody)
         {
             other.attachedRigidbody.AddForce(Vector3.up * 500);
             particleSystem1.SetActive(true);
+            AudioSource.PlayClipAtPoint(BoostSound, transform.position, 1);
             StartCoroutine("StopParticleSystem");
         }
     }
