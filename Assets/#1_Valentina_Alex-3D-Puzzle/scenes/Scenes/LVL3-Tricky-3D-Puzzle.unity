@@ -3040,6 +3040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b0ae94c2e446a58209c63870f3bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 50
 --- !u!1 &629093401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,6 +4251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b0ae94c2e446a58209c63870f3bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 500
 --- !u!65 &870758835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7678,6 +7680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b0ae94c2e446a58209c63870f3bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 500
 --- !u!1 &1621629840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7799,7 +7802,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3916972773925722141, guid: 98f3c7ff240ba495fae90a17ca685230, type: 3}
       propertyPath: m_Size.y
-      value: 0.15
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 6391231378839405405, guid: 98f3c7ff240ba495fae90a17ca685230, type: 3}
       propertyPath: m_RootOrder
@@ -7900,6 +7903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b0ae94c2e446a58209c63870f3bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 50
 --- !u!1 &1691362566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8654,7 +8658,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3916972773925722141, guid: 98f3c7ff240ba495fae90a17ca685230, type: 3}
       propertyPath: m_Size.y
-      value: 0.15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6391231378839405405, guid: 98f3c7ff240ba495fae90a17ca685230, type: 3}
       propertyPath: m_RootOrder
@@ -9099,6 +9103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b0ae94c2e446a58209c63870f3bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 500
 --- !u!1 &2080147105
 GameObject:
   m_ObjectHideFlags: 0
