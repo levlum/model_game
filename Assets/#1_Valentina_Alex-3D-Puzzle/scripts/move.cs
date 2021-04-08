@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    private float rotSpeed = 5;
+   // private float rotSpeed = 5;
     private Rigidbody rb;
     private float moveSpeed;
     private float dirX, dirZ;
