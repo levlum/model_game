@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1_Valentina_Alex-3D-Puzzle/scripts/rotObj.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
       <workItem from="1615989943930" duration="604000" />
       <workItem from="1616070741362" duration="3243000" />
       <workItem from="1616086352154" duration="1562000" />
-      <workItem from="1616691002920" duration="4247000" />
+      <workItem from="1616691002920" duration="4615000" />
     </task>
     <servers />
   </component>
