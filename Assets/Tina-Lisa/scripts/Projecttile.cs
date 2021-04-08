@@ -32,12 +32,14 @@ public class Projecttile : MonoBehaviour
     public RaycastHit hit;
     public GameObject endscreen;
     public Button btn;
+    public Button quit;
 
     // Start is called before the first frame update
     void Start()
     {
          //Button btn = PlayAgainButton.GetComponent<Button>();
         btn.onClick.AddListener(RestartGame);
+        quit.onClick.AddListener(QuitGame);
        
         randomObject = Random.Range(0,8);
         /*if(randomObject == 0)
@@ -302,4 +304,8 @@ public class Projecttile : MonoBehaviour
  public void RestartGame() {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
          }
+ public void QuitGame() {
+     Debug.Log("Quit");
+         Application.Quit();
+ }
 }
