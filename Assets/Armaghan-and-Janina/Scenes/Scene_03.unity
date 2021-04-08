@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 3800326}
   - component: {fileID: 3800325}
   m_Layer: 3
-  m_Name: Floor
+  m_Name: Floor Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 7474711}
   - component: {fileID: 7474710}
   m_Layer: 3
-  m_Name: Wall (5)
+  m_Name: Wall 5 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 51b40d62287d44fcc9aa9c21bcacfce0, type: 2}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Name
-      value: Ring 2
+      value: Ring 2 Arma
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Layer
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 184459100}
   - component: {fileID: 184459099}
   m_Layer: 3
-  m_Name: Floor (1)
+  m_Name: Floor Lava Arma
   m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 199084353}
   - component: {fileID: 199084352}
   m_Layer: 3
-  m_Name: Wall (10)
+  m_Name: Wall 10 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 303534237}
   - component: {fileID: 303534236}
   m_Layer: 0
-  m_Name: Point Light (2)
+  m_Name: Point Light (2) Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -753,7 +753,7 @@ GameObject:
   - component: {fileID: 315546318}
   - component: {fileID: 315546317}
   m_Layer: 3
-  m_Name: Wall (8)
+  m_Name: Wall 8 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 426745762}
   - component: {fileID: 426745760}
   m_Layer: 0
-  m_Name: Colliders
+  m_Name: Colliders Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -921,12 +921,12 @@ GameObject:
   - component: {fileID: 503589664}
   - component: {fileID: 503589663}
   m_Layer: 0
-  m_Name: Playercube 2
+  m_Name: Playercube Arma
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &503589663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1015,8 +1015,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 3}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children:
-  - {fileID: 1778346200}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1033,7 +1032,7 @@ GameObject:
   - component: {fileID: 521510416}
   - component: {fileID: 521510415}
   m_Layer: 3
-  m_Name: Wall (4)
+  m_Name: Wall 4 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1126,12 +1125,12 @@ GameObject:
   - component: {fileID: 586105139}
   - component: {fileID: 586105138}
   m_Layer: 0
-  m_Name: Level1
+  m_Name: Level1 Arma
   m_TagString: Level1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &586105138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1172,7 +1171,7 @@ GameObject:
   - component: {fileID: 615504472}
   - component: {fileID: 615504471}
   m_Layer: 3
-  m_Name: Wall (14)
+  m_Name: Wall 12 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1373,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976bd33d3596d4f60aeede2eb2c16c18, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Name
-      value: Platform_05
+      value: Platform_05 Arma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
@@ -1412,7 +1411,7 @@ GameObject:
   - component: {fileID: 753177787}
   - component: {fileID: 753177786}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: Point Light (1) Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1563,7 +1562,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 809508e5176824b0facb499c6ac66827, type: 2}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Name
-      value: Ring
+      value: Ring 1 Arma
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Layer
@@ -1584,7 +1583,7 @@ GameObject:
   - component: {fileID: 811144321}
   - component: {fileID: 811144320}
   m_Layer: 3
-  m_Name: Wall (11)
+  m_Name: Wall 11 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1681,12 +1680,12 @@ GameObject:
   - component: {fileID: 1033957005}
   - component: {fileID: 1033957009}
   m_Layer: 0
-  m_Name: player
-  m_TagString: Untagged
+  m_Name: player Arma
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1033957004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1775,7 +1774,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 3}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
+  m_Children:
+  - {fileID: 1778346200}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1853,7 +1853,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976bd33d3596d4f60aeede2eb2c16c18, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Name
-      value: Platform_02
+      value: Platform_02 Arma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
@@ -1926,7 +1926,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 809508e5176824b0facb499c6ac66827, type: 2}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Name
-      value: Ring 4
+      value: Ring 4 Arma
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Layer
@@ -1991,7 +1991,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976bd33d3596d4f60aeede2eb2c16c18, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Name
-      value: Platform_03
+      value: Platform_03 Arma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
@@ -2008,7 +2008,7 @@ GameObject:
   - component: {fileID: 1157028259}
   - component: {fileID: 1157028258}
   m_Layer: 3
-  m_Name: Wall (6)
+  m_Name: Wall 6 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2103,7 +2103,7 @@ GameObject:
   - component: {fileID: 1193757875}
   - component: {fileID: 1193757874}
   m_Layer: 3
-  m_Name: Wall (1)
+  m_Name: Wall 2 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 1213463773}
   - component: {fileID: 1213463772}
   m_Layer: 3
-  m_Name: Wall
+  m_Name: Wall 1 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2291,7 +2291,7 @@ GameObject:
   - component: {fileID: 1231052447}
   - component: {fileID: 1231052446}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Directional Light Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2384,12 +2384,12 @@ GameObject:
   - component: {fileID: 1247955589}
   - component: {fileID: 1247955588}
   m_Layer: 0
-  m_Name: Level2
+  m_Name: Level2 Arma
   m_TagString: Level2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1247955588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2430,7 +2430,7 @@ GameObject:
   - component: {fileID: 1283415009}
   - component: {fileID: 1283415008}
   m_Layer: 3
-  m_Name: Wall (7)
+  m_Name: Wall 7 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2522,7 +2522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290409301}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: Walls Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2628,7 +2628,7 @@ GameObject:
   - component: {fileID: 1339468887}
   - component: {fileID: 1339468886}
   m_Layer: 0
-  m_Name: Point Light (3)
+  m_Name: Point Light (3) Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2771,7 +2771,7 @@ GameObject:
   - component: {fileID: 1596610664}
   - component: {fileID: 1596610663}
   m_Layer: 3
-  m_Name: Wall (2)
+  m_Name: Wall 3 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2922,7 +2922,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 51b40d62287d44fcc9aa9c21bcacfce0, type: 2}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Name
-      value: Ring 3
+      value: Ring 3 Arma
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Layer
@@ -2943,7 +2943,7 @@ GameObject:
   - component: {fileID: 1634050183}
   - component: {fileID: 1634050182}
   m_Layer: 3
-  m_Name: Wall (9)
+  m_Name: Wall 9 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3038,7 +3038,7 @@ GameObject:
   - component: {fileID: 1740180232}
   - component: {fileID: 1740180231}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Main Camera Arma
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3056,10 +3056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b000290231050a47b3d754f81ad0d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 503589662}
+  player: {fileID: 1033957003}
   PassedRing: {fileID: 8300000, guid: 7e8c7ede1ed66c646853bad2fe1b73d7, type: 3}
   FinalRing: {fileID: 8300000, guid: f0021a723382aed4d8ce7a955fdb384b, type: 3}
-  rb_player: {fileID: 503589664}
+  rb_player: {fileID: 1033957004}
 --- !u!81 &1740180232
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3136,7 +3136,7 @@ GameObject:
   - component: {fileID: 1778346200}
   - component: {fileID: 1778346199}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Point Light Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3215,7 +3215,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 503589667}
+  m_Father: {fileID: 1033957008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833879500
@@ -3231,7 +3231,7 @@ GameObject:
   - component: {fileID: 1833879502}
   - component: {fileID: 1833879501}
   m_Layer: 3
-  m_Name: Wall (3)
+  m_Name: Wall 4 Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,7 +3323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1922499570}
   m_Layer: 0
-  m_Name: Rings
+  m_Name: Rings Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3404,7 +3404,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976bd33d3596d4f60aeede2eb2c16c18, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Name
-      value: Platform_04
+      value: Platform_04 Arma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
@@ -3420,7 +3420,7 @@ GameObject:
   - component: {fileID: 1926476454}
   - component: {fileID: 1926476453}
   m_Layer: 3
-  m_Name: Particle System
+  m_Name: Particle System Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8223,12 +8223,12 @@ GameObject:
   - component: {fileID: 1932757961}
   - component: {fileID: 1932757960}
   m_Layer: 0
-  m_Name: Level3
+  m_Name: Level3 Arma
   m_TagString: Level3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1932757960
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttachObject : MonoBehaviour {
+public class AttachObjectArma : MonoBehaviour {
     
 
     private void OnTriggerEnter(Collider other)

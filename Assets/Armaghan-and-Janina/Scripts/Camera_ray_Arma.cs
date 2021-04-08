@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Camera_ray_2 : MonoBehaviour
+public class Camera_ray_Arma : MonoBehaviour
 {
     //public GameObject Light1;
     //public GameObject Light2;
