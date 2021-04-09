@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_02_Janina.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost6.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +109,7 @@
       <workItem from="1617738365034" duration="2551000" />
       <workItem from="1617780212257" duration="5981000" />
       <workItem from="1617796042059" duration="1023000" />
+      <workItem from="1617980956403" duration="514000" />
     </task>
     <servers />
   </component>
