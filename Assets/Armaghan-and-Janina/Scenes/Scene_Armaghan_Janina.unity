@@ -265,7 +265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22013093}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.51, y: 2.11, z: -3}
+  m_LocalPosition: {x: -32.3, y: 2.11, z: -3}
   m_LocalScale: {x: 7.55743, y: 0.5, z: 7.46413}
   m_Children: []
   m_Father: {fileID: 1144280302}
@@ -5308,8 +5308,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74535531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.3865, y: 20.78, z: -1.1463}
-  m_LocalScale: {x: 14.104085, y: 1, z: 22.442705}
+  m_LocalPosition: {x: 79.174, y: 20.78, z: -1.1463}
+  m_LocalScale: {x: 9.679633, y: 1, z: 22.442705}
   m_Children: []
   m_Father: {fileID: 418668648}
   m_RootOrder: 22
@@ -20849,7 +20849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22
+      value: 26.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37490,7 +37490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b45f2cf14e49a40d2871f40a405111f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.499992
+      value: -32.289993
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b45f2cf14e49a40d2871f40a405111f5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -37589,8 +37589,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918511379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90, y: 32, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalPosition: {x: 92.45, y: 32, z: 0}
+  m_LocalScale: {x: 14.7, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 418668648}
   m_RootOrder: 18
@@ -45197,7 +45197,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 976bd33d3596d4f60aeede2eb2c16c18, type: 2}
+      objectReference: {fileID: 2100000, guid: e2233c1ab6916475cacaaa59bd8b7283, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_Name
       value: Platform_04 Arma
@@ -50724,7 +50724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631178433}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -26.59, y: 4.03, z: -3}
+  m_LocalPosition: {x: -32.38, y: 4.03, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1144280302}
@@ -55846,11 +55846,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5242777
+      value: 18.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_LocalScale.z
@@ -55858,7 +55858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -17.550003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55899,7 +55899,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 51b40d62287d44fcc9aa9c21bcacfce0, type: 2}
+      objectReference: {fileID: 2100000, guid: becc3d68586914a149a0348b8b5309ca, type: 2}
     - target: {fileID: 919132149155446097, guid: 308c0062d647a442b8ca76b20534a03b, type: 3}
       propertyPath: m_Name
       value: Ring 2 Arma
@@ -56080,8 +56080,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678770527}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.371, y: 10.8, z: -4.3072}
-  m_LocalScale: {x: 31.630754, y: 1, z: 22.594599}
+  m_LocalPosition: {x: -7.5983, y: 10.8, z: -4.3072}
+  m_LocalScale: {x: 36.086452, y: 1, z: 22.594599}
   m_Children: []
   m_Father: {fileID: 1754113243}
   m_RootOrder: 11
@@ -57597,7 +57597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 134
+      value: 77.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d96d05ef95a1406488f45a24e348c2c, type: 3}
       propertyPath: m_LocalPosition.y

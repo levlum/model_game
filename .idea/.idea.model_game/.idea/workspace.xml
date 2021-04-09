@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat2.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +50,10 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost4.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost1.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" />
-        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost6.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +109,7 @@
       <workItem from="1617780212257" duration="5981000" />
       <workItem from="1617796042059" duration="1023000" />
       <workItem from="1617980956403" duration="514000" />
+      <workItem from="1617983217196" duration="483000" />
     </task>
     <servers />
   </component>
