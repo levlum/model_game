@@ -41,6 +41,7 @@ public class greenglas : MonoBehaviour
                  script._points++;
                  slider.value = script._points;
                UnityEngine.Debug.Log("Grün Points: " +script._points);
+             
                glas.Play();
                  
             }
@@ -50,6 +51,7 @@ public class greenglas : MonoBehaviour
                   script._points--;
                   slider.value = script._points;
                UnityEngine.Debug.Log("Grün Points " + script._points);
+             
                error.Play();
             }
         }

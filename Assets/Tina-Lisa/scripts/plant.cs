@@ -63,8 +63,8 @@ public AudioSource plantAudio;
                         Vector3 pos = contact.point;
                          Instantiate(explosionPrefab, pos, rot);
                         Destroy(gameObject);
-                        //yield return new WaitForSeconds(2);
-                        plantAudio.Play();
+                        Debug.Log("Plant");
+                        //plantAudio.Play();
                    }
                 }
 }
