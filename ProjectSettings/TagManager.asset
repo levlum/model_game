@@ -15,6 +15,10 @@ TagManager:
   - Level2
   - Level3
   - Level4
+  - jumpy
+  - Level Left
+  - Level Right
+  - Level Main
   layers:
   - Default
   - TransparentFX

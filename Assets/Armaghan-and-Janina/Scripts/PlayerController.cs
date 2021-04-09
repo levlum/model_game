@@ -8,11 +8,20 @@ public class PlayerController : MonoBehaviour
     public Transform teleportDestination_Level2;
     public Transform teleportDestination_Level1;
 
-    public GameObject DirectionalLight;
+    public GameObject JaninaLightMain;
+    public GameObject JaninaLightLeft;
+    public GameObject JaninaLightRight;
+
+    public GameObject LevelLeftOn;
+    public GameObject LevelLeftOff;
+    public GameObject LevelRightOn;
+    public GameObject LevelRightOff;
+
     public GameObject Light1;
     public GameObject Light2;
     public GameObject Light3;
     public GameObject Light4;
+    public GameObject Light5;
 
     public GameObject Level1;
     public GameObject Level2;
@@ -28,14 +37,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Teleport")) //and the other object has the tag "Teleport"
         {
             gameObject.transform.position = teleportDestination_Level2.position; //set the position of the Player to the position of the Destination-Object (Level2)
-            DirectionalLight.SetActive(false);
+            JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Teleport_Outside")) //if it collides with another object that has the tag "Teleport_Outside"
         {
             gameObject.transform.position = teleportDestination_Level1.position; //set the position of the Player to the position of the Destination-Object (Level1)
-            DirectionalLight.SetActive(true);
+            JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
         }
         
@@ -50,6 +59,7 @@ public class PlayerController : MonoBehaviour
             Light2.SetActive(true);
             Light3.SetActive(false);
             Light4.SetActive(false);
+            Light5.SetActive(false);
             AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
             //Cposition = new Vector3(0.0f,24.0f,-36.0f);
             Debug.Log("Level1");
@@ -64,6 +74,7 @@ public class PlayerController : MonoBehaviour
             Light2.SetActive(true);
             Light3.SetActive(true);
             Light4.SetActive(false);
+            Light5.SetActive(false);
             AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
             //Cposition = new Vector3(0.0f,40.0f,-36.0f);
         }
@@ -77,6 +88,7 @@ public class PlayerController : MonoBehaviour
             Light2.SetActive(false);
             Light3.SetActive(true);
             Light4.SetActive(true);
+            Light5.SetActive(false);
             AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
@@ -89,12 +101,42 @@ public class PlayerController : MonoBehaviour
             Light1.SetActive(false);
             Light2.SetActive(false);
             Light3.SetActive(false);
-            Light4.SetActive(false);
-            DirectionalLight.SetActive(true);
+            Light4.SetActive(true);
+            Light5.SetActive(true);
+            //DirectionalLight.SetActive(true);
             AudioSource.PlayClipAtPoint(FinalRing, transform.position, 1);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
-
+        if (other.gameObject.CompareTag("Level Left"))
+        {
+            JaninaLightLeft.SetActive(true);
+            JaninaLightMain.SetActive(false);
+            JaninaLightRight.SetActive(false);
+            LevelLeftOn.SetActive(false);
+            LevelLeftOff.SetActive(true);
+            LevelRightOn.SetActive(true);
+            LevelRightOff.SetActive(false);
+        }
+        if (other.gameObject.CompareTag("Level Right"))
+        {
+            JaninaLightLeft.SetActive(false);
+            JaninaLightMain.SetActive(false);
+            JaninaLightRight.SetActive(true);
+            LevelLeftOn.SetActive(true);
+            LevelLeftOff.SetActive(false);
+            LevelRightOn.SetActive(false);
+            LevelRightOff.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("Level Main"))
+        {
+            JaninaLightLeft.SetActive(false);
+            JaninaLightMain.SetActive(true);
+            JaninaLightRight.SetActive(false);
+            LevelLeftOn.SetActive(true);
+            LevelLeftOff.SetActive(false);
+            LevelRightOn.SetActive(true);
+            LevelRightOff.SetActive(false);
+        }
     }
 
 }
