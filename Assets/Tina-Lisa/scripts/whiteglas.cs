@@ -9,6 +9,8 @@ public class whiteglas : MonoBehaviour
     public float _point;
     public points script;
     public Slider slider;
+    public AudioSource glas;
+    public AudioSource error;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class whiteglas : MonoBehaviour
                  script._points++;
                  slider.value = script._points;
                UnityEngine.Debug.Log("Points: " +script._points);
+               glas.Play();
                  
             }
             if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown"))
@@ -45,6 +48,7 @@ public class whiteglas : MonoBehaviour
                   script._points--;
                   slider.value = script._points;
                UnityEngine.Debug.Log("Points " + script._points);
+               error.Play();
             }
         }
 }

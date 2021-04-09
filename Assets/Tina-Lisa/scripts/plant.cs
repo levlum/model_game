@@ -11,6 +11,7 @@ public class plant : MonoBehaviour
     public float _point;
     public points script;
     public Slider slider;
+public AudioSource plantAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +63,8 @@ public class plant : MonoBehaviour
                         Vector3 pos = contact.point;
                          Instantiate(explosionPrefab, pos, rot);
                         Destroy(gameObject);
+                        //yield return new WaitForSeconds(2);
+                        plantAudio.Play();
                    }
                 }
 }

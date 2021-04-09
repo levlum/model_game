@@ -11,6 +11,8 @@ public class bin : MonoBehaviour
     public points script;
     public float _point;
     public Slider slider;
+    public AudioSource error;
+    public AudioSource binAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +41,11 @@ public class bin : MonoBehaviour
               script._points+=1;
               slider.value = script._points;
                UnityEngine.Debug.Log("Points: " + script._points);
+               binAudio.Play();
             }
-            if (other.gameObject.CompareTag("bottle"))
+            if (other.gameObject.CompareTag("white") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown"))
             {
+                error.Play();
                 script._points--;
                 slider.value = script._points;
                UnityEngine.Debug.Log("Points: " + script._points);

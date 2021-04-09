@@ -11,6 +11,8 @@ public class greenglas : MonoBehaviour
       public float _point;
     public points script;
     public Slider slider;
+    public AudioSource glas;
+    public AudioSource error;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class greenglas : MonoBehaviour
                  script._points++;
                  slider.value = script._points;
                UnityEngine.Debug.Log("Grün Points: " +script._points);
+               glas.Play();
                  
             }
               if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("brown"))
@@ -47,6 +50,7 @@ public class greenglas : MonoBehaviour
                   script._points--;
                   slider.value = script._points;
                UnityEngine.Debug.Log("Grün Points " + script._points);
+               error.Play();
             }
         }
 }
