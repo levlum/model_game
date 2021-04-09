@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +106,7 @@
       <workItem from="1617780212257" duration="5981000" />
       <workItem from="1617796042059" duration="1023000" />
       <workItem from="1617980956403" duration="514000" />
-      <workItem from="1617983217196" duration="483000" />
+      <workItem from="1617983217196" duration="830000" />
     </task>
     <servers />
   </component>
