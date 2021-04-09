@@ -62,9 +62,10 @@ public AudioSource plantAudio;
                          Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
                         Vector3 pos = contact.point;
                          Instantiate(explosionPrefab, pos, rot);
-                        Destroy(gameObject);
                         Debug.Log("Plant");
-                        //plantAudio.Play();
+                        plantAudio.Play();
+                        
+                        //Destroy(gameObject);
                    }
                 }
 }

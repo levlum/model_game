@@ -175,7 +175,7 @@ MonoBehaviour:
   _point: 0
   script: {fileID: 0}
   slider: {fileID: 0}
-  plantAudio: {fileID: 0}
+  plantAudio: {fileID: -3141914408952141929}
   explosionPrefab: {fileID: 8040015438563326059, guid: 0cb781ae86c194c93971fbe5616a52cb, type: 3}
 --- !u!82 &-3141914408952141929
 AudioSource:
@@ -187,8 +187,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 76c5a8ab38e4b4c95b0c1617e869b54d, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 7b285db71c1ef495cb3e714a320da83d, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.67
   m_Pitch: 1
   Loop: 0
