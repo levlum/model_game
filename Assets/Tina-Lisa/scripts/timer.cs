@@ -10,6 +10,8 @@ public class timer : MonoBehaviour
     public bool finished = false;
     public float timeLeft = 60f;
      public GameObject endscreen;
+     public Text timeend;
+     public float timeEnde;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,13 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(finished) 
-        return; 
+        timeEnde = 60f - timeLeft;
+        if(finished) {
+ endscreen.gameObject.SetActive(true);
+ timeend.text = timeEnde.ToString("f0");
+           return;  
+        }
+        
     
          timeLeft -= Time.deltaTime;
          timerText.text = timeLeft.ToString("f0");
@@ -29,7 +36,7 @@ public class timer : MonoBehaviour
              Debug.Log("gameOver");
               finished = true;
                
-            endscreen.gameObject.SetActive(true);
+           ;
          }
     
 

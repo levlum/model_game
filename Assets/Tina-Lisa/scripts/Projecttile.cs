@@ -37,6 +37,7 @@ public class Projecttile : MonoBehaviour
     public points script;
     public float finalpoints;
     public Text prozent;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -105,6 +106,10 @@ public class Projecttile : MonoBehaviour
        
        finalpoints = script._points*2;
        prozent.text = finalpoints.ToString();
+       if (finalpoints == 100){
+           Timer.finished = true;
+           Debug.Log("100%");
+       }
        //Debug.Log(randomObject);
         LaunchProjectile();
 
