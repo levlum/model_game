@@ -10,7 +10,7 @@ namespace markus_max_karo {
         public float smoothTime = 0.3F;
         private Vector3 velocity = Vector3.zero;
 
-        void Update()
+        void FixedUpdate()
         {
             // Define a target position above and behind the target transform
             Vector3 targetPosition = player.position + offset;
