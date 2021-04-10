@@ -21,8 +21,7 @@ public class points : MonoBehaviour
     }
      void Update()
      {
-         //pointsText.text = _points.ToString(); 
-        //_lifes = script.lifes;  //  Update our score continuously.
+     
         
      }
         private void FixedUpdate()
