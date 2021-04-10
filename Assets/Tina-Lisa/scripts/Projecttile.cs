@@ -34,10 +34,16 @@ public class Projecttile : MonoBehaviour
     public Button btn;
     public Button quit;
     public Image panel;
+    public points script;
+    public float finalpoints;
+    public Text prozent;
+ 
 
     // Start is called before the first frame update
     void Start()
     {
+         script = GameObject.FindObjectOfType<points>(); 
+       finalpoints = script._points;
          //Button btn = PlayAgainButton.GetComponent<Button>();
         btn.onClick.AddListener(RestartGame);
         quit.onClick.AddListener(QuitGame);
@@ -97,10 +103,16 @@ public class Projecttile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //
+       
+       finalpoints = script._points*2;
+       prozent.text = finalpoints.ToString();
+       if (finalpoints == 100){
+           Timer.finished = true;
+           Debug.Log("100%");
+       }
        //Debug.Log(randomObject);
         LaunchProjectile();
-       
+
        
     }
     void LaunchProjectile()
