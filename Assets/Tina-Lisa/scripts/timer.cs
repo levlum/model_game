@@ -8,8 +8,8 @@ public class timer : MonoBehaviour
     public Text timerText;
     private float startTime;
     public bool finished = false;
-    public float countdown = 60;
-    
+    public float timeLeft = 60f;
+     public GameObject endscreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +22,23 @@ public class timer : MonoBehaviour
         if(finished) 
         return; 
     
-       
+         timeLeft -= Time.deltaTime;
+         timerText.text = timeLeft.ToString("f0");
+         if(timeLeft < 0)
+         {
+             Debug.Log("gameOver");
+              finished = true;
+               
+            endscreen.gameObject.SetActive(true);
+         }
     
 
-        float t = Time.time - startTime;
+       // float t = Time.time - startTime;
 
-      
-        string seconds = (t % 60).ToString("f0");
+       // string minutes = ((int) t / 60).ToString();
+       // string seconds = (t % 60).ToString("f0");
 
-        timerText.text =  seconds;
+       // timerText.text = minutes + ":" + seconds;
     }
 
     public void Finish()

@@ -56,7 +56,7 @@ public AudioSource plantAudio;
                 void OnCollisionEnter(Collision collision) {
                    if (collision.gameObject.tag == "house")
                    {
-                      script._points++;
+                      script._points+=3;
                       slider.value = script._points;
                          ContactPoint contact = collision.contacts[0];
                          Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
@@ -65,7 +65,7 @@ public AudioSource plantAudio;
                         Debug.Log("Plant");
                         plantAudio.Play();
                         
-                        //Destroy(gameObject);
+                       // gameObject.SetActive(false);
                    }
                 }
 }

@@ -42,50 +42,7 @@ public class Projecttile : MonoBehaviour
         quit.onClick.AddListener(QuitGame);
        
         randomObject = Random.Range(0,8);
-        /*if(randomObject == 0)
-                        {
-                    SamenBallPref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                    greenBottlePref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                 
-                                
-                      }  
-                      if(randomObject == 1 || randomObject == 2)
-                        {
-                    canPref.gameObject.SetActive(true);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 greenBottlePref.gameObject.SetActive(false);
-                                whiteBottlePref.gameObject.SetActive(false);
-                      } 
-                      if(randomObject == 3 || randomObject == 4)
-                        {
-                    brownBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                               greenBottlePref.gameObject.SetActive(false); 
-                      } 
-                      if(randomObject == 5 || randomObject == 6)
-                        {
-                    greenBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 whiteBottlePref.gameObject.SetActive(false);
-                                
-                      } 
-                       if(randomObject == 7 || randomObject == 8)
-                        {
-                    whiteBottlePref.gameObject.SetActive(true);
-                    canPref.gameObject.SetActive(false);
-                    SamenBallPref.gameObject.SetActive(false);
-                    brownBottlePref.gameObject.SetActive(false);
-                 greenBottlePref.gameObject.SetActive(false);
-                                
-                      }  */
+  
                     if(randomObject == 0)
                     {
                     whiteBottlePointer.SetActive(false);
@@ -143,11 +100,7 @@ public class Projecttile : MonoBehaviour
        //Debug.Log(randomObject);
         LaunchProjectile();
        
-         if (i == 20) {
-                  Timer.finished = true;
-                  Debug.Log("finished");
-                   endscreen.gameObject.SetActive(true);
-              }
+       
     }
     void LaunchProjectile()
     {
@@ -217,8 +170,7 @@ public class Projecttile : MonoBehaviour
             if(Input.GetMouseButtonDown(0))
             {
                 
-                if (i < 20){
-                    i++;
+                
                 if(randomObject == 0)
                 {
                 Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
@@ -298,7 +250,7 @@ public class Projecttile : MonoBehaviour
             result.y = Vy;
 
             return result;
-    }
+    
         }
 }
  public void RestartGame() {
