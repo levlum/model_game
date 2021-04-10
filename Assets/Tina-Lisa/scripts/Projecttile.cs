@@ -33,6 +33,7 @@ public class Projecttile : MonoBehaviour
     public GameObject endscreen;
     public Button btn;
     public Button quit;
+    public Image panel;
 
     // Start is called before the first frame update
     void Start()
@@ -255,6 +256,8 @@ public class Projecttile : MonoBehaviour
 }
  public void RestartGame() {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            panel.gameObject.SetActive(false);
+
          }
  public void QuitGame() {
      Debug.Log("Quit");
