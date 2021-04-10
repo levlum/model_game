@@ -145,8 +145,8 @@
             <e p="brownglas.cs" t="Include" />
             <e p="camera_ray_tili.cs" t="Include" />
             <e p="cars.cs" t="Include" />
-            <e p="GameOver.cs" t="Include" />
             <e p="greenglas.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
             <e p="plant.cs" t="Include" />
             <e p="points.cs" t="Include" />
             <e p="Projecttile.cs" t="Include" />

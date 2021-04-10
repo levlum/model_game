@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Tina-Lisa/Game/Scenes/Menu.unity
+    guid: 163175d46b93b47b9924f8f651f9741a
+  - enabled: 1
+    path: Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity
+    guid: acc7f4ab2128843fa84e0675763cfa46
   m_configObjects: {}
