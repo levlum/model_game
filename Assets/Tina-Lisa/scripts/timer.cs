@@ -8,6 +8,7 @@ public class timer : MonoBehaviour
     public Text timerText;
     private float startTime;
     public bool finished = false;
+    public float countdown = 60;
     
     // Start is called before the first frame update
     void Start()
@@ -26,10 +27,10 @@ public class timer : MonoBehaviour
 
         float t = Time.time - startTime;
 
-        string minutes = ((int) t / 60).ToString();
+      
         string seconds = (t % 60).ToString("f0");
 
-        timerText.text = minutes + ":" + seconds;
+        timerText.text =  seconds;
     }
 
     public void Finish()
