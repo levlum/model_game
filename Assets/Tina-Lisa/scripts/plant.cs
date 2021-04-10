@@ -65,7 +65,7 @@ public AudioSource plantAudio;
                         Debug.Log("Plant");
                         plantAudio.Play();
                         
-                       // gameObject.SetActive(false);
+                       gameObject.SetActive(false);
                    }
                 }
 }
