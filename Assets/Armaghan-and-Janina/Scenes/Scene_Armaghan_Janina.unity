@@ -42626,6 +42626,7 @@ MonoBehaviour:
   Level4: {fileID: 1051849252}
   PassedRing: {fileID: 8300000, guid: 7e8c7ede1ed66c646853bad2fe1b73d7, type: 3}
   FinalRing: {fileID: 8300000, guid: f0021a723382aed4d8ce7a955fdb384b, type: 3}
+  Teleport: {fileID: 8300000, guid: 4830b92541a1c4eedbecaf9daa05ae9f, type: 3}
 --- !u!1 &668606701
 GameObject:
   m_ObjectHideFlags: 0
