@@ -25,6 +25,7 @@ public class timer : MonoBehaviour
         if(finished) {
  endscreen.gameObject.SetActive(true);
  timeend.text = timeEnde.ToString("f0");
+ Time.timeScale = 0;
            return;  
         }
         

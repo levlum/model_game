@@ -12,11 +12,11 @@ public class Projecttile : MonoBehaviour
     public Rigidbody whiteBottlePrefab;
     public Rigidbody trash;
     public Rigidbody plant;
-    public Rigidbody whiteBottlePref;
-     public Rigidbody SamenBallPref;
-     public Rigidbody greenBottlePref;
-      public Rigidbody brownBottlePref;
-      public Rigidbody canPref;
+    //public Rigidbody whiteBottlePref;
+    // public Rigidbody SamenBallPref;
+     //public Rigidbody greenBottlePref;
+     // public Rigidbody brownBottlePref;
+     // public Rigidbody canPref;
     public GameObject cursor;
     public GameObject whiteBottlePointer;
     public GameObject greenBottlePointer;
@@ -52,6 +52,7 @@ public class Projecttile : MonoBehaviour
   
                     if(randomObject == 0)
                     {
+                        Debug.Log ("Pointer: Plant");
                     whiteBottlePointer.SetActive(false);
                     canPointer.SetActive(false);
                     brownBottlePointer.SetActive(false);
@@ -127,8 +128,54 @@ public class Projecttile : MonoBehaviour
 
             Vector3 Vo = CalculateVelocity(hit.point, shootPoint.position, 1f);
             transform.rotation = Quaternion.LookRotation(Vo);
-      if(randomObject == 0)
+            if(randomObject == 0)
                     {
+                        Debug.Log ("Pointer: Plant");
+                    whiteBottlePointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
+                    samenPointer.transform.position = hit.point + Vector3.up * 0.1f;    
+                    }  
+                    if(randomObject == 1 || randomObject == 2)
+                    {
+                     samenPointer.SetActive(false);
+                     whiteBottlePointer.SetActive(false);
+                     brownBottlePointer.SetActive(false);
+                     greenBottlePointer.SetActive(false);
+                     canPointer.SetActive(true);
+                     canPointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 3 || randomObject == 4)
+                    {
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    whiteBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false);
+                    brownBottlePointer.SetActive(true);
+                    brownBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 5 || randomObject == 6)
+                    {
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    whiteBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(true);
+                    greenBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
+                    } 
+                    if(randomObject == 7 || randomObject == 8)
+                    { 
+                    samenPointer.SetActive(false);
+                    canPointer.SetActive(false);
+                    brownBottlePointer.SetActive(false);
+                    greenBottlePointer.SetActive(false);
+                    whiteBottlePointer.SetActive(true);
+                    whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
+                    } 
+      /*if(randomObject == 0)
+                    {
+                        Debug.Log ("Pointer: Plant");
                  SamenBallPref.gameObject.SetActive(false);
                     canPref.gameObject.SetActive(false);
                     brownBottlePref.gameObject.SetActive(false);
@@ -178,7 +225,7 @@ public class Projecttile : MonoBehaviour
                     whiteBottlePointer.SetActive(true);
             whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
                       }                 
-                    
+                    */
               
             if(Input.GetMouseButtonDown(0))
             {
@@ -186,6 +233,7 @@ public class Projecttile : MonoBehaviour
                 
                 if(randomObject == 0)
                 {
+                    Debug.Log ("Prefab: Plant");
                 Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
                 objPlant.transform.rotation = Random.rotation ;
                 objPlant.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
