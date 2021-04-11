@@ -10,6 +10,7 @@ TagManager:
   - car
   - Collectable
   - bubble
+  - Goalplate
   layers:
   - Default
   - TransparentFX

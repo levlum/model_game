@@ -10,10 +10,10 @@ public class Instantiate : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 100; i++)
         {
             bubbleClone = Instantiate(bubbleOriginal, transform.position, Quaternion.identity) as GameObject;
-            bubbleClone.transform.position = new Vector3(Random.Range(0, 50), 7, Random.Range(0, 20));
+            bubbleClone.transform.position = new Vector3(Random.Range(0, 50), 8, Random.Range(0, 20));
 
         }
     }
