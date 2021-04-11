@@ -148,6 +148,7 @@
             <e p="greenglas.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="plant.cs" t="Include" />
+            <e p="PlayAndQuit.cs" t="Include" />
             <e p="points.cs" t="Include" />
             <e p="Projecttile.cs" t="Include" />
             <e p="timer.cs" t="Include" />
