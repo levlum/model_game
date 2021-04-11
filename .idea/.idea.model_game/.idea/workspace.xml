@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +81,7 @@
       <workItem from="1617189094719" duration="254000" />
       <workItem from="1617813965759" duration="181000" />
       <workItem from="1618059124027" duration="253000" />
+      <workItem from="1618157490080" duration="165000" />
     </task>
     <servers />
   </component>
