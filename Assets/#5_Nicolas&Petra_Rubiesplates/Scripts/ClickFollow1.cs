@@ -53,15 +53,12 @@ public class ClickFollow1 : MonoBehaviour
             if (Physics.Raycast(myRay, out hitInfo, Mathf.Infinity))
             {
                 myAgent.SetDestination(hitInfo.point);
-            }
+          }
 
-            if (Input.GetMouseButtonDown(1))
-            {
-                jumpCube();
-            }
-
-
-
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            jumpCube();
         }
     }
     private void jumpCube()
