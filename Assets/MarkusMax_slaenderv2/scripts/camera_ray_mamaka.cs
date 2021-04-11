@@ -15,13 +15,16 @@ public class camera_ray_mamaka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        RaycastHit hit;
-        var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
-        {
-            hit.rigidbody.AddForce(Vector3.up * Time.deltaTime * power, ForceMode.Impulse);
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+            RaycastHit hit;
+            var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(Vector3.up * Time.deltaTime * power, ForceMode.Impulse);
+            }
+        //}
     }
+    
 
 }
