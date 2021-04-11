@@ -15,6 +15,7 @@ TagManager:
   - Part
   - Enemy
   - Floor
+  - Dot
   layers:
   - Default
   - TransparentFX

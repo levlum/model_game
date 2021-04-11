@@ -47,11 +47,15 @@ namespace karo_julian
 
                         crosshair_t.position = new Vector3(hit.point.x, 0.51f, hit.point.z); //set crosshair position
                         //use all objects with tag "jumpy"
-                        foreach (var one_jumpy in jumpy_objects)
+                        if( Input.GetButton("Fire1"))
                         {
-                            Vector3 power_direction = hit.point - one_jumpy.GetComponent<Transform>().position;
-                            one_jumpy.GetComponent<Rigidbody>().AddForce(power_direction, ForceMode.Force);
+                            foreach (var one_jumpy in jumpy_objects)
+                            {
+                                Vector3 power_direction = hit.point - one_jumpy.GetComponent<Transform>().position;
+                                one_jumpy.GetComponent<Rigidbody>().AddForce(power_direction, ForceMode.Force);
+                            }
                         }
+                        
                     }
                     break;
 
