@@ -11,6 +11,7 @@ TagManager:
   - pop
   - funnel
   - Floor
+  - World
   layers:
   - Default
   - TransparentFX
