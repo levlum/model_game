@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="" />
+    <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat5.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Animation/ArmaPlat5.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Lava.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Lava.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Lava.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/Lava.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/seamless-barley-texture_800x800.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/seamless-barley-texture_800x800.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/white+gravel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Materials/white+gravel.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +119,7 @@
       <workItem from="1617796042059" duration="1023000" />
       <workItem from="1617980956403" duration="514000" />
       <workItem from="1617983217196" duration="830000" />
+      <workItem from="1618174141492" duration="540000" />
     </task>
     <servers />
   </component>

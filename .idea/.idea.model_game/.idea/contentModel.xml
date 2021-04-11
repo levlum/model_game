@@ -4,24 +4,6 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="#1_Valentina_Alex-3D-Puzzle" t="Include">
-          <e p="scripts" t="Include">
-            <e p="camera_ray.cs" t="Include" />
-          </e>
-        </e>
-        <e p="#7_Lukas_Lin" t="Include">
-          <e p="Game" t="Include">
-            <e p="scripts" t="Include">
-              <e p="camera_ray_lulin.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="3_Corinna_Marie" t="Include">
-          <e p="scripts" t="Include">
-            <e p="CameraRay.cs" t="Include" />
-            <e p="SimpleCameraController.cs" t="Include" />
-          </e>
-        </e>
         <e p="Armaghan-and-Janina" t="Include">
           <e p="scripts" t="Include">
             <e p="AttachObject.cs" t="Include" />
@@ -35,54 +17,6 @@
             <e p="SpeedBoost5.cs" t="Include" />
             <e p="SpeedBoost6.cs" t="Include" />
           </e>
-        </e>
-        <e p="bergerkardel" t="Include">
-          <e p="scripts" t="Include">
-            <e p="camera_ray.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Desertballoons_Kate&amp;Carina" t="Include">
-          <e p="Free Low Poly Desert Pack" t="Include">
-            <e p="Materials" t="Include">
-              <e p="Shaders" t="Include">
-                <e p="Vertex_Color_Basic.shader" t="Include" />
-                <e p="Vertex_Color_Unlit 2.shader" t="Include" />
-                <e p="Vertex_Color_Unlit.shader" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="scripts" t="Include">
-            <e p="FuggooController 2.cs" t="Include" />
-            <e p="FuggooController.cs" t="Include" />
-            <e p="MainCameraController 2.cs" t="Include" />
-            <e p="MainCameraController.cs" t="Include" />
-            <e p="SimpleCameraController.cs" t="Include" />
-          </e>
-        </e>
-        <e p="GueneyJulianBaskiceball" t="Include">
-          <e p="scripts" t="Include">
-            <e p="camera_script.cs" t="Include" />
-          </e>
-        </e>
-        <e p="levs_start" t="Include">
-          <e p="scripts" t="Include">
-            <e p="cam_ray.cs" t="Include" />
-            <e p="camera_ray.cs" t="Include" />
-          </e>
-        </e>
-        <e p="MarkusMaxKaro_slaenderv2" t="Include">
-          <e p="scripts" t="Include">
-            <e p="camera_ray_mamaka.cs" t="Include" />
-            <e p="CameraController.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Tina-Lisa" t="Include">
-          <e p="scripts" t="Include">
-            <e p="camera_ray_tili.cs" t="Include" />
-          </e>
-        </e>
-        <e p="UP_Dostal-Schmidt" t="Include">
-          <e p="camray.cs" t="Include" />
         </e>
       </e>
       <e p="model_game.sln" t="IncludeFlat" />
