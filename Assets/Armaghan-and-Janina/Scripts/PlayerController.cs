@@ -38,14 +38,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Teleport")) //and the other object has the tag "Teleport"
         {
             gameObject.transform.position = teleportDestination_Level2.position; //set the position of the Player to the position of the Destination-Object (Level2)
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 3);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 200);
             JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Teleport_Outside")) //if it collides with another object that has the tag "Teleport_Outside"
         {
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 3);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 20);
             gameObject.transform.position = teleportDestination_Level1.position; //set the position of the Player to the position of the Destination-Object (Level1)
             JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
