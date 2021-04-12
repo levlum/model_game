@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cam_ray : MonoBehaviour
+namespace Yai
+{
+
+    public class cam_ray : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,5 +21,6 @@ public class cam_ray : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50f) && hit.rigidbody != null){
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
         }
+    }
     }
 }
