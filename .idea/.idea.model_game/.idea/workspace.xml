@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost6.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost7.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +112,7 @@
       <workItem from="1617983217196" duration="830000" />
       <workItem from="1618174141492" duration="540000" />
       <workItem from="1618185068465" duration="928000" />
+      <workItem from="1618206857440" duration="31000" />
     </task>
     <servers />
   </component>
