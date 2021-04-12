@@ -33,7 +33,7 @@ public class Camera_ray : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     hit.transform.Rotate(new Vector3(0,0, 15));
-                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
                 }
             }
             
