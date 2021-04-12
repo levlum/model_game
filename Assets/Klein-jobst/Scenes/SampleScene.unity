@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 216453832}
   - component: {fileID: 216453831}
   - component: {fileID: 216453830}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Background (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4536,6 +4536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb744d50cf17b4667bcc998078e04a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  power: 10
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
