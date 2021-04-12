@@ -38,14 +38,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Teleport")) //and the other object has the tag "Teleport"
         {
             gameObject.transform.position = teleportDestination_Level2.position; //set the position of the Player to the position of the Destination-Object (Level2)
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 200);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
             JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Teleport_Outside")) //if it collides with another object that has the tag "Teleport_Outside"
         {
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 20);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 50);
             gameObject.transform.position = teleportDestination_Level1.position; //set the position of the Player to the position of the Destination-Object (Level1)
             JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
             Light3.SetActive(false);
             Light4.SetActive(false);
             Light5.SetActive(false);
-            AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
+            //AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,24.0f,-36.0f);
             Debug.Log("Level1");
         }
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
             Light3.SetActive(true);
             Light4.SetActive(false);
             Light5.SetActive(false);
-            AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
+            //AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,40.0f,-36.0f);
         }
         if (other.gameObject.CompareTag("Level3"))
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
             Light3.SetActive(true);
             Light4.SetActive(true);
             Light5.SetActive(false);
-            AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1);
+            //AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
         if (other.gameObject.CompareTag("Level4"))
@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
             Light4.SetActive(true);
             Light5.SetActive(true);
             //DirectionalLight.SetActive(true);
-            AudioSource.PlayClipAtPoint(FinalRing, transform.position, 1);
+            //AudioSource.PlayClipAtPoint(FinalRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
         if (other.gameObject.CompareTag("Level Left"))
