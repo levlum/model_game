@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Materials/Cube.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Materials/Cube.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Materials/Goal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Materials/Goal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scenes/5.0 Bubblegame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scenes/5.0 Bubblegame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/CameraRay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/CameraRay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Instantiate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Instantiate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +25,9 @@
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cam_ray_script.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
-        <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Instantiate.cs" />
         <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Instantiate.cs" />
+        <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/CameraRay.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +80,8 @@
       <workItem from="1615910328740" duration="371000" />
       <workItem from="1616607051360" duration="6340000" />
       <workItem from="1617994772118" duration="1264000" />
-      <workItem from="1618157513937" duration="8126000" />
+      <workItem from="1618157513937" duration="8677000" />
+      <workItem from="1618214483611" duration="324000" />
     </task>
     <servers />
   </component>

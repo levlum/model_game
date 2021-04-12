@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraRay : MonoBehaviour
 {
-    [SerializeField] private Material b_idleMaterial = null;
-    [SerializeField] private Material b_touchMaterial = null;
+  //  [SerializeField] private Material b_idleMaterial = null;
+    //[SerializeField] private Material b_touchMaterial = null;
 
     public float power;
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ public class CameraRay : MonoBehaviour
                 direction.Normalize();
                 // bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power, ForceMode.Impulse);
                 bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power * 1 / distance);
-                bubble.GetComponent<Renderer>().material = b_touchMaterial;
+             //   bubble.GetComponent<Renderer>().material = b_touchMaterial;
             }
             Debug.Log("HI");
 
@@ -40,7 +40,7 @@ public class CameraRay : MonoBehaviour
             foreach (var bubble in bubbles)
             {
                 
-                bubble.GetComponent<Renderer>().material = b_idleMaterial;
+              //  bubble.GetComponent<Renderer>().material = b_idleMaterial;
             }
 
         }
