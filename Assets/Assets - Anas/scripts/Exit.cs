@@ -9,11 +9,11 @@ public class Exit : MonoBehaviour
 {
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Finish"))
         {
             UnityEngine.Debug.Log("dead");
 
-            //Application.Quit();
+            Application.Quit();
             UnityEditor.EditorApplication.ExitPlaymode();
         }
 
