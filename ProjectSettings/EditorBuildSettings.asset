@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MarkusMax_slaenderv2/Scenes/menu.unity
-    guid: 553d2328ca46a7643b292174378a4d78
-  - enabled: 1
     path: Assets/MarkusMax_slaenderv2/Scenes/SampleScene.unity
     guid: 57da4c0a64ad745ce80b3307f1f5dbbf
+  - enabled: 1
+    path: Assets/MarkusMax_slaenderv2/Scenes/menu.unity
+    guid: 553d2328ca46a7643b292174378a4d78
   m_configObjects: {}
