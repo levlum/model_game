@@ -12,7 +12,13 @@ public class Camera_ray : MonoBehaviour
     private SerializeField m_speed;
 
     public AudioClip PlatformRotate;
+    public AudioClip Backgroundsound;
 
+
+    void Start()
+    {
+        AudioSource.PlayClipAtPoint(Backgroundsound, transform.position, 0.5f);
+    }
     // Update is called once per frame
     void Update()
     {
