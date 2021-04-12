@@ -22584,7 +22584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystem5: {fileID: 523867745}
-  BoostSound: {fileID: 8300000, guid: 37621131732ce3149a2b8f3e35d5ced4, type: 3}
+  BoostSound: {fileID: 8300000, guid: f0021a723382aed4d8ce7a955fdb384b, type: 3}
 --- !u!64 &486494337
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49613,7 +49613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1051849253
 Transform:
   m_ObjectHideFlags: 0
