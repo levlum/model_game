@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cam_ray : MonoBehaviour
+namespace yasi_carol
 {
+    public class cam_ray : MonoBehaviour
+{
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,4 +22,5 @@ public class cam_ray : MonoBehaviour
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
         }
     }
+}
 }
