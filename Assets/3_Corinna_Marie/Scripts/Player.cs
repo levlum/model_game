@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         if (GameObject.Find("duck").transform.position.y <= 0)
         {
             UnityEngine.Debug.Log("Game Over!");
-            SceneManager.LoadScene("Assets/3_Corinna_Marie/Scenes/GameOver.unity");
+            SceneManager.LoadScene("GameOver_Bubble");
         }
 
         
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Goalplate"))
         {
             UnityEngine.Debug.Log("You Win!");
-            SceneManager.LoadScene("Assets/3_Corinna_Marie/Scenes/Win.unity");
+            SceneManager.LoadScene("Win_Bubble");
         }
     }
     
