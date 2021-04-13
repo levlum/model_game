@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace karo_julian
 {
@@ -110,7 +111,8 @@ namespace karo_julian
         {
             if (hit.gameObject.tag == "Finish")
             {
-                UnityEditor.EditorApplication.ExitPlaymode();
+                SceneManager.LoadScene(0);
+                // UnityEditor.EditorApplication.ExitPlaymode();
             }
         }
 
