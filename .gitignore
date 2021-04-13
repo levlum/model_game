@@ -63,5 +63,11 @@ crashlytics-build.properties
 
 Assets/.DS_Store
 
+# webgl export
+webgl/
+
+#Settings
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
+UserSettings/EditorUserSettings.asset
 UserSettings/
-ProjectSettings/
