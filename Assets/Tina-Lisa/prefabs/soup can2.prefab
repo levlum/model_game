@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1007210934828299159}
   - component: {fileID: 512411989108113487}
   - component: {fileID: 7924238392411386032}
+  - component: {fileID: 4810384640457074616}
   m_Layer: 0
   m_Name: soup can2
   m_TagString: can
@@ -126,3 +127,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.9102182, y: 14.863063, z: 7.9102187}
   m_Center: {x: -0.49650466, y: 0.33344698, z: -2.9004033}
+--- !u!114 &4810384640457074616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039749278966758282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d715843e5e8b8442db07891a5bed22c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  spinx: 0
+  spiny: 0
+  spinz: 0
