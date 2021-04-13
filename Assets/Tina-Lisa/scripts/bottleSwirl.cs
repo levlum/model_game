@@ -22,7 +22,7 @@ public class bottleSwirl : MonoBehaviour
         
     // transform.Rotate(new Vector3(Random.Range(-100f, 200f),Random.Range(-500.0f, 500.0f),Random.Range(-200.0f, 200.0f)) * speed, Space.World);
        transform.Rotate(new Vector3(spinx, spiny, spinz) * speed, Space.World);
-      // Debug.Log("Spinx = " + spinx + "  "+ spiny+  "  " + spinz);
+      
        
     }
      void OnCollisionEnter(Collision collision) {
