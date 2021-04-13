@@ -3,33 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace bergerkardel {
-public class camera_ray : MonoBehaviour
-{
-    public Transform targetObject;
-    private Vector3 initalOffset;
-    private Vector3 cameraPosition;
-
-    // Start is called before the first frame update
-    void Start()
+    public class camera_ray : MonoBehaviour
     {
-        initalOffset = transform.position - targetObject.position;
-    }
+            public Transform player;
+            public Vector3 offset = new Vector3(0f, 10f, -70f);
+            public float smoothTime = 0.9F;
+            private Vector3 velocity = Vector3.zero;
 
-    // Update is called once per frame
-    void Update()
-    {
-        RaycastHit hit;
-        var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 50))
+            // Start is called before the first frame update
+            void Start()
+        {    }
+
+        // Update is called once per frame
+        void Update()
         {
-            if (hit.rigidbody != null)
+            RaycastHit hit;
+            var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 5000))
             {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+                if (hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForce(Vector3.up * Time.deltaTime, ForceMode.Impulse);
+                }
             }
-        }
 
-        cameraPosition = targetObject.position + initalOffset;
-        transform.position = cameraPosition;
+                // Define a target position above and behind the target transform
+                Vector3 targetPosition = player.position + offset;
+
+                // Smoothly move the camera towards that target position
+                transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
     }
-}
 }
