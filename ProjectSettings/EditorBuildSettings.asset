@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets - Anas/Scenes/SampleScene.unity
     guid: 972aaf359dd0a3d4b8b17d206f1aaf76
+  - enabled: 1
+    path: Assets/#7_Lukas_Lin/Scenes/Lea_Lukas.unity
+    guid: eb40c7f289d084dcc868635245281f79
   m_configObjects: {}

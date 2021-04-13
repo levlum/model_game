@@ -732,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[2]
-      value: Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity
+      value: Assets/#7_Lukas_Lin/Scenes/Lea_Lukas.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[3]
