@@ -19,7 +19,6 @@ public class cube_controller : MonoBehaviour
 
         for (int i = cubes.Length - 1; i > 0; i--)
         {
-            Debug.Log(i);
             StartCoroutine(ExampleCoroutine(i));
         }
     }
