@@ -62,3 +62,6 @@ sysinfo.txt
 crashlytics-build.properties
 
 Assets/.DS_Store
+
+UserSettings/
+ProjectSettings/
