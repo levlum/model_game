@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class Ball : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("You win");
-            UnityEditor.EditorApplication.ExitPlaymode();
+            // UnityEditor.EditorApplication.ExitPlaymode();
+            SceneManager.LoadScene(0);
         }
     }
 }

@@ -14,7 +14,8 @@ public class Exit : MonoBehaviour
             UnityEngine.Debug.Log("dead");
 
             //Application.Quit();
-            UnityEditor.EditorApplication.ExitPlaymode();
+            // UnityEditor.EditorApplication.ExitPlaymode();
+            SceneManager.LoadScene(0);
         }
 
 

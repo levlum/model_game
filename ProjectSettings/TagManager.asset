@@ -8,14 +8,28 @@ TagManager:
   - Jumpy
   - korb
   - car
+  - Collectable
+  - bubble
+  - Goalplate
   - pop
   - funnel
+  - Floor
+  - World
   - plattform
   - Platform
   - Part
   - Enemy
   - Floor
   - Dot
+  - bin
+  - greenglas
+  - bottle
+  - can
+  - house
+  - green
+  - brown
+  - white
+  - Level1
   layers:
   - Default
   - TransparentFX
