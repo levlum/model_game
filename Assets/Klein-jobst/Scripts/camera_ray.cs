@@ -1,10 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace klein_jobst {
     public class camera_ray : MonoBehaviour
     {
+        public float power = 10f;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -17,9 +19,9 @@ namespace klein_jobst {
             RaycastHit hit;
 
             var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody !=null)
+            if (Physics.Raycast(ray, out hit, 150) && hit.rigidbody !=null)
             {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+                hit.rigidbody.AddForce(Vector3.up * Time.deltaTime * power, ForceMode.Impulse);
             }
         }
     }

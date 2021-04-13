@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Lev {
     public enum Interaction_types
     {
-        OBJECT_UP, VACUUM_CLEANER, PUSH_OBJECT
+        OBJECT_UP, VACUUM_CLEANER, PUSH_OBJECT, ROTATE_CUBE
     }
 
     public class camera_ray : MonoBehaviour
@@ -70,6 +70,32 @@ namespace Lev {
                             push_object.GetComponent<Rigidbody>().AddForce(Vector3.up * 100f * Time.deltaTime, ForceMode.Impulse);
                         }
                     } 
+                break;
+
+
+                case Interaction_types.ROTATE_CUBE:
+                    if (Physics.Raycast(ray, out hit, 500f, ~ignoreMe) && hit.rigidbody != null) {
+
+                        if (Input.GetMouseButtonUp(0) && hit.collider.GetComponent<SceneLoader>()){
+                            
+                            Vector3 incomingVec = hit.collider.GetComponent<Transform>().InverseTransformDirection(hit.normal) ;
+                            int side = 0;
+                            if (incomingVec == new Vector3(0, -1, 0)) side = 0;
+                            if (incomingVec == new Vector3(-1, 0, 0)) side = 1;
+                            if (incomingVec == new Vector3(1, 0, 0)) side = 2;
+                            if (incomingVec == new Vector3(0, 0, 1)) side = 3;
+                            if (incomingVec == new Vector3(0, 1, 0)) side = 4;
+                            if (incomingVec == new Vector3(0, 0, -1)) side = 5;
+                            
+                            hit.collider.GetComponent<SceneLoader>().LoadScene(side);
+                        }
+                        else {
+                            var center_to_hit = (hit.collider.GetComponent<Transform>().position) - hit.point;
+                            Vector3 ninetyDegrees = Vector3.Cross(-Vector3.up, center_to_hit);
+                            hit.rigidbody.AddTorque(ninetyDegrees * Time.deltaTime * pushing_strength, ForceMode.Impulse);
+                        }
+                    }
+
                 break;
             }
         }

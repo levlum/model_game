@@ -8,8 +8,14 @@ TagManager:
   - Jumpy
   - korb
   - car
+  - Collectable
+  - bubble
+  - Goalplate
   - pop
   - funnel
+  - cube
+  - Floor
+  - World
   - plattform
   - Platform
   - bin

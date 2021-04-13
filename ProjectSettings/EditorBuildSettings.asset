@@ -6,9 +6,64 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/levs_start/Scenes/Start.unity
+    guid: c2fd6a29ccc6c47078534eca12d25f98
+  - enabled: 1
+    path: Assets/MarkusMax_slaenderv2/Scenes/SampleScene.unity
+    guid: 57da4c0a64ad745ce80b3307f1f5dbbf
+  - enabled: 1
+    path: Assets/MarkusMax_slaenderv2/Scenes/menu.unity
+    guid: 553d2328ca46a7643b292174378a4d78
+  - enabled: 1
+    path: Assets/Desertballoons_Kate&Carina/Scenes/Desert.unity
+    guid: 2dcb391f9c42146689c42d5da907773d
+  - enabled: 1
+    path: Assets/Desertballoons_Kate&Carina/Scenes/Lose.unity
+    guid: a36930422e06748978451d5809bbea8c
+  - enabled: 1
+    path: Assets/Desertballoons_Kate&Carina/Scenes/Win.unity
+    guid: 820c7005a6a98408c9ebf3fbc09262ef
+  - enabled: 1
     path: Assets/Tina-Lisa/Game/Scenes/Menu.unity
     guid: 163175d46b93b47b9924f8f651f9741a
   - enabled: 1
+    path: Assets/bergerkardel/Scenes/Game.unity
+    guid: 6180b0139210044dcaff5b82eb73717c
+  - enabled: 1
+    path: Assets/Klein-jobst/Scenes/SampleScene.unity
+    guid: 4acff209c4d7d414d9b16c85e2780662
+  - enabled: 1
+    path: Assets/GueneyJulianBallsyJump/Scenes/BallsyJump.unity
+    guid: 9a61bedb1e8554e2dbcf780af4ec872a
+  - enabled: 1
     path: Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity
     guid: acc7f4ab2128843fa84e0675763cfa46
+  - enabled: 1
+    path: Assets/3_Corinna_Marie/Scenes/5.0 Bubblegame.unity
+    guid: c18dfe85809304cceaf302752e98c154
+  - enabled: 1
+    path: Assets/3_Corinna_Marie/Scenes/Win.unity
+    guid: 6c2a10dbd6fa840469ec37d17e82c3c6
+  - enabled: 1
+    path: Assets/3_Corinna_Marie/Scenes/GameOver.unity
+    guid: f14e3a27ded97400aa0c2918274e10ce
+  - enabled: 1
+    path: Assets/#5_Nicolas&Petra_Rubiesplates/Scenes/Hobe.unity
+    guid: bbffb13fbb766184fafa7de0727c0e6d
+  - enabled: 1
+    path: Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity
+    guid: 08cd956aa0ceb4ab9965590ce94a47ec
+  - enabled: 1
+    path: Assets/Karo_Julian/Scenes/FinalGame.unity
+    guid: 159bcea0b393efb48bbd31beb5f4cbd0
+  - enabled: 1
+    path: Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3.2-Tricky-3D-Puzzle
+      2.unity
+    guid: ab5f03818dcd044cab3f75c4203b7040
+  - enabled: 1
+    path: Assets/Assets - Anas/Scenes/SampleScene.unity
+    guid: 972aaf359dd0a3d4b8b17d206f1aaf76
+  - enabled: 1
+    path: Assets/#7_Lukas_Lin/Scenes/Lea_Lukas.unity
+    guid: 5b862a87a99a549dfa8f17dadf22ee9e
   m_configObjects: {}
