@@ -7,12 +7,13 @@ using System.Diagnostics;
 
 public class Exit : MonoBehaviour
 {
+    public RectTransform loosePanel;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
             UnityEngine.Debug.Log("dead");
-            SceneManager.LoadScene(0);
+            loosePanel.gameObject.SetActive(true);
             // Application.Quit();
             // UnityEditor.EditorApplication.ExitPlaymode();
         }
@@ -21,6 +22,10 @@ public class Exit : MonoBehaviour
 
 
     }
-    
+    public void Restart(){
+
+      SceneManager.LoadScene("Assets/Assets - Anas/Scenes/SampleScene.unity");
+
+    }
     
 }

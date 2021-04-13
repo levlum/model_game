@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Probst_Weissler/Game/Scenes/Probst_Weissler.unity
     guid: d9d22571e98074b9c9c5a6c6a133161c
+  - enabled: 1
+    path: Assets/Assets - Anas/Scenes/SampleScene.unity
+    guid: 972aaf359dd0a3d4b8b17d206f1aaf76
   m_configObjects: {}
