@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
         m_offset = gameObject.transform.position - m_playerObject.transform.position; //store the positional offset of our player object and the camera (on which this script is attached to)
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         gameObject.transform.position = m_playerObject.transform.position + m_offset; //update the cameras position every frame - with the corresponding offset
     }

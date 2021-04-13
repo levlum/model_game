@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#5_Nicolas&amp;Petra_Rubiesplates/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#5_Nicolas&amp;Petra_Rubiesplates/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tina-Lisa/scripts/PlayAndQuit.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -22,6 +23,9 @@
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/camera_ray_tili.cs" />
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
         <option value="$PROJECT_DIR$/Assets/#7_Lukas_Lin/Scripts/funnel_controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/GameOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/PlayAndQuit.cs" />
       </list>
     </option>
   </component>
@@ -74,6 +78,15 @@
       <workItem from="1615989943930" duration="604000" />
       <workItem from="1616070741362" duration="3243000" />
       <workItem from="1616086352154" duration="1562000" />
+      <workItem from="1616272142673" duration="180000" />
+      <workItem from="1616272440999" duration="529000" />
+      <workItem from="1616619830821" duration="1016000" />
+      <workItem from="1616769030617" duration="21000" />
+      <workItem from="1617189094719" duration="254000" />
+      <workItem from="1617813965759" duration="181000" />
+      <workItem from="1618059124027" duration="253000" />
+      <workItem from="1618157490080" duration="165000" />
+      <workItem from="1618166249497" duration="871000" />
     </task>
     <servers />
   </component>
@@ -84,5 +97,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="311" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1616272192932">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="311" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1280.775/1280.25.1920.1055@0.25.1280.775" timestamp="1616272192932" />
   </component>
 </project>
