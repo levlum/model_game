@@ -4,26 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - jumpy
-  - Jumpy
-  - korb
-  - car
-  - pop
-  - funnel
-  - plattform
-  - Platform
-  - bin
-  - greenglas
-  - bottle
-  - can
+  - turtle
+  - terrain
+  - WaterSurface
+  - Plane
+  - bubbleCollider
+  - bombCollider
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Floor
+  - 
   - Water
   - UI
-  - play_objects
+  - 
   - 
   - 
   - 
