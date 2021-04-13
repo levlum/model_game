@@ -3013,8 +3013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3f84ab675c74ec289914e3fab69cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mvmt_speed: 22
-  jump_height: 22
+  mvmt_speed: 24
+  jump_height: 19
   horizontalMovement: 0
 --- !u!54 &848045447
 Rigidbody:
