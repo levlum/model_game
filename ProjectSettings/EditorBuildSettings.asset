@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Yasi_Caro/Scenes/SampleScene.unity
     guid: af5cbb2a0694d54499ee8c3ea1247e9c
+  - enabled: 1
+    path: Assets/UP_Dostal-Schmidt/Scenes/Up_lvl1.unity
+    guid: 50481efccc8e94f44bc7fd024c065f20
   m_configObjects: {}

@@ -1100,6 +1100,10 @@ PrefabInstance:
       propertyPath: scenePaths.Array.data[4]
       value: Assets/Yasi_Caro/Scenes/SampleScene.unity
       objectReference: {fileID: 0}
+    - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
+      propertyPath: scenePaths.Array.data[5]
+      value: Assets/UP_Dostal-Schmidt/Scenes/Up_lvl1.unity
+      objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528311, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: m_Name
       value: Sttart_cube_2
