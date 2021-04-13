@@ -7,43 +7,31 @@ public class funnel_controller : MonoBehaviour
 {
     private GameObject[] funnel;
     private Vector3 currFunnelPos;
-    bool stopRightMovement = false;
+    [SerializeField] private float funnelSpeed = 1.0f;
+    [SerializeField] private float strength = 1.0f;
     void Start()
     {
         funnel = GameObject.FindGameObjectsWithTag("funnel");
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow) && !stopRightMovement)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            funnel[0].transform.position += new Vector3(1f, 0,0);
+            funnel[0].GetComponent<Rigidbody>().AddForce(new Vector3(funnelSpeed, 0,0) * Time.deltaTime * strength, ForceMode.Impulse);
+            //funnel[0].transform.position += new Vector3(funnelSpeed, 0,0);
         } 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            funnel[0].transform.position += new Vector3(-1f, 0,0);
+            funnel[0].GetComponent<Rigidbody>().AddForce(new Vector3(-funnelSpeed, 0,0) * Time.deltaTime * strength, ForceMode.Impulse);
         } 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            funnel[0].transform.position += new Vector3(0, 0,1f);
+            funnel[0].GetComponent<Rigidbody>().AddForce(new Vector3(0, 0,funnelSpeed) * Time.deltaTime * strength, ForceMode.Impulse);
         } 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) )
         {
-            funnel[0].transform.position += new Vector3(0, 0,-1f);
-        }
-
-        currFunnelPos = funnel[0].transform.position;
-        
-        if (funnel[0].transform.position.x >= 18f)
-        {
-            currFunnelPos.x = 18f;
-            stopRightMovement = true;
-
-        }
-        else
-        {
-            stopRightMovement = false;
+            funnel[0].GetComponent<Rigidbody>().AddForce(new Vector3(0, 0,-funnelSpeed) * Time.deltaTime * strength, ForceMode.Impulse);
         }
     }
     

@@ -21,13 +21,8 @@ public class camera_ray : MonoBehaviour
             //{
                 //hit.rigidbody.tag == "jumpy";
                 
-                var rotObj = hit.collider.GetComponent<rotObj>();
-                if (rotObj != null){
-                    hit.rigidbody.AddForceAtPosition(Vector3.down * Time.deltaTime * rotObj.torque, hit.point, ForceMode.Impulse);
-                }
-                else {
-                    hit.rigidbody.AddForce(Vector3.up * Time.deltaTime, ForceMode.Impulse);
-                }
+                
+                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse); 
                 //Add things - change them. change the floor.
                 //make it in a way, to let users interact with objects 
                 //try to not fall down
