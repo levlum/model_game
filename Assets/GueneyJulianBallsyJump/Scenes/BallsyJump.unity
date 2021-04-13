@@ -2880,7 +2880,6 @@ GameObject:
   - component: {fileID: 848045448}
   - component: {fileID: 848045447}
   - component: {fileID: 848045446}
-  - component: {fileID: 848045445}
   - component: {fileID: 848045452}
   m_Layer: 0
   m_Name: Player
@@ -2889,21 +2888,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &848045445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848045444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!114 &848045446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2916,8 +2900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3f84ab675c74ec289914e3fab69cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mvmt_speed: 22
-  jump_height: 22
+  mvmt_speed: 24
+  jump_height: 19
   horizontalMovement: 0
 --- !u!54 &848045447
 Rigidbody:
