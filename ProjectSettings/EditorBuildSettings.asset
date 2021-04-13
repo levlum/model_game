@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/#7_Lukas_Lin/Scenes/Lea_Lukas.unity
     guid: eb40c7f289d084dcc868635245281f79
+  - enabled: 1
+    path: Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3.1-Tricky-3D-Puzzle.unity
+    guid: cbebc212c3dc34346aa24c16410bde3b
   m_configObjects: {}
