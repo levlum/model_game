@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Tina-Lisa/Game/Scenes/Menu.unity
     guid: 163175d46b93b47b9924f8f651f9741a
   - enabled: 1
+    path: Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity
+    guid: acc7f4ab2128843fa84e0675763cfa46
+  - enabled: 1
     path: Assets/bergerkardel/Scenes/Game.unity
     guid: 6180b0139210044dcaff5b82eb73717c
   - enabled: 1
@@ -35,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GueneyJulianBallsyJump/Scenes/BallsyJump.unity
     guid: 9a61bedb1e8554e2dbcf780af4ec872a
-  - enabled: 1
-    path: Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity
-    guid: acc7f4ab2128843fa84e0675763cfa46
   - enabled: 1
     path: Assets/3_Corinna_Marie/Scenes/5.0 Bubblegame.unity
     guid: c18dfe85809304cceaf302752e98c154
@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/3_Corinna_Marie/Scenes/GameOver_Bubble.unity
     guid: f14e3a27ded97400aa0c2918274e10ce
+  - enabled: 1
+    path: Assets/Yasi_Caro/Scenes/SampleScene.unity
+    guid: af5cbb2a0694d54499ee8c3ea1247e9c
   m_configObjects: {}

@@ -8,14 +8,15 @@ namespace Tisa{
     {
         public void PlayGame()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity");
         }
 
         public void ExitGame()
         {
-            #if UNITY_EDITOR 
-            UnityEditor.EditorApplication.ExitPlaymode();
-            #endif
+         SceneManager.LoadScene(0);
+            // #if UNITY_EDITOR 
+            // UnityEditor.EditorApplication.ExitPlaymode();
+            // #endif
         }
     }
 }
