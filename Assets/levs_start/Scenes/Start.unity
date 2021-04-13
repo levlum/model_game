@@ -732,19 +732,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[2]
-      value: Assets/#7_Lukas_Lin/Scenes/Lea_Lukas.unity
+      value: Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[3]
-      value: Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3.1-Tricky-3D-Puzzle.unity
+      value: Assets/Karo_Julian/Scenes/FinalGame.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
-      propertyPath: scenePaths.Array.data[5]
-      value: 
+      value: Assets/Yasi_Caro/Scenes/SampleScene.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528311, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: m_Name
