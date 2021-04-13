@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/UP_Dostal-Schmidt/Scenes/Up_lvl1.unity
     guid: 50481efccc8e94f44bc7fd024c065f20
+  - enabled: 1
+    path: Assets/Probst_Weissler/Game/Scenes/Probst_Weissler.unity
+    guid: d9d22571e98074b9c9c5a6c6a133161c
   m_configObjects: {}

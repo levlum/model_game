@@ -316,8 +316,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 40
+  m_Intensity: 0.3
+  m_Range: 60
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -374,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143315482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.7, y: 32.5, z: 3.7}
+  m_LocalPosition: {x: 9.7, y: 32.5, z: 7.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -724,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[0]
-      value: Assets/#5_Nicolas&Petra_Rubiesplates/Scenes/Hobe.unity
+      value: Assets/Probst_Weissler/Game/Scenes/Probst_Weissler.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[1]
@@ -740,7 +740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[4]
-      value: Assets/Yasi_Caro/Scenes/SampleScene.unity
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
+      propertyPath: scenePaths.Array.data[5]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528311, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: m_Name

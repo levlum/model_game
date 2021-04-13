@@ -12,9 +12,9 @@ public class Exit : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             UnityEngine.Debug.Log("dead");
-
-            Application.Quit();
-            UnityEditor.EditorApplication.ExitPlaymode();
+            SceneManager.LoadScene(0);
+            // Application.Quit();
+            // UnityEditor.EditorApplication.ExitPlaymode();
         }
 
 
