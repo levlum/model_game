@@ -736,11 +736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[3]
-      value: Assets/Karo_Julian/Scenes/FinalGame.unity
+      value: Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3.1-Tricky-3D-Puzzle.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528302, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: scenePaths.Array.data[4]
-      value: Assets/Yasi_Caro/Scenes/SampleScene.unity
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4560515726003528311, guid: 068e2324786db48a0ada5042ff91bf30, type: 3}
       propertyPath: m_Name

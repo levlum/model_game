@@ -53,4 +53,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Karo_Julian/Scenes/FinalGame.unity
     guid: 159bcea0b393efb48bbd31beb5f4cbd0
+  - enabled: 1
+    path: Assets/#1_Valentina_Alex-3D-Puzzle/scenes/Scenes/LVL3.2-Tricky-3D-Puzzle
+      2.unity
+    guid: ab5f03818dcd044cab3f75c4203b7040
+  - enabled: 1
+    path: Assets/Assets - Anas/Scenes/SampleScene.unity
+    guid: 972aaf359dd0a3d4b8b17d206f1aaf76
   m_configObjects: {}
