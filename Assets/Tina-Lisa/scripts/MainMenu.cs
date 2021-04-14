@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-namespace tisa
-{
+namespace Tisa{
     public class MainMenu : MonoBehaviour
     {
         public void PlayGame()
@@ -15,11 +13,10 @@ namespace tisa
 
         public void ExitGame()
         {
-            SceneManager.LoadScene(0);
+         SceneManager.LoadScene(0);
             // #if UNITY_EDITOR 
             // UnityEditor.EditorApplication.ExitPlaymode();
             // #endif
         }
     }
-    
 }

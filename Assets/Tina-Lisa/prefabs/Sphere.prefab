@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1826770707299998105}
   - component: {fileID: 4161470301024150634}
   - component: {fileID: 7898362219486165740}
+  - component: {fileID: -5479283034162678466}
+  - component: {fileID: -5283465883056103337}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -112,3 +114,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5479283034162678466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860148609408695800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc728c4d6b1df4de6a381755ae3d07f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantCount: 0
+  _point: 0
+  script: {fileID: 0}
+  slider: {fileID: 0}
+  explosionPrefab: {fileID: 6630181688990581948, guid: 9008d4ed56a764b50acd2ba2bfeaa4c7, type: 3}
+--- !u!135 &-5283465883056103337
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860148609408695800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

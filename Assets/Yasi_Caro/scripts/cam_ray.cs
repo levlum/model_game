@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace Yai
 {
-
-    public class cam_ray : MonoBehaviour
-{
     public class cam_ray : MonoBehaviour
     {
         // Start is called before the first frame update
@@ -24,6 +21,5 @@ namespace Yai
                 hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
             }
         }
-    }
     }
 }
