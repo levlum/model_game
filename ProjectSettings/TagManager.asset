@@ -21,6 +21,21 @@ TagManager:
   - greenglas
   - bottle
   - can
+  - house
+  - green
+  - brown
+  - white
+  - Lava
+  - ParticleSystem
+  - Level Left
+  - Level Right
+  - Level2
+  - Teleport_Outside
+  - Level Main
+  - Level4
+  - Teleport
+  - Level3
+  - Level1
   layers:
   - Default
   - TransparentFX
