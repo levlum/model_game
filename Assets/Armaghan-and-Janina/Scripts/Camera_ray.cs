@@ -14,19 +14,20 @@ public class Camera_ray : MonoBehaviour
     public AudioClip PlatformRotate;
     //public AudioClip Backgroundsound;
 
+    public float power = 1f;
 
     void Start()
     {
         //AudioSource.PlayClipAtPoint(Backgroundsound, transform.position, 0.5f);
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
-            hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            hit.rigidbody.AddForce(Vector3.up * power, ForceMode.Impulse);
 
             if (hit.rigidbody.tag == "Platform")
             {
