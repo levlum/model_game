@@ -16,7 +16,7 @@ namespace Lev
 
         // private Letters last_letter;
 
-        private static Vector3[] sides = {
+        public static Vector3[] sides = {
                 new Vector3(0, -1, 0), //a (r=b) (f=f)
                 new Vector3(-1, 0, 0), //b (r=f) (f=a)
                 new Vector3(1, 0, 0), //c (r=d) (f=a)

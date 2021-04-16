@@ -17,23 +17,27 @@ public class cube_controller : MonoBehaviour
             cubes[j].SetActive(false);
         }
 
-        for (int i = cubes.Length - 1; i > 0; i--)
-        {
-            StartCoroutine(ExampleCoroutine(i));
+        StartCoroutine(Activate_Cubes());
+
+        // for (int i = cubes.Length - 1; i > 0; i--)
+        // {
+        // }
+    }
+    IEnumerator Activate_Cubes()
+    {
+
+        for (int cube_nr = transform.childCount-1; cube_nr>=0; cube_nr--){
+            yield return new WaitForSeconds(5);
+            transform.GetChild(cube_nr).gameObject.SetActive(true);
         }
     }
-    IEnumerator ExampleCoroutine(int cubeCount)
-    {
-        yield return new WaitForSeconds(increment(5));
-        setCube(cubeCount);
-    }
-    private void setCube(int index)
-    {
-        cubes[index].SetActive(true);
-    }
-    private int increment(int input)
-    {
-        functionCallCount++;
-        return input + (functionCallCount * 2);
-    }
+    // private void setCube(int index)
+    // {
+    //     cubes[index].SetActive(true);
+    // }
+    // private int increment(int input)
+    // {
+    //     functionCallCount++;
+    //     return input + (functionCallCount * 2);
+    // }
 }

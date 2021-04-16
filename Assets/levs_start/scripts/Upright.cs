@@ -6,6 +6,7 @@ namespace Lev
 {
     public class Upright : MonoBehaviour
     {
+        public int start_up_side = 0;
         public float torque_power = 5f;
 
         Transform t;
@@ -17,9 +18,16 @@ namespace Lev
         {
             t = GetComponent<Transform>();   
             rb = GetComponent<Rigidbody>();
+
+
+            var face = Set_Letter_Up.sides[start_up_side];
+            var alpha = Set_Letter_Up.rate_y[start_up_side];
+            t.rotation = Quaternion.FromToRotation(face, Vector3.up);
+            t.Rotate(0, alpha, 0, Space.World);
+
             float min = -1f; float max = 1f;
             var randomVec = new Vector3(UnityEngine.Random.Range(min, max), UnityEngine.Random.Range(min, max), UnityEngine.Random.Range(min, max));
-            rb.AddTorque(randomVec * 50f, ForceMode.Impulse);
+            rb.AddTorque(randomVec * 20f, ForceMode.Impulse);
         }
 
         // Update is called once per frame
