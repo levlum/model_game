@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 47840f206bce64b58b624a576c9f8306, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2078,7 +2078,7 @@ MonoBehaviour:
     m_Bits: 68
   crosshair_t: {fileID: 1332122928}
   push_object: {fileID: 0}
-  pushing_strength: 0.1
+  pushing_strength: 5
 --- !u!114 &1464265440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2657,7 +2657,7 @@ Transform:
   - {fileID: 676733722}
   - {fileID: 377807026}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821812810
 GameObject:

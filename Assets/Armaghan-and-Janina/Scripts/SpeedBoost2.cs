@@ -11,7 +11,7 @@ public class SpeedBoost2 : MonoBehaviour
     {
         if (other.attachedRigidbody)
         {
-            other.attachedRigidbody.AddForce(Vector3.up * 500);
+            other.attachedRigidbody.AddForce(Vector3.up * 1000f * Time.deltaTime, ForceMode.Impulse);
             particleSystem2.SetActive(true);
             AudioSource.PlayClipAtPoint(BoostSound, transform.position, 1);
             StartCoroutine("StopParticleSystem");

@@ -26,7 +26,7 @@ namespace karo_julian
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
             RaycastHit hit;
             var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
@@ -36,7 +36,7 @@ namespace karo_julian
                 case Interaction_types.OBJECT_UP:
                     if (Physics.Raycast(ray, out hit, 500f, ~ignoreMe) && hit.rigidbody != null)
                     {
-                        hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+                        hit.rigidbody.AddForce(Vector3.up * pushing_strength, ForceMode.Impulse);
                     }
                     break;
 
@@ -52,7 +52,7 @@ namespace karo_julian
                             foreach (var one_jumpy in jumpy_objects)
                             {
                                 Vector3 power_direction = hit.point - one_jumpy.GetComponent<Transform>().position;
-                                one_jumpy.GetComponent<Rigidbody>().AddForce(power_direction, ForceMode.Force);
+                                one_jumpy.GetComponent<Rigidbody>().AddForce(power_direction * pushing_strength, ForceMode.Force);
                             }
                         }
                         
@@ -78,7 +78,7 @@ namespace karo_julian
                                 push_object.GetComponent<Rigidbody>().isKinematic = false;
 
                             }
-                            push_object.GetComponent<Rigidbody>().AddForce(Vector3.up * 100f * Time.deltaTime, ForceMode.Impulse);
+                            push_object.GetComponent<Rigidbody>().AddForce(Vector3.up * pushing_strength, ForceMode.Impulse);
                         }
                     }
                     break;
