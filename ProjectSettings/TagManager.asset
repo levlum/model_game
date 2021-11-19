@@ -19,6 +19,7 @@ TagManager:
   - Level Left
   - Level Right
   - Level Main
+  - gameOver
   layers:
   - Default
   - TransparentFX

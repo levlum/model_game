@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +36,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall_Animation_MarieKunzmann/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost4.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,6 +60,7 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost7.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/timer.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +121,7 @@
       <workItem from="1618185068465" duration="928000" />
       <workItem from="1618206857440" duration="31000" />
       <workItem from="1618220518189" duration="716000" />
+      <workItem from="1637318553330" duration="4118000" />
     </task>
     <servers />
   </component>
