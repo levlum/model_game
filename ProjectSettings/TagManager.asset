@@ -21,6 +21,7 @@ TagManager:
   - Level Main
   - gameOver
   - fire
+  - Ring
   layers:
   - Default
   - TransparentFX

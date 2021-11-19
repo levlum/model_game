@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0494339-8235-4a86-913c-b3d349a93f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/timer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/timer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,7 @@
       <workItem from="1618185068465" duration="928000" />
       <workItem from="1618206857440" duration="31000" />
       <workItem from="1618220518189" duration="716000" />
-      <workItem from="1637318553330" duration="9731000" />
+      <workItem from="1637318553330" duration="10601000" />
     </task>
     <servers />
   </component>
@@ -149,5 +146,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1637324925001" />
+    <state x="503" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1637336054804">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="503" y="248" width="672" height="678" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1637336054804" />
   </component>
 </project>
