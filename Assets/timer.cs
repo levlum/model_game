@@ -30,7 +30,7 @@ public class timer : MonoBehaviour
     {
         currentTime = currentTime - Time.deltaTime;
         
-        if (currentTime >= 30 || currentTime <=  60)
+        if (currentTime >= 60 || currentTime <=  30)
         {
             fireImage1.SetActive(true);
         }
@@ -43,14 +43,20 @@ public class timer : MonoBehaviour
        
         TimeSpan time = TimeSpan.FromSeconds(currentTime); //convert seconds into minutes
         currentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString();
-        
+        //currentTimeText.text = currentTime.ToString();
     }
 
-    //void Fire()
-    
-      
-        
-       // else if (currentTime )
+    /*void Fire()
+    {
+        if (currentTime >= 30 || currentTime <=  60)
+        {
+            fireImage1.SetActive(true);
+        }
+    } */
+
+
+
+    // else if (currentTime )
 }
 
 

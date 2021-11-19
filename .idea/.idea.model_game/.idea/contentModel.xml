@@ -18,6 +18,7 @@
             <e p="SpeedBoost6.cs" t="Include" />
             <e p="SpeedBoost7.cs" t="Include" />
           </e>
+          <e p="Water.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
