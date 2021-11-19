@@ -20,6 +20,7 @@ TagManager:
   - Level Right
   - Level Main
   - gameOver
+  - fire
   layers:
   - Default
   - TransparentFX
