@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/timer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/timer.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,6 @@
     <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall_Animation_MarieKunzmann/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Sem_1/ProWork1_Unity/RollABall/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost5.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,9 +59,10 @@
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/AttachObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost6.cs" />
         <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/SpeedBoost7.cs" />
-        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
-        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/RotatePlatforms.cs" />
+        <option value="$PROJECT_DIR$/Assets/Armaghan-and-Janina/Scripts/Camera_ray.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +123,7 @@
       <workItem from="1618185068465" duration="928000" />
       <workItem from="1618206857440" duration="31000" />
       <workItem from="1618220518189" duration="716000" />
-      <workItem from="1637318553330" duration="7989000" />
+      <workItem from="1637318553330" duration="9731000" />
     </task>
     <servers />
   </component>

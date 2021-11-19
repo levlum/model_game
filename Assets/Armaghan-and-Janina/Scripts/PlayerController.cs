@@ -32,13 +32,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip PassedRing;
     public AudioClip FinalRing;
     public AudioClip Teleport;
-    
-    private Stopwatch m_stopwatch; //takes the time
 
-    private void Start()
-    {
-        m_stopwatch = Stopwatch.StartNew(); //start the stopwatch
-    }
 
     //Teleport the Player into another Level by Colliding with a specific Object
     private void OnTriggerEnter(Collider other) //if the Playersphere collides with another object

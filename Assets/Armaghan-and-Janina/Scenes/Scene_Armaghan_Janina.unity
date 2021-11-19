@@ -56326,6 +56326,7 @@ GameObject:
   - component: {fileID: 1358224526}
   - component: {fileID: 1358224525}
   - component: {fileID: 1358224524}
+  - component: {fileID: 1358224529}
   m_Layer: 3
   m_Name: Rotate-Cube1
   m_TagString: Platform
@@ -56425,6 +56426,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358224529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358224523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8ff9241a1bf4dc9b787e68fef3f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformRotate: {fileID: 0}
+  moveThis: {fileID: 0}
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1358822648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2917cd8efa78e4b369684e0baa9b05c0, type: 3}
@@ -73161,6 +73179,7 @@ GameObject:
   - component: {fileID: 1740180233}
   - component: {fileID: 1740180232}
   - component: {fileID: 1740180231}
+  - component: {fileID: 1740180236}
   - component: {fileID: 1740180235}
   m_Layer: 0
   m_Name: Main Camera (1)
@@ -73266,6 +73285,23 @@ PositionConstraint:
   m_Sources:
   - sourceTransform: {fileID: 2048884808}
     weight: 1
+--- !u!114 &1740180236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740180230}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8ff9241a1bf4dc9b787e68fef3f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformRotate: {fileID: 0}
+  moveThis: {fileID: 1358224528}
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1754113242
 GameObject:
   m_ObjectHideFlags: 0
