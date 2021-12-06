@@ -273,6 +273,7 @@ public class Projecttile : MonoBehaviour
             
                          
                      }
+
                       else {
                     
                 Rigidbody objTrash = Instantiate(whiteBottlePrefab, shootPoint.position, Quaternion.identity);
