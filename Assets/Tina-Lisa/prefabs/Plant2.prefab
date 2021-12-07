@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6833825539970536615}
   - component: {fileID: 7600241680157022978}
   - component: {fileID: 5664838678584782792}
+  - component: {fileID: -8095087507898277130}
   m_Layer: 0
   m_Name: Plant2
   m_TagString: Untagged
@@ -81,3 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8095087507898277130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6169210981023993373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c5753ac695e41d28365698fc59bea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  growTime: 6
+  maxSize: 2
+  isMaxSize: 0

@@ -48,17 +48,9 @@ public class Projecttile : MonoBehaviour
         btn.onClick.AddListener(RestartGame);
         quit.onClick.AddListener(QuitGame);
        
-        randomObject = Random.Range(0,8);
+        randomObject = Random.Range(0,15);
   
-                    if(randomObject == 0)
-                    {
-                        Debug.Log ("Pointer: Plant");
-                    whiteBottlePointer.SetActive(false);
-                    canPointer.SetActive(false);
-                    brownBottlePointer.SetActive(false);
-                    greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
-                    samenPointer.transform.position = hit.point + Vector3.up * 0.1f;    
-                    }  
+
                     if(randomObject == 1 || randomObject == 2)
                     {
                      samenPointer.SetActive(false);
@@ -94,7 +86,16 @@ public class Projecttile : MonoBehaviour
                     greenBottlePointer.SetActive(false);
                     whiteBottlePointer.SetActive(true);
                     whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
-                    } 
+                    }
+                       else
+                       {
+                        Debug.Log ("Pointer: Plant");
+                                        whiteBottlePointer.SetActive(false);
+                                        canPointer.SetActive(false);
+                                        brownBottlePointer.SetActive(false);
+                                        greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
+                                        samenPointer.transform.position = hit.point + Vector3.up * 0.1f;
+                                        }
         
         cam = Camera.main;
         Timer = GameObject.FindObjectOfType<timer>(); 
@@ -125,18 +126,11 @@ public class Projecttile : MonoBehaviour
         {
            // whiteBottlePointer.SetActive(true);
            // whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
-
+Debug.Log("randomObject= ");
+Debug.Log(randomObject);
             Vector3 Vo = CalculateVelocity(hit.point, shootPoint.position, 1f);
             transform.rotation = Quaternion.LookRotation(Vo);
-            if(randomObject == 0)
-                    {
-                        Debug.Log ("Pointer: Plant");
-                    whiteBottlePointer.SetActive(false);
-                    canPointer.SetActive(false);
-                    brownBottlePointer.SetActive(false);
-                    greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
-                    samenPointer.transform.position = hit.point + Vector3.up * 0.1f;    
-                    }  
+
                     if(randomObject == 1 || randomObject == 2)
                     {
                      samenPointer.SetActive(false);
@@ -146,7 +140,7 @@ public class Projecttile : MonoBehaviour
                      canPointer.SetActive(true);
                      canPointer.transform.position = hit.point + Vector3.up * 0.1f;
                     } 
-                    if(randomObject == 3 || randomObject == 4)
+                    else if(randomObject == 3 || randomObject == 4)
                     {
                     samenPointer.SetActive(false);
                     canPointer.SetActive(false);
@@ -155,7 +149,7 @@ public class Projecttile : MonoBehaviour
                     brownBottlePointer.SetActive(true);
                     brownBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
                     } 
-                    if(randomObject == 5 || randomObject == 6)
+                    else if(randomObject == 5 || randomObject == 6)
                     {
                     samenPointer.SetActive(false);
                     canPointer.SetActive(false);
@@ -164,7 +158,7 @@ public class Projecttile : MonoBehaviour
                     greenBottlePointer.SetActive(true);
                     greenBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
                     } 
-                    if(randomObject == 7 || randomObject == 8)
+                    else if(randomObject == 7 || randomObject == 8)
                     { 
                     samenPointer.SetActive(false);
                     canPointer.SetActive(false);
@@ -172,7 +166,16 @@ public class Projecttile : MonoBehaviour
                     greenBottlePointer.SetActive(false);
                     whiteBottlePointer.SetActive(true);
                     whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;  
-                    } 
+                    }
+                     else
+                                        {
+                                            Debug.Log ("Pointer: Plant");
+                                        whiteBottlePointer.SetActive(false);
+                                        canPointer.SetActive(false);
+                                        brownBottlePointer.SetActive(false);
+                                        greenBottlePointer.SetActive(false); samenPointer.SetActive(true);
+                                        samenPointer.transform.position = hit.point + Vector3.up * 0.1f;
+                                        }
       /*if(randomObject == 0)
                     {
                         Debug.Log ("Pointer: Plant");
@@ -231,17 +234,8 @@ public class Projecttile : MonoBehaviour
             {
                 
                 
-                if(randomObject == 0)
-                {
-                    Debug.Log ("Prefab: Plant");
-                Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
-                objPlant.transform.rotation = Random.rotation ;
-                objPlant.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
 
-                objPlant.velocity = Vo;
-               // Debug.Log(randomObject);
-                }
-                else if (randomObject == 1 || randomObject == 2){
+                 if (randomObject == 1 || randomObject == 2){
                 Rigidbody objTrash = Instantiate(trash, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
                 objTrash.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
@@ -274,7 +268,7 @@ public class Projecttile : MonoBehaviour
                          
                      }
 
-                      else {
+                      else if(randomObject == 7|| randomObject == 8) {
                     
                 Rigidbody objTrash = Instantiate(whiteBottlePrefab, shootPoint.position, Quaternion.identity);
                 objTrash.transform.rotation = Random.rotation ;
@@ -286,7 +280,17 @@ public class Projecttile : MonoBehaviour
             
                          
                      }
-                    randomObject = Random.Range(0,8);
+                        else
+                                     {
+                                         Debug.Log ("Prefab: Plant");
+                                     Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
+                                     objPlant.transform.rotation = Random.rotation ;
+                                     objPlant.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);
+
+                                     objPlant.velocity = Vo;
+                                    // Debug.Log(randomObject);
+                                     }
+                    randomObject = Random.Range(0,15);
                     }        else{
                     cursor.SetActive(false);
                   }
