@@ -23,18 +23,41 @@ public class timer : MonoBehaviour
         currentTime = startMinutes * 60; // having it in seconds
         gameOver.SetActive(false);
         fireImage1.SetActive(false);
-    }
+        fireImage2.SetActive(false);
+        fireImage3.SetActive(false);
+        fireImage4.SetActive(false);
+        fireImage5.SetActive(false);
+            }
 
     // Update is called once per frame
     void Update()
     {
         currentTime = currentTime - Time.deltaTime;
         
+        if (currentTime >= 150 || currentTime <= 120)
+        {
+            fireImage2.SetActive(true);
+        }
+
+        if (currentTime >= 120 || currentTime <= 90)
+        {
+            fireImage2.SetActive(true);
+        }
+        if (currentTime >= 90 || currentTime <= 60)
+        {
+            fireImage3.SetActive(true);
+        }
+
         if (currentTime >= 60 || currentTime <=  30)
         {
-            fireImage1.SetActive(true);
+            fireImage4.SetActive(true);
         }
-        
+        if (currentTime >= 30 || currentTime <= 0)
+        {
+            fireImage5.SetActive(true);
+        }
+
+
         if (currentTime <= 0)
         {
             currentTime = 0;
