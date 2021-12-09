@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject JaninaLightMain;
     public GameObject JaninaLightLeft;
-    public GameObject JaninaLightRight;
+    public Light JaninaLightRight;
 
     public GameObject LevelLeftOn;
     public GameObject LevelLeftOff;
@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip PassedRing;
     public AudioClip FinalRing;
     public AudioClip Teleport;
+
+    //private color BlueColor;
 
 
     //Teleport the Player into another Level by Colliding with a specific Object
@@ -114,9 +116,9 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Level Left"))
         {
-            JaninaLightLeft.SetActive(true);
-            JaninaLightMain.SetActive(false);
-            JaninaLightRight.SetActive(false);
+            //JaninaLightLeft.SetActive(true);
+            //JaninaLightMain.SetActive(false);
+            //JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(false);
             LevelLeftOff.SetActive(true);
             LevelRightOn.SetActive(true);
@@ -124,9 +126,9 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Level Right"))
         {
-            JaninaLightLeft.SetActive(false);
-            JaninaLightMain.SetActive(false);
-            JaninaLightRight.SetActive(true);
+            //JaninaLightLeft.SetActive(false);
+            //JaninaLightMain.SetActive(false);
+            JaninaLightRight.color = Color.blue;
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);
             LevelRightOn.SetActive(false);
@@ -134,9 +136,9 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Level Main"))
         {
-            JaninaLightLeft.SetActive(false);
-            JaninaLightMain.SetActive(true);
-            JaninaLightRight.SetActive(false);
+            //JaninaLightLeft.SetActive(false);
+            //JaninaLightMain.SetActive(true);
+            //JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);
             LevelRightOn.SetActive(true);

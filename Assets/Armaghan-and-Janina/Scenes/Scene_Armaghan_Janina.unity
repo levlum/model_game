@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21268,7 +21268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &376276249
 Light:
   m_ObjectHideFlags: 0
@@ -48955,7 +48955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &937816727
 Light:
   m_ObjectHideFlags: 0
@@ -56438,11 +56438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8ff9241a1bf4dc9b787e68fef3f015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformRotate: {fileID: 0}
-  moveThis: {fileID: 0}
-  hitLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1358822648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2917cd8efa78e4b369684e0baa9b05c0, type: 3}
@@ -73297,11 +73292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8ff9241a1bf4dc9b787e68fef3f015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformRotate: {fileID: 0}
-  moveThis: {fileID: 1358224528}
-  hitLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1754113242
 GameObject:
   m_ObjectHideFlags: 0
@@ -74698,7 +74688,7 @@ MonoBehaviour:
   teleportDestination_Level1: {fileID: 960774651}
   JaninaLightMain: {fileID: 293615092}
   JaninaLightLeft: {fileID: 376276248}
-  JaninaLightRight: {fileID: 937816726}
+  JaninaLightRight: {fileID: 937816727}
   LevelLeftOn: {fileID: 167076873}
   LevelLeftOff: {fileID: 1175396062}
   LevelRightOn: {fileID: 430040908}
