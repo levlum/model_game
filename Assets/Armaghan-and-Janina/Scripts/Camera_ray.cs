@@ -12,11 +12,17 @@ public class Camera_ray : MonoBehaviour
     private SerializeField m_speed;
 
     public AudioClip PlatformRotate;
-    //public AudioClip Backgroundsound;
+
+    private float SceneWidth;
+    private Vector3 Presspoint;
+    private Quaternion StartRotation;
+       //public AudioClip Backgroundsound;
 
 
     void Start()
     {
+        SceneWidth = Screen.width;
+
         //AudioSource.PlayClipAtPoint(Backgroundsound, transform.position, 0.5f);
     }
     // Update is called once per frame
@@ -24,6 +30,8 @@ public class Camera_ray : MonoBehaviour
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+       
+
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
@@ -42,24 +50,32 @@ public class Camera_ray : MonoBehaviour
 
                 if (hit.rigidbody.tag == "Platform")
                 {
-                
-                    if (Input.mousePosition != default)
-                    {
-                        hit.transform.Rotate(new Vector3(0,0, 5));
                     
-                        AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Presspoint = Input.mousePosition;
+                        StartRotation = transform.rotation;
+                    }
+                    else if (Input.GetMouseButton(0))
+                    {
+                        float CurrentDistanceBetweenMousePositions = (Input.mousePosition - Presspoint).x;
+                        transform.rotation = StartRotation * Quaternion.Euler(Vector3.forward * (CurrentDistanceBetweenMousePositions / SceneWidth) * 360);
+
                     }
 
-                    else if(Input.GetMouseButton(0))
+                   else if (Input.mousePosition != default)
                     {
-                        hit.transform.Rotate(new Vector3(0, 0, 5));
+                         hit.transform.Rotate(new Vector3(0, 0, 5));
+                        
 
+              
                         AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
                     }
                 }
             }
         }
     }
+    
 }
 
     
