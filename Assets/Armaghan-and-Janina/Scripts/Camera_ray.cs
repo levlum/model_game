@@ -44,11 +44,10 @@ public class Camera_ray : MonoBehaviour
                     AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
             }
-            if (Physics.Raycast(ray, out hit, 20) && hit.rigidbody != null)
-            {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+           
+                //hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
 
-                if (hit.rigidbody.tag == "Platform")
+                if (hit.collider.tag == "Platform")
                 {
                     
                     if (Input.GetMouseButtonDown(0))
@@ -72,7 +71,6 @@ public class Camera_ray : MonoBehaviour
                         AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
                     }
                 }
-            }
         }
     }
     
