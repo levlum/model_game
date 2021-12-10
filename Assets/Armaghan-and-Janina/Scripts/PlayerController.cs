@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public Transform teleportDestination_Level2;
     public Transform teleportDestination_Level1;
 
-    public GameObject JaninaLightMain;
-    public GameObject JaninaLightLeft;
+    public Light JaninaLightMain;
+    public Light JaninaLightLeft;
     public Light JaninaLightRight;
 
     public GameObject LevelLeftOn;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.position = teleportDestination_Level2.position; //set the position of the Player to the position of the Destination-Object (Level2)
             AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
-            JaninaLightMain.SetActive(false);
+            //JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
 
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(Teleport, transform.position, 50);
             gameObject.transform.position = teleportDestination_Level1.position; //set the position of the Player to the position of the Destination-Object (Level1)
-            JaninaLightMain.SetActive(true);
+            //JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
         }
         
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Level Left"))
         {
-            //JaninaLightLeft.SetActive(true);
+            JaninaLightLeft.color = Color.blue;
             //JaninaLightMain.SetActive(false);
             //JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(false);
@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Level Main"))
         {
             //JaninaLightLeft.SetActive(false);
-            //JaninaLightMain.SetActive(true);
+            JaninaLightMain.color = Color.blue;
             //JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);

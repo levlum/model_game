@@ -74686,8 +74686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportDestination_Level2: {fileID: 668606705}
   teleportDestination_Level1: {fileID: 960774651}
-  JaninaLightMain: {fileID: 293615092}
-  JaninaLightLeft: {fileID: 376276248}
+  JaninaLightMain: {fileID: 293615093}
+  JaninaLightLeft: {fileID: 376276249}
   JaninaLightRight: {fileID: 937816727}
   LevelLeftOn: {fileID: 167076873}
   LevelLeftOff: {fileID: 1175396062}
