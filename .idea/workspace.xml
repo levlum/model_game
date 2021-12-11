@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8bb1b4-3d02-4d40-bf35-4a3326bbae8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/Plant_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/Plant_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/Projecttile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/Projecttile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638824045147</updated>
       <workItem from="1638824055147" duration="1405000" />
-      <workItem from="1638866333675" duration="3303000" />
+      <workItem from="1638866333675" duration="3967000" />
     </task>
     <servers />
   </component>
