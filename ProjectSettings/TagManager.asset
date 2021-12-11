@@ -20,7 +20,6 @@ TagManager:
   - green
   - brown
   - white
-  - Jumpable
   layers:
   - Default
   - TransparentFX
@@ -29,7 +28,7 @@ TagManager:
   - Water
   - UI
   - play_objects
-  - PostProcessing
+  - 
   - 
   - 
   - 
