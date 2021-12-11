@@ -42,7 +42,7 @@ public class whiteglas : MonoBehaviour
                glas.Play();
                  
             }
-            if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown"))
+            else if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green")  || other.gameObject.CompareTag("brown")|| other.gameObject.CompareTag("samen"))
             {
             
                   script._points--;

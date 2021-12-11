@@ -43,7 +43,7 @@ public class bin : MonoBehaviour
                UnityEngine.Debug.Log("Points: " + script._points);
                binAudio.Play();
             }
-            if (other.gameObject.CompareTag("white") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown"))
+            if (other.gameObject.CompareTag("white") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("brown")|| other.gameObject.CompareTag("samen"))
             {
                 error.Play();
                 script._points--;
