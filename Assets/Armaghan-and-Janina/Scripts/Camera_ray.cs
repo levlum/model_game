@@ -12,6 +12,7 @@ public class Camera_ray : MonoBehaviour
     private SerializeField m_speed;
 
     public AudioClip PlatformRotate;
+    public GameObject Rocket;
     //public AudioClip Backgroundsound;
 
 
@@ -26,6 +27,7 @@ public class Camera_ray : MonoBehaviour
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
         {
+            
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
 
             if (hit.rigidbody.tag == "Jumpy")
@@ -52,6 +54,21 @@ public class Camera_ray : MonoBehaviour
                 
                 }
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            UnityEngine.Debug.Log("Move Left");
+            Rocket.transform.position += Vector3.left * Time.deltaTime * 10;
+        }
+
+        if(Input.GetMouseButton(1))
+        {
+            UnityEngine.Debug.Log("Move Right");
+            Rocket.transform.position += Vector3.right * Time.deltaTime * 10;
         }
     }
 }
