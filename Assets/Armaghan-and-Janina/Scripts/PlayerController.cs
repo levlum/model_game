@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public Light JaninaLightLeft;
     public Light JaninaLightRight;
 
+    public GameObject RightParticle;
+    public GameObject LeftParticle;
+
     public GameObject LevelLeftOn;
     public GameObject LevelLeftOff;
     public GameObject LevelRightOn;
@@ -117,6 +120,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Level Left"))
         {
             JaninaLightLeft.color = Color.blue;
+            LeftParticle.SetActive(true);
             //JaninaLightMain.SetActive(false);
             //JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(false);
@@ -129,6 +133,7 @@ public class PlayerController : MonoBehaviour
             //JaninaLightLeft.SetActive(false);
             //JaninaLightMain.SetActive(false);
             JaninaLightRight.color = Color.blue;
+            RightParticle.SetActive(true);
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);
             LevelRightOn.SetActive(false);
