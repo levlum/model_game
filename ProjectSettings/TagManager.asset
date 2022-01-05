@@ -3,22 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - jumpy
-  - Jumpy
-  - korb
-  - car
-  - Collectable
-  - bubble
-  - Goalplate
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Floor
+  - 
   - Water
   - UI
-  - play_objects
+  - 
   - 
   - 
   - 

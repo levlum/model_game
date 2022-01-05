@@ -19,17 +19,30 @@ public class CameraRay : MonoBehaviour
     {
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 50) && hit.rigidbody != null)
+        if (Physics.Raycast(ray, out hit, 500))
         {
             //hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse
             var bubbles = GameObject.FindGameObjectsWithTag("bubble");
-            foreach (var bubble in bubbles)
+            var dogs = GameObject.FindGameObjectsWithTag("dog");
+            var dogPosition = Vector3.zero;
+            foreach (var dog in dogs)
             {
-                var direction = bubble.transform.position - hit.point;
+                dogPosition = dog.transform.position;
+                var direction = hit.point - dogPosition;
                 var distance = direction.magnitude;
                 direction.Normalize();
                 // bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power, ForceMode.Impulse);
-                bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power * 1 / distance);
+                dog.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power * 1f);
+                // bubble.GetComponent<Renderer>().material = b_touchMaterial;
+            }
+
+            foreach (var bubble in bubbles)
+            {
+                var direction = bubble.transform.position - dogPosition;
+                var distance = direction.magnitude;
+                direction.Normalize();
+                // bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power, ForceMode.Impulse);
+                bubble.GetComponent<Rigidbody>().AddForce(direction * Time.deltaTime * power * 1f / distance);
                // bubble.GetComponent<Renderer>().material = b_touchMaterial;
             }
             Debug.Log("HI");

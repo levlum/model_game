@@ -33,8 +33,9 @@ public class Bubble : MonoBehaviour {
     {
         if(other.name == "duck")
             {
-                Destroy(gameObject);
-            }
+            //Destroy(gameObject);
+            GetComponent<Rigidbody>().AddForce(Vector3.up * Time.deltaTime * 10f, ForceMode.Impulse);
+        }
     }
 
 }

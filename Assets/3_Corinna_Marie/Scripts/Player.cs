@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
             isGrounded = false;
         }
 
-        if (GameObject.Find("duck").transform.position.y <= 0)
+        if (GameObject.Find("duck").transform.position.y <= -50)
         {
             UnityEngine.Debug.Log("Game Over!");
             SceneManager.LoadScene("GameOver");
