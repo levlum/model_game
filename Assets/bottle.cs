@@ -12,13 +12,14 @@ public class bottle : MonoBehaviour
    // public int randomPlant;
 public AudioSource plantAudio;
  public ParticleSystem drops;
-
+  public GameObject myPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
         // script = GameObject.FindObjectOfType<points>();
               // _point = script._points;
+
 
     }
 
@@ -32,18 +33,21 @@ public AudioSource plantAudio;
          //public Transform explosionPrefab;
                 void OnCollisionEnter(Collision collision) {
                    if (collision.gameObject.tag == "house")
-                   Debug.Log("braune Flasche an Wand");
+
                    {//AudioSource.PlayClipAtPoint(plantAudio, this.gameObject.transform.position);
                       plantAudio.Play();
+                      Debug.Log("braune Flasche an Wand");
                       //script._points+=3;
                       //slider.value = script._points;
                       //this.gameObject.SetActive(false) ;
+
                          ContactPoint contact = collision.contacts[0];
                          Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
                         Vector3 pos = contact.point;
-                        drops.Play();
+                       // drops.Play();
                        // Instantiate(explosionPrefab, pos, rot);
-
+                       // Instantiate(myPrefab, new Vector3(0, pos, rot), Quaternion.identity);
+                            Instantiate(myPrefab,pos, rot);
                        Destroy(this.gameObject, 0.1f);
 
 

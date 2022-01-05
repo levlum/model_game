@@ -13,6 +13,7 @@ public class plant : MonoBehaviour
     public Slider slider;
     public int randomPlant;
 public AudioSource plantAudio;
+public AudioSource error;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +63,9 @@ public AudioSource plantAudio;
                        Destroy(this.gameObject, 0.1f);
                         
 
+                   }
+                   else if (collision.gameObject.tag == "tonne"){
+                    error.Play();
                    }
                 }
 }

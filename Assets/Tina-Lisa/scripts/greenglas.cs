@@ -45,7 +45,7 @@ public class greenglas : MonoBehaviour
                glas.Play();
                  
             }
-              if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("brown"))
+              if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("white") || other.gameObject.CompareTag("brown")|| other.gameObject.CompareTag("samen"))
             {
             
                   script._points--;

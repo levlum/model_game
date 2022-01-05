@@ -43,7 +43,7 @@ public class brownglas : MonoBehaviour
                glas.Play();
                  
             }
-            if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("white"))
+            if (other.gameObject.CompareTag("can") || other.gameObject.CompareTag("green") || other.gameObject.CompareTag("white")|| other.gameObject.CompareTag("samen"))
             {
             error.Play();
                   script._points--;
