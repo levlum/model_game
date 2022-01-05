@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 
 public class PlayerController : MonoBehaviour
@@ -32,27 +34,42 @@ public class PlayerController : MonoBehaviour
     public AudioClip PassedRing;
     public AudioClip FinalRing;
     public AudioClip Teleport;
+    
+    public AudioClip PlatformRotate;
+
 
 
     //Teleport the Player into another Level by Colliding with a specific Object
     private void OnTriggerEnter(Collider other) //if the Playersphere collides with another object
     {
+
+        if (other.gameObject.CompareTag("rotate")) //rotate Platform when colliding
+        {
+            other.gameObject.transform.Rotate(0, 0, 10);
+            AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
+        }
+
         if (other.gameObject.CompareTag("Teleport")) //and the other object has the tag "Teleport"
         {
-            gameObject.transform.position = teleportDestination_Level2.position; //set the position of the Player to the position of the Destination-Object (Level2)
+            gameObject.transform.position =
+                teleportDestination_Level2
+                    .position; //set the position of the Player to the position of the Destination-Object (Level2)
             AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
             JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
 
-        if (other.gameObject.CompareTag("Teleport_Outside")) //if it collides with another object that has the tag "Teleport_Outside"
+        if (other.gameObject.CompareTag("Teleport_Outside")
+        ) //if it collides with another object that has the tag "Teleport_Outside"
         {
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 50);
-            gameObject.transform.position = teleportDestination_Level1.position; //set the position of the Player to the position of the Destination-Object (Level1)
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
+            gameObject.transform.position =
+                teleportDestination_Level1
+                    .position; //set the position of the Player to the position of the Destination-Object (Level1)
             JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
         }
-        
+
         //Light Switching And Audio Playing Codes
         if (other.gameObject.CompareTag("Level1"))
         {
@@ -69,6 +86,7 @@ public class PlayerController : MonoBehaviour
             //Cposition = new Vector3(0.0f,24.0f,-36.0f);
             UnityEngine.Debug.Log("Level1");
         }
+
         if (other.gameObject.CompareTag("Level2"))
         {
             Level1.SetActive(true);
@@ -83,6 +101,7 @@ public class PlayerController : MonoBehaviour
             //AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,40.0f,-36.0f);
         }
+
         if (other.gameObject.CompareTag("Level3"))
         {
             Level1.SetActive(true);
@@ -97,6 +116,7 @@ public class PlayerController : MonoBehaviour
             //AudioSource.PlayClipAtPoint(PassedRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
+
         if (other.gameObject.CompareTag("Level4"))
         {
             Level1.SetActive(true);
@@ -112,6 +132,7 @@ public class PlayerController : MonoBehaviour
             //AudioSource.PlayClipAtPoint(FinalRing, transform.position, 1.5f);
             //Cposition = new Vector3(0.0f,56.0f,-36.0f);
         }
+
         if (other.gameObject.CompareTag("Level Left"))
         {
             JaninaLightLeft.SetActive(true);
@@ -122,6 +143,7 @@ public class PlayerController : MonoBehaviour
             LevelRightOn.SetActive(true);
             LevelRightOff.SetActive(false);
         }
+
         if (other.gameObject.CompareTag("Level Right"))
         {
             JaninaLightLeft.SetActive(false);
@@ -132,6 +154,7 @@ public class PlayerController : MonoBehaviour
             LevelRightOn.SetActive(false);
             LevelRightOff.SetActive(true);
         }
+
         if (other.gameObject.CompareTag("Level Main"))
         {
             JaninaLightLeft.SetActive(false);
@@ -143,7 +166,6 @@ public class PlayerController : MonoBehaviour
             LevelRightOff.SetActive(false);
         }
     }
-
 }
 
 

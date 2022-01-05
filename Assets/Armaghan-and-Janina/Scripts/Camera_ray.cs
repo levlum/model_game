@@ -28,6 +28,8 @@ public class Camera_ray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         RaycastHit hit;
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
        
@@ -36,14 +38,14 @@ public class Camera_ray : MonoBehaviour
         {
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
 
-            if (hit.rigidbody.tag == "Jumpy")
+            /*if (hit.rigidbody.tag == "Jumpy")
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     hit.transform.Rotate(new Vector3(0,0, -15));
                     AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
-            }
+            }*/
             if (Physics.Raycast(ray, out hit, 20) && hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
@@ -63,19 +65,19 @@ public class Camera_ray : MonoBehaviour
 
                     }
 
-                   else if (Input.mousePosition != default)
+                   /*else if (Input.mousePosition != default)
                     {
                          hit.transform.Rotate(new Vector3(0, 0, 5));
                         
 
               
                         AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
-                    }
+                    }*/
                 }
             }
         }
     }
-    
+
 }
 
     

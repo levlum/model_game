@@ -21,6 +21,7 @@ TagManager:
   - Level Main
   - gameOver
   - fire
+  - rotate
   layers:
   - Default
   - TransparentFX
