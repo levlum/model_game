@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tina-Lisa/Game/Scenes/Menu.unity
     guid: 163175d46b93b47b9924f8f651f9741a
   - enabled: 1
