@@ -20,6 +20,8 @@ TagManager:
   - green
   - brown
   - white
+  - tonne
+  - samen
   layers:
   - Default
   - TransparentFX

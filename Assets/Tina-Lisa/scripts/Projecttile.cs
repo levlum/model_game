@@ -89,7 +89,7 @@ public class Projecttile : MonoBehaviour
                     }
                        else
                        {
-                        Debug.Log ("Pointer: Plant");
+
                                         whiteBottlePointer.SetActive(false);
                                         canPointer.SetActive(false);
                                         brownBottlePointer.SetActive(false);
@@ -126,8 +126,7 @@ public class Projecttile : MonoBehaviour
         {
            // whiteBottlePointer.SetActive(true);
            // whiteBottlePointer.transform.position = hit.point + Vector3.up * 0.1f;
-Debug.Log("randomObject= ");
-Debug.Log(randomObject);
+
             Vector3 Vo = CalculateVelocity(hit.point, shootPoint.position, 1f);
             transform.rotation = Quaternion.LookRotation(Vo);
 
@@ -169,7 +168,8 @@ Debug.Log(randomObject);
                     }
                      else
                                         {
-                                            Debug.Log ("Pointer: Plant");
+
+
                                         whiteBottlePointer.SetActive(false);
                                         canPointer.SetActive(false);
                                         brownBottlePointer.SetActive(false);
@@ -282,7 +282,8 @@ Debug.Log(randomObject);
                      }
                         else
                                      {
-                                         Debug.Log ("Prefab: Plant");
+
+
                                      Rigidbody objPlant = Instantiate(plant, shootPoint.position, Quaternion.identity);
                                      objPlant.transform.rotation = Random.rotation ;
                                      objPlant.transform.Rotate(new Vector3(Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f),Random.Range(-500.0f, 500.0f)) * Time.deltaTime, Space.World);

@@ -159,8 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _point: 0
   plantAudio: {fileID: 208455289291663797}
-  drops: {fileID: 8834452494034396284, guid: 56290354119fc4b78905f15be775bdd4, type: 3}
-  ps: {fileID: 0}
+  drops: {fileID: 5119919717609814303, guid: cb0c413321ae4455194eee54d938923e, type: 3}
+  myPrefab: {fileID: 960790821930811732, guid: cb0c413321ae4455194eee54d938923e, type: 3}
 --- !u!82 &208455289291663797
 AudioSource:
   m_ObjectHideFlags: 0
@@ -171,8 +171,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 74471cd09ebec41a4b290854540e68ea, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 638feffbbf7324d4b8302616e0b474c6, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
