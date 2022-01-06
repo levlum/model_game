@@ -150,10 +150,7 @@ public class PlayerController : MonoBehaviour
             LevelRightOff.SetActive(false);
         }
 
-        if (other.gameObject.CompareTag("RightMainWall"))
-        {
-            
-        }
+
     }
 
 }

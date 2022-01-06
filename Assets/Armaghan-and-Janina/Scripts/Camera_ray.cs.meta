@@ -3,7 +3,10 @@ guid: 59c242c6c6ae8448d9cf9de667386416
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PlatformRotate: {instanceID: 0}
+  - Rocket: {instanceID: 0}
+  - Backgroundsound: {fileID: 8300000, guid: 80152c23133f86b44b07e5fa0106ca0f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

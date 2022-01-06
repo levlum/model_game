@@ -13,12 +13,13 @@ public class Camera_ray : MonoBehaviour
 
     public AudioClip PlatformRotate;
     public GameObject Rocket;
-    //public AudioClip Backgroundsound;
+    public AudioClip Backgroundsound;
+    public float BackgroundVolume;
 
 
     void Start()
     {
-        //AudioSource.PlayClipAtPoint(Backgroundsound, transform.position, 0.5f);
+        AudioSource.PlayClipAtPoint(Backgroundsound, transform.position, BackgroundVolume);
     }
     // Update is called once per frame
     void Update()
