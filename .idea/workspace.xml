@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d8bb1b4-3d02-4d40-bf35-4a3326bbae8d" name="Changes" comment="">
+    <list default="true" id="9d8bb1b4-3d02-4d40-bf35-4a3326bbae8d" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/drops 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/drops 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/drops 2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/drops 2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/Game/Scenes/Lvl 1 Recycling.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/dropmat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/dropmat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/splash_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/splash_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/can_double (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/can_double (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/wine bottle6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/Projecttile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/Projecttile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/bin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/bin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/brownglas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/brownglas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/greenglas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/greenglas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/plant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/whiteglas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/whiteglas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bottle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bottle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +57,7 @@
       <workItem from="1638824055147" duration="1405000" />
       <workItem from="1638866333675" duration="3967000" />
       <workItem from="1639256870925" duration="93000" />
+      <workItem from="1641459576122" duration="5000" />
     </task>
     <servers />
   </component>
