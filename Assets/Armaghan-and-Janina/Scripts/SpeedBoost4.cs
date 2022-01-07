@@ -13,7 +13,7 @@ public class SpeedBoost4 : MonoBehaviour
         {
             other.attachedRigidbody.AddForce(Vector3.down *300);
             particleSystem4.SetActive(true);
-            AudioSource.PlayClipAtPoint(BoostSound, transform.position, 5);
+            AudioSource.PlayClipAtPoint(BoostSound, transform.position, 0.5f);
             StartCoroutine("StopParticleSystem");
         }
     }

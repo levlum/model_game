@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject LevelLeftOn;
     public GameObject LevelLeftOff;
-    public GameObject LevelRightOn;
+   // public GameObject LevelRightOn;
     public GameObject LevelRightOff;
 
     public GameObject Light1;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position =
                 teleportDestination_Level2
                     .position; //set the position of the Player to the position of the Destination-Object (Level2)
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 10);
             JaninaLightMain.SetActive(false);
             Light1.SetActive(true);
         }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Teleport_Outside")
         ) //if it collides with another object that has the tag "Teleport_Outside"
         {
-            AudioSource.PlayClipAtPoint(Teleport, transform.position, 300);
+            AudioSource.PlayClipAtPoint(Teleport, transform.position, 10);
             gameObject.transform.position =
                 teleportDestination_Level1
                     .position; //set the position of the Player to the position of the Destination-Object (Level1)
@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
             JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(false);
             LevelLeftOff.SetActive(true);
-            LevelRightOn.SetActive(true);
+          //  LevelRightOn.SetActive(true);
             LevelRightOff.SetActive(false);
         }
 
@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
             JaninaLightRight.SetActive(true);
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);
-            LevelRightOn.SetActive(false);
+          //  LevelRightOn.SetActive(false);
             LevelRightOff.SetActive(true);
         }
 
@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
             JaninaLightRight.SetActive(false);
             LevelLeftOn.SetActive(true);
             LevelLeftOff.SetActive(false);
-            LevelRightOn.SetActive(true);
+      //      LevelRightOn.SetActive(true);
             LevelRightOff.SetActive(false);
         }
     }
