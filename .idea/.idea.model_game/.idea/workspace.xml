@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="" />
+    <list default="true" id="ea13b551-8ca4-4f12-a87b-9f1aedabd3c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.model_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Bubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Bubble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Desertballoons_Kate&amp;Carina/Free Low Poly Desert Pack/Unity Prefabs/Terrain/Mixed_Ground_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Klein-jobst/prefabs/Sphere.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/Materials/Anzeigetafel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/Materials/Basketballcourtpng.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/materials/Materials/Korb.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tina-Lisa/prefabs/Floor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/Monqo Egg Coffee Table Set/_Prefabs/EggStool.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/Monqo Egg Coffee Table Set/_Prefabs/EggTable.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/materials/RPG Monster Duo PBR Polyart/Materials/PolyartDefault.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/materials/RPG Monster Duo PBR Polyart/Scenes/DuoSceneSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/materials/blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/materials/crosshair-467258_640.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yasi_Caro/prefabs/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bergerkardel/prefabs/floortile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/Tina-Lisa/scripts/cars.cs" />
         <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Instantiate.cs" />
         <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/3_Corinna_Marie/Scripts/Bubble.cs" />
       </list>
     </option>
   </component>
@@ -74,6 +95,7 @@
       <workItem from="1616607051360" duration="6340000" />
       <workItem from="1617994772118" duration="1264000" />
       <workItem from="1618157513937" duration="8126000" />
+      <workItem from="1641497648781" duration="2681000" />
     </task>
     <servers />
   </component>

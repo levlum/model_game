@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float m_speed = 1f;
     private Rigidbody m_playerRigidbody;
+    private Rigidbody jumpplane;
     public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
-        
+
     }
     void OnTriggerEnter(Collider other)
     {

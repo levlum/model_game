@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bubble
+  - Jumpy
+  - dog
+  - jumpy
+  - Goalplate
+  - jumpplane
   layers:
   - Default
   - TransparentFX
