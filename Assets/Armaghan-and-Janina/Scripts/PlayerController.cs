@@ -69,6 +69,12 @@ public class PlayerController : MonoBehaviour
             JaninaLightMain.SetActive(true);
             Light1.SetActive(false);
         }
+        
+        if (other.gameObject.CompareTag("right")) //moving to the right when hitting the ceiling
+        {
+            gameObject.transform.position += Vector3.right * Time.deltaTime * 100;
+        }
+        
 
         //Light Switching And Audio Playing Codes
         if (other.gameObject.CompareTag("Level1"))

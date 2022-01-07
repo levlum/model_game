@@ -21016,9 +21016,10 @@ GameObject:
   - component: {fileID: 327254552}
   - component: {fileID: 327254551}
   - component: {fileID: 327254550}
+  - component: {fileID: 327254553}
   m_Layer: 3
   m_Name: Ceiling (1)
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21099,6 +21100,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327254548}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &327254553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327254548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &355939920
 GameObject:
   m_ObjectHideFlags: 0
@@ -43006,9 +43020,10 @@ GameObject:
   - component: {fileID: 641831241}
   - component: {fileID: 641831240}
   - component: {fileID: 641831239}
+  - component: {fileID: 641831242}
   m_Layer: 3
   m_Name: 'Wall 11 Arma '
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43089,6 +43104,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641831237}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &641831242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641831237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &645120448
 GameObject:
   m_ObjectHideFlags: 0
@@ -61466,9 +61494,10 @@ GameObject:
   - component: {fileID: 1244515533}
   - component: {fileID: 1244515532}
   - component: {fileID: 1244515531}
+  - component: {fileID: 1244515535}
   m_Layer: 3
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61549,6 +61578,19 @@ Transform:
   m_Father: {fileID: 863438258}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1244515535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244515530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1254450365
 GameObject:
   m_ObjectHideFlags: 0
@@ -61883,7 +61925,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25e22932394294477a8327c5cfee33ba, type: 2}
+  - {fileID: 2100000, guid: 6cb7b67ead0224b7fb4a1adc1420f388, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75057,9 +75099,10 @@ GameObject:
   - component: {fileID: 1901104156}
   - component: {fileID: 1901104155}
   - component: {fileID: 1901104154}
+  - component: {fileID: 1901104157}
   m_Layer: 3
   m_Name: Ceiling (2)
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75140,6 +75183,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901104152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1901104157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901104152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1921614573
 GameObject:
   m_ObjectHideFlags: 0
@@ -75736,7 +75792,7 @@ MonoBehaviour:
   PassedRing: {fileID: 8300000, guid: 7e8c7ede1ed66c646853bad2fe1b73d7, type: 3}
   FinalRing: {fileID: 8300000, guid: f0021a723382aed4d8ce7a955fdb384b, type: 3}
   Teleport: {fileID: 8300000, guid: 4830b92541a1c4eedbecaf9daa05ae9f, type: 3}
-  PlatformRotate: {fileID: 0}
+  PlatformRotate: {fileID: 8300000, guid: 3ca2791ec484a8b4c8cd7d26b6289b87, type: 3}
 --- !u!33 &2048884804
 MeshFilter:
   m_ObjectHideFlags: 0
