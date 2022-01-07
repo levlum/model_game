@@ -46,7 +46,28 @@ public class Camera_ray : MonoBehaviour
                     AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
             }*/
-            if (hit.collider.tag == "Platform")
+
+           /* if (Physics.Raycast(ray, out hit, 20) && hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+
+                if (hit.rigidbody.tag == "Platform")
+                {
+
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Presspoint = Input.mousePosition;
+                        StartRotation = transform.rotation;
+                    }
+                    else if (Input.GetMouseButton(0))
+                    {
+                        float CurrentDistanceBetweenMousePositions = (Input.mousePosition - Presspoint).x;
+                        transform.rotation = StartRotation * Quaternion.Euler(Vector3.forward * (CurrentDistanceBetweenMousePositions / SceneWidth) * 360);
+
+                    }*/
+
+
+                    if (hit.collider.tag == "Platform")
             {
 
                 if (Input.GetMouseButtonDown(0))
@@ -67,7 +88,7 @@ public class Camera_ray : MonoBehaviour
 
 
 
-                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.1f);
                 }
             }
          
