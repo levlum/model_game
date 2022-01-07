@@ -23,6 +23,7 @@ TagManager:
   - fire
   - rotate
   - right
+  - left
   layers:
   - Default
   - TransparentFX

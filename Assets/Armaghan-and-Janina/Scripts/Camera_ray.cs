@@ -88,7 +88,7 @@ public class Camera_ray : MonoBehaviour
 
 
 
-                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.1f);
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.01f);
                 }
             }
          

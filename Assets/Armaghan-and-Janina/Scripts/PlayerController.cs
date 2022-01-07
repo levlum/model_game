@@ -78,6 +78,13 @@ public class PlayerController : MonoBehaviour
 
         }
         
+        if (other.gameObject.CompareTag("left")) //moving to the left when hitting the ceiling
+        {
+            //gameObject.transform.position += Vector3.right * Time.deltaTime * 100;
+            gameObject.GetComponent<Rigidbody>().AddForce(Vector3.left * Time.deltaTime * 1000, ForceMode.Impulse); //add force to the left when hitting ceiling
+
+        }
+        
 
         //Light Switching And Audio Playing Codes
         if (other.gameObject.CompareTag("Level1"))
