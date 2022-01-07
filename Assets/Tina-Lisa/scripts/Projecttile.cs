@@ -30,10 +30,9 @@ public class Projecttile : MonoBehaviour
     public float i = 0;
     //public timer Timer;
     public RaycastHit hit;
-    public GameObject endscreen;
+
     //public Button btn;
-    public Button quit;
-    public Image panel;
+
     //public points script;
    // public float finalpoints;
     //public Text prozent;
@@ -46,7 +45,7 @@ public class Projecttile : MonoBehaviour
        //finalpoints = script._points;
          //Button btn = PlayAgainButton.GetComponent<Button>();
         //btn.onClick.AddListener(RestartGame);
-        quit.onClick.AddListener(QuitGame);
+
        
         randomObject = Random.Range(0,15);
   
@@ -322,11 +321,8 @@ public class Projecttile : MonoBehaviour
 }
  public void RestartGame() {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            panel.gameObject.SetActive(false);
+
 
          }
- public void QuitGame() {
-     Debug.Log("Quit");
-    //     Application.;
- }
+
 }

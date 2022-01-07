@@ -39,6 +39,7 @@ public AudioSource error;
                 void OnCollisionEnter(Collision collision) {
                    if (collision.gameObject.tag == "house")
                    {//AudioSource.PlayClipAtPoint(plantAudio, this.gameObject.transform.position);
+
                       plantAudio.Play();
                       script._points+=3;
                       slider.value = script._points;
@@ -48,18 +49,22 @@ public AudioSource error;
                         Vector3 pos = contact.point;
                         if (randomPlant == 0){
                         Instantiate(explosionPrefab, pos, rot);
+                         Debug.Log("1 Plant");
                         }
                         else if (randomPlant == 1){
                         Instantiate(explosionPrefabTwo, pos, rot);
+                         Debug.Log("2 Plant");
                          }
                           else if (randomPlant == 2){
                           Instantiate(explosionPrefabThree, pos, rot);
+                           Debug.Log("3 Plant");
                           }
                          else if (randomPlant == 3){
                          Instantiate(explosionPrefabFour, pos, rot);
+                          Debug.Log("4 Plant");
                           }
 
-                        Debug.Log("Plant");
+                        Debug.Log("Plant kaputt");
                        Destroy(this.gameObject, 0.1f);
                         
 
