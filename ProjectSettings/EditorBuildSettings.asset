@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Armaghan-and-Janina/Scenes/Scene_Armaghan_Janina.unity
+    guid: 08cd956aa0ceb4ab9965590ce94a47ec
   m_configObjects: {}
