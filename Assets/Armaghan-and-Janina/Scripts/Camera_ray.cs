@@ -46,35 +46,31 @@ public class Camera_ray : MonoBehaviour
                     AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 1);
                 }
             }*/
-            if (Physics.Raycast(ray, out hit, 20) && hit.rigidbody != null)
+            if (hit.collider.tag == "Platform")
             {
-                hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
 
-                if (hit.rigidbody.tag == "Platform")
+                if (Input.GetMouseButtonDown(0))
                 {
-                    
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        Presspoint = Input.mousePosition;
-                        StartRotation = transform.rotation;
-                    }
-                    else if (Input.GetMouseButton(0))
-                    {
-                        float CurrentDistanceBetweenMousePositions = (Input.mousePosition - Presspoint).x;
-                        transform.rotation = StartRotation * Quaternion.Euler(Vector3.forward * (CurrentDistanceBetweenMousePositions / SceneWidth) * 360);
+                    Presspoint = Input.mousePosition;
+                    StartRotation = transform.rotation;
+                }
+                else if (Input.GetMouseButton(0))
+                {
+                    float CurrentDistanceBetweenMousePositions = (Input.mousePosition - Presspoint).x;
+                    transform.rotation = StartRotation * Quaternion.Euler(Vector3.forward * (CurrentDistanceBetweenMousePositions / SceneWidth) * 360);
 
-                    }
+                }
 
-                   /*else if (Input.mousePosition != default)
-                    {
-                         hit.transform.Rotate(new Vector3(0, 0, 5));
-                        
+                else if (Input.mousePosition != default)
+                {
+                    hit.transform.Rotate(new Vector3(0, 0, 5));
 
-              
-                        AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
-                    }*/
+
+
+                    AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
                 }
             }
+         
         }
     }
 
