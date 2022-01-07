@@ -46,7 +46,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("rotate")) //rotate Platform when colliding
         {
             other.gameObject.transform.Rotate(0, 0, 10);
-            AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
+            //AudioSource.PlayClipAtPoint(PlatformRotate, transform.position, 0.5f);
+            Debug.Log("test");
         }
 
         if (other.gameObject.CompareTag("Teleport")) //and the other object has the tag "Teleport"
@@ -72,7 +73,9 @@ public class PlayerController : MonoBehaviour
         
         if (other.gameObject.CompareTag("right")) //moving to the right when hitting the ceiling
         {
-            gameObject.transform.position += Vector3.right * Time.deltaTime * 100;
+            //gameObject.transform.position += Vector3.right * Time.deltaTime * 100;
+            gameObject.GetComponent<Rigidbody>().AddForce(Vector3.right * Time.deltaTime * 1000, ForceMode.Impulse); //add force to the right when hitting ceiling
+
         }
         
 
