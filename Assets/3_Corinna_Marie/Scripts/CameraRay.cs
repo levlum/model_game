@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CameraRay : MonoBehaviour
 {
- //  [SerializeField] private Material b_idleMaterial = null;
-   // [SerializeField] private Material b_touchMaterial = null;
-
+    //  [SerializeField] private Material b_idleMaterial = null;
+    // [SerializeField] private Material b_touchMaterial = null;
+    public Transform target;
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
     public float power;
     // Start is called before the first frame update
     void Start()
@@ -60,5 +62,10 @@ public class CameraRay : MonoBehaviour
 
      
         
+    }
+
+    private void LateUpdate()
+    {
+        transform.position = target.position + offset;
     }
 }

@@ -10,6 +10,7 @@ TagManager:
   - jumpy
   - Goalplate
   - jumpplane
+  - sideplane
   layers:
   - Default
   - TransparentFX
