@@ -5,11 +5,13 @@ using UnityEngine;
 public class Bubble : MonoBehaviour { 
     public Vector3 jump;
     public Vector3 side;
+    public Vector3 sideleft;
     public float jumpForce = 4.0f;
    // public float speed = 10.0f;
     private Rigidbody rb;
-    
-   // private Vector2 screenBounds;
+
+    // private Vector2 screenBounds;
+
 
     private void Start()
     {
@@ -18,6 +20,7 @@ public class Bubble : MonoBehaviour {
       //  screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
       jump = new Vector3(0.0f, 2.0f, 0.0f);
       side = new Vector3(0.0f, 0.0f, 2.0f);
+      sideleft = new Vector3(0.0f, 0.0f, -2.0f);
 
     }
 
@@ -49,6 +52,15 @@ public class Bubble : MonoBehaviour {
 
             //GetComponent<Rigidbody>().AddForce(Vector3.up * Time.deltaTime * 10f, ForceMode.Impulse);
         }
+
+        if (other.gameObject.CompareTag("sideplaneleft"))
+        {
+            rb.AddForce(side * jumpForce, ForceMode.Impulse);
+
+            //GetComponent<Rigidbody>().AddForce(Vector3.up * Time.deltaTime * 10f, ForceMode.Impulse);
+        }
     }
+
+    
 
 }

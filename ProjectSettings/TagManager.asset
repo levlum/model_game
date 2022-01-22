@@ -11,6 +11,9 @@ TagManager:
   - Goalplate
   - jumpplane
   - sideplane
+  - teleportStart
+  - teleportTarget
+  - sideplaneleft
   layers:
   - Default
   - TransparentFX
