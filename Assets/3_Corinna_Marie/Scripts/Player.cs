@@ -1,70 +1,66 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+using UnityEngine.Serialization;
 using Vector3 = UnityEngine.Vector3;
 
-public class Player : MonoBehaviour
+    
+
+namespace _3_Corinna_Marie.Scripts
 {
-    [SerializeField] private float m_speed = 1f;
-    private Rigidbody m_playerRigidbody;
+    public class Player : MonoBehaviour
+    {
+        [FormerlySerializedAs("m_speed")] [SerializeField] private float mSpeed = 1f;
+        private Rigidbody _mPlayerRigidbody;
+/*
     private Rigidbody jumpplane;
-    public Vector3 jump;
-    public float jumpForce = 2.0f;
-    public bool isGrounded;
+*/
+        public Vector3 jump;
+        public float jumpForce = 2.0f;
+        public bool isGrounded;
     
     
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       m_playerRigidbody = GetComponent<Rigidbody>();
-        jump = new Vector3(0.0f, 2.0f, 0.0f);
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            _mPlayerRigidbody = GetComponent<Rigidbody>();
+            jump = new Vector3(0.0f, 2.0f, 0.0f);
+        }
 
     
-    private void OnCollisionStay()
-    {
-        isGrounded= true;
-    }
+        private void OnCollisionStay()
+        {
+            isGrounded= true;
+        }
     
     
     
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 movement = new Vector3(0f, 0f, 0f);
-        m_playerRigidbody.AddForce((movement*m_speed));
+        // Update is called once per frame
+        void Update()
+        {
+            Vector3 movement = new Vector3(0f, 0f, 0f);
+            _mPlayerRigidbody.AddForce((movement*mSpeed));
         
         
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            m_playerRigidbody.AddForce(jump*jumpForce,ForceMode.Impulse);
-            isGrounded = false;
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                _mPlayerRigidbody.AddForce(jump*jumpForce,ForceMode.Impulse);
+                isGrounded = false;
+            }
+
+            if (GameObject.Find("duck").transform.position.y <= -50)
+            {
+                UnityEngine.Debug.Log("Game Over!");
+                SceneManager.LoadScene("GameOver");
+            }
+
+
         }
 
-        if (GameObject.Find("duck").transform.position.y <= -50)
-        {
-            UnityEngine.Debug.Log("Game Over!");
-            SceneManager.LoadScene("GameOver");
-        }
-
+    
 
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Goalplate"))
-        {
-            UnityEngine.Debug.Log("You Win!");
-            SceneManager.LoadScene("Win");
-        }
-    }
-    
-    
 }
     
 

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/3_Corinna_Marie/Scenes/Main Menu.unity
     guid: ac3d9c2f9084442f6bf1ced40ac24dcc
   - enabled: 1

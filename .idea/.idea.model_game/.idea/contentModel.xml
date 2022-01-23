@@ -33,13 +33,23 @@
           </e>
         </e>
         <e p="3_Corinna_Marie" t="Include">
+          <e p="external Assets" t="Include">
+            <e p="UI" t="Include">
+              <e p="Montserrat" t="Include">
+                <e p="OFL.txt" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="scripts" t="Include">
             <e p="Bubble.cs" t="Include" />
+            <e p="buttonrestart.cs" t="Include" />
             <e p="CameraRay.cs" t="Include" />
             <e p="Gameplay.cs" t="Include" />
+            <e p="hut.cs" t="Include" />
             <e p="Instantiate.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="SimpleCameraController.cs" t="Include" />
+            <e p="teleport.cs" t="Include" />
           </e>
         </e>
         <e p="Armaghan-and-Janina" t="Include">
@@ -108,6 +118,7 @@
             <e p="camera_ray.cs" t="Include" />
           </e>
         </e>
+        <e p="mainMenu.cs" t="Include" />
         <e p="MarkusMaxKaro_slaenderv2" t="Include">
           <e p="scripts" t="Include">
             <e p="camera_ray_mamaka.cs" t="Include" />
